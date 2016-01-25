@@ -1,0 +1,112 @@
+CS 202 - Computer Science II  
+
+-- C++ I/O & Review --
+
+Due: January 27th
+
+**********************************************************************************
+
+Objectives:  The two main objectives of this project is to test your ability to (1) use C++ I/O (standard and file), and (2) design, implement and test a solution to a given problem. In addition, a light review of your knowledge of C-style strings and multi-dimensional arrays is included. This project will also test your ability to create, compile and run a program in a Linux environment and your ability to upload your program and supporting documentation to webCampus.
+
+For this project you will write a program to read in 10 first names from a file into a two-dimensional character array, output the names to the terminal, sort the list of names, and then output the sorted names both to the terminal and to a file. Although an example file is provided, for grading purposes your project will be tested against a file of 10 names that we will supply but will not be provided to you beforehand. Our test file will be in the same format as the example file.
+
+**********************************************************************************
+
+The following minimum functionality and structure is required:
+
+Read in the list of names from an input file.
+Print out the unsorted list of names to the terminal.
+Sort the list of names alphabetically.
+Print the list of sorted named to the terminal.
+Write the list of sorted names to an output file.
+Ask the user for the input and output file names.
+
+The list of names must be stored in a two-dimensional character array.
+Use character arrays (i.e., C-style) to hold your strings.
+Write multiple functions.
+
+Write your own string copy, string compare (or other) functions as needed.
+
+**********************************************************************************
+
+The following are a list of restrictions:
+
+	No string data types or the string library are allowed.
+
+	No libraries except iostream and fstream are allowed.
+	No global variables or constants except number of names and/or string size.
+
+	Do not use pointers or dynamic memory.
+
+**********************************************************************************
+
+The completed project should have the following properties:
+
+	Written, complied and tested using Linux.
+
+	It must compile using the g++ compiler.
+
+	The code must be commented and indented properly.
+
+	Run a test case using the example list and document using the script program. See 		the 'Basic Linux Commands' on the 'Resources' link.
+
+	Coding should conform to this course's coding standards. See course policies on the 	'Policies' link.
+
+	A one page (minimum) typed sheet documenting your code. This should include the 		overall purpose of the program, your design, problems (if any), and any changes 	you would make given more time.
+
+Turn in: .cpp file; test case documentation; project documentation.
+
+**********************************************************************************
+
+Example Output:
+
+
+Unsorted Names
+
+==============
+
+Milda
+
+Dan
+
+Dale
+
+Letha
+
+Kurt
+
+Daniel
+
+Kandy
+
+Tammy
+
+Malisa
+
+Corey
+
+ 
+
+Sorted Names
+
+============
+
+Corey
+
+Dale
+
+Dan
+
+Daniel
+
+Kandy
+
+Kurt
+
+Letha
+
+Malisa
+
+Milda
+
+Tammy

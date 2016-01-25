@@ -1,0 +1,62 @@
+/*
+
+	Bryce Monaco
+	CS202-1102
+	
+	Project 1
+
+*/
+
+#include <iostream>
+#include <iomanip> //Might end up not being used
+#include <fstream>
+
+using namespace std;
+
+int main ()
+{
+	int nameAmount;
+	
+	char inputFileName[24];
+	
+	cout << "Input the name of the file to be read (Include the extension, ";
+	cout << "must be less than 22 characters): ";
+	
+	cin >> inputFileName;
+	
+	inputFileName[23] = '\0'; //To ensure null terminator
+	
+	cout << "Input the number of names: ";
+	
+	cin >> nameAmount;
+	
+	char namesUnsorted[nameAmount][24];
+	char namesSorted[nameAmount][24];
+	
+	ifstream inputFile;
+	
+	inputFile.open(inputFileName);
+	
+	for (int i = 0; i < nameAmount; i++)
+	{
+	
+		inputFile.getline(namesUnsorted[i], 24, '\n');
+		
+		namesUnsorted[i][23] = '\0';
+		
+	}
+	
+	inputFile.close();
+	
+	for (int i = 0; i < nameAmount; i++)
+	{
+	
+		cout << namesUnsorted[i] << endl;
+	
+	}
+	
+	return 0;
+	
+}
+
+

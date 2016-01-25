@@ -1,0 +1,12 @@
+Luke
+Leia
+Han
+Chewie
+Obi-Wan
+Vader
+Alderan
+Naboo
+Tatooine
+Endor
+C-3PO
+R2-D2

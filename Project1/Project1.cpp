@@ -71,7 +71,22 @@ int main ()
 	
 	*/
 	
+	char lastLetter = 'A'; 	//Char values A-Z = [65, 90], a-z = [97, 122]
+							//To go from lower to upper, subtract 32
+	
 	return 0;
+	
+}
+
+void CopyString (char string1[24], char string2[24])
+{
+	for (int i = 0; i < 24; i++)
+	{
+		string2[i] = string1[i];
+	
+	}
+
+	return;
 	
 }
 

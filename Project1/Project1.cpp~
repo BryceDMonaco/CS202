@@ -13,18 +13,20 @@
 
 using namespace std;
 
+void CopyString (char string1[24], char string2[24]);
+
 int main ()
 {
 	int nameAmount;
 	
-	char inputFileName[24];
+	char inputFileName[50];
 	
 	cout << "Input the name of the file to be read (Include the extension, ";
-	cout << "must be less than 22 characters): ";
+	cout << "must be less than 48 characters): ";
 	
 	cin >> inputFileName;
 	
-	inputFileName[23] = '\0'; //To ensure null terminator
+	inputFileName[49] = '\0'; //To ensure null terminator
 	
 	cout << "Input the number of names: ";
 	
@@ -73,19 +75,88 @@ int main ()
 	
 	char lastLetter = 'A'; 	//Char values A-Z = [65, 90], a-z = [97, 122]
 							//To go from lower to upper, subtract 32
+	int onName = 0;
 	
-	for (int currentName = 0; currentName < nameAmount; currentName++) //Loop for each name
+	//Go through every letter
+	for (char thisLetter = 'A'; thisLetter <= 'Z'; thisLetter++)
 	{
-		for (char currentLetter = lastLetter; currentLetter <= 'Z'; currentLetter++)
+		//Go through every name in the unsorted array
+		for (int i = 0; i < nameAmount; i++)
 		{
-			for (int checkName = 0; checkName < nameAmount; checkName++)
+			//If a match is found
+			if (namesUnsorted[i][0] == thisLetter)
 			{
+				//If there is already a name entered before and it starts with
+				//the same letter as the match found
+				if ((onName > 0) && (namesSorted[(onName - 1)][0] == thisLetter))
+				{
+					//Go through every letter to find which is lower
+					for (int checkChar = 0; checkChar < 24; checkChar++)
+					{
+						char sortedChar, unsortedChar;
+						
+						sortedChar = namesSorted[onName - 1][checkChar];
+						unsortedChar = namesUnsorted[i][checkChar];
+						
+						//If the char is a lowercase letter, convert to
+						//uppercase
+						if (sortedChar > 'Z')
+						{
+							sortedChar -= 32;
+						
+						}
+						
+						if (unsortedChar > 'Z')
+						{
+							sortedChar -= 32;
+						
+						}
+						
+						if (sortedChar > unsortedChar) //Sorted is higher
+						{
+							//Move the sorted name down one and place the
+							//unsorted name to where the sorted one was
+							CopyString(namesSorted[(onName - 1)], namesSorted[onName]);
+							CopyString(namesUnsorted[i], namesSorted[(onName - 1)]);
+							
+							break;
+						
+						} else if (sortedChar < unsortedChar)
+						{
+							//Keep the sorted name where it is and place the
+							//unsorted name in the entry below
+							CopyString(namesUnsorted[i], namesSorted[onName]);
+						
+						}
+						
+						//If it's checking the final char and no match has
+						//been found, they must be the same
+						if (checkChar == 23)
+						{
+							CopyString(namesUnsorted[i], namesSorted[onName]);
+						
+						}
+					}
 				
+				} else
+				{
+					CopyString(namesUnsorted[i], namesSorted[onName]);
+				
+				}
+				
+				onName++;
 			
 			}
 		
-		
 		}
+	
+	}
+	
+	cout << endl << "Sorted names: " << endl;
+	
+	for (int i = 0; i < nameAmount; i++)
+	{
+		cout << namesSorted[i] << endl;
 	
 	}
 	
@@ -100,6 +171,8 @@ void CopyString (char string1[24], char string2[24])
 		string2[i] = string1[i];
 	
 	}
+	
+	string2[23] = '\0';
 
 	return;
 	

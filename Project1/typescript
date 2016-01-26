@@ -1,33 +1,10 @@
-Script started on Fri 22 Jan 2016 09:01:39 PM PST
-]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ g++ Project1.cpp -o p1
-Project1.cpp: In function ‘int main()’:
-Project1.cpp:58:2: error: return-statement with no value, in function returning ‘int’ [-fpermissive]
-  return;
-  ^
-]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ^C
-]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exit
-exit
-
-Script done on Fri 22 Jan 2016 09:04:11 PM PST
-Script started on Fri 22 Jan 2016 09:05:34 PM PST
-]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exitg++ Project1.cpp -o p1
-]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ./p1[K[K[K[Kexit
-exit
-
-Script done on Fri 22 Jan 2016 09:05:54 PM PST
-Script started on Fri 22 Jan 2016 09:08:31 PM PST
+Script started on Mon 25 Jan 2016 06:09:35 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ./p1[K[K[K[Klist[K[K[Ks
+list.txt  [0m[01;32mp1[0m  Project1.cpp  Project1.cpp~  ProjectDesc.txt  typescript
 ]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ./p1
-Input the name of the file to be read (Include the extension, must be less than 22 characters): list.txt
+Input the name of the file to be read (Include the extension, must be less than 22 characters): lists .txt
 Input the number of names: 12
-LukeLeiaHanChewieObi-WanVaderAlderanNabooTatooineEndorC-3POR2-D2]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ./p1exit
-exit
-
-Script done on Fri 22 Jan 2016 09:09:01 PM PST
-Script started on Fri 22 Jan 2016 09:09:26 PM PST
-]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exit./p1exitg++ Project1.cpp -o p1exit[Kg++ Project1.cpp -o p1exit[Kg++ Project1.cpp -o p1
-]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ./p1
-Input the name of the file to be read (Include the extension, must be less than 22 characters): list.txt
-Input the number of names: 12
+Found the following entries in list.txt:
 Luke
 Leia
 Han
@@ -40,7 +17,54 @@ Tatooine
 Endor
 C-3PO
 R2-D2
+Alderan
+C-3PO
+Chewie
+Endor
+Han
+Leia
+Luke
+Naboo
+Obi-Wan
+R2-D2
+Tatooine
+Vader
 ]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exit
 exit
 
-Script done on Fri 22 Jan 2016 09:09:51 PM PST
+Script done on Mon 25 Jan 2016 06:10:28 PM PST
+Script started on Mon 25 Jan 2016 06:11:10 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exit./p1
+Input the name of the file to be read (Include the extension, must be less than 22 characters): lists .txt
+Input the number of names: 12
+Found the following entries in list.txt:
+Luke
+Leia
+Han
+Chewie
+Obi-Wan
+Vader
+Alderan
+Naboo
+Tatooine
+Endor
+C-3PO
+R2-D2
+
+Sorted names: 
+Alderan
+C-3PO
+Chewie
+Endor
+Han
+Leia
+Luke
+Naboo
+Obi-Wan
+R2-D2
+Tatooine
+Vader
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exit
+exit
+
+Script done on Mon 25 Jan 2016 06:11:48 PM PST

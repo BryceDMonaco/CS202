@@ -17,6 +17,20 @@ void CopyString (char string1[24], char string2[24]);
 
 int main ()
 {
+	int doDebug = 0;
+	
+	cout << "Do Debug Output? [Y/N]:";
+	
+	char response;
+	
+	cin >> response;
+	
+	if (response == 'y' || response == 'Y')
+	{
+		doDebug = 1;
+	
+	}
+	
 	int nameAmount;
 	
 	char inputFileName[50];
@@ -59,6 +73,18 @@ int main ()
 	
 	}
 	
+	//Debug
+	if (doDebug)
+	{
+		cout << "The following chars were found in entry 3: " << endl;
+	
+		for (int i = 0; namesUnsorted[3][i] != '\0'; i++)
+		{
+			cout << "'" << namesUnsorted[3][i] << "'" << endl;
+		
+		}
+	}
+	
 	/*
 		
 		For loop to run once for every spot in the sorted list
@@ -73,9 +99,13 @@ int main ()
 	
 	*/
 	
-	char lastLetter = 'A'; 	//Char values A-Z = [65, 90], a-z = [97, 122]
-							//To go from lower to upper, subtract 32
+	//Char values A-Z = [65, 90], a-z = [97, 122]
+	//To go from lower to upper, subtract 32
+	
+	//To keep track of which position is next in the sorted array
 	int onName = 0;
+	
+	//Begin main sorting algorithm
 	
 	//Go through every letter
 	for (char thisLetter = 'A'; thisLetter <= 'Z'; thisLetter++)
@@ -90,6 +120,7 @@ int main ()
 				//the same letter as the match found
 				if ((onName > 0) && (namesSorted[(onName - 1)][0] == thisLetter))
 				{
+					cout << "Comparing " << namesSorted[(onName - 1)] << namesUnsorted[i] << endl;
 					//Go through every letter to find which is lower
 					for (int checkChar = 0; checkChar < 24; checkChar++)
 					{
@@ -108,8 +139,39 @@ int main ()
 						
 						if (unsortedChar > 'Z')
 						{
-							sortedChar -= 32;
+							unsortedChar -= 32;
 						
+						}
+						
+						//The sorted name ended sooner
+						if (sortedChar == '\0' && unsortedChar != '\0')
+						{
+							//namesSorted[onName - 1][checkChar] = '\0';
+							
+							//Keep the sorted name where it is and place the
+							//unsorted name in the entry below
+							CopyString(namesUnsorted[i], namesSorted[onName]);
+							
+							break;
+						
+						} else if (unsortedChar == '\0' && sortedChar != '\0')
+						{
+							//The unsorted name ended sooner
+							//namesUnsorted[i][checkChar] = '\0';
+							
+							//Move the sorted name down one and place the
+							//unsorted name to where the sorted one was
+							CopyString(namesSorted[(onName - 1)], namesSorted[onName]);
+							CopyString(namesUnsorted[i], namesSorted[(onName - 1)]);
+							
+							break;
+						
+						}
+						
+						//Debug
+						if (doDebug)
+						{
+							cout << "S: " << sortedChar << " | U: " << unsortedChar << endl;
 						}
 						
 						if (sortedChar > unsortedChar) //Sorted is higher
@@ -159,6 +221,27 @@ int main ()
 		cout << namesSorted[i] << endl;
 	
 	}
+	
+	char outputFileName[50];
+	
+	cout << "Enter output file name (including extension): ";
+	cin >> outputFileName;
+	
+	outputFileName[49] = '\0';
+	
+	ofstream outputFile;
+	
+	outputFile.open(outputFileName);
+	
+	for (int i = 0; i < nameAmount; i++)
+	{
+		outputFile << namesSorted[i] << "\n";
+	
+	}
+	
+	outputFile.close();
+	
+	cout << "Sorted list successfully stored in " << outputFileName << endl;
 	
 	return 0;
 	

@@ -68,3 +68,135 @@ Vader
 exit
 
 Script done on Mon 25 Jan 2016 06:11:48 PM PST
+Script started on Mon 25 Jan 2016 07:36:15 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ./p1
+Input the name of the file to be read (Include the extension, must be less than 48 characters): list.txt
+Input the number of names: 12
+Found the following entries in list.txt:
+Luke
+Leia
+Han
+Chewie
+Obi-Wan
+Vader
+Alderan
+Naboo
+Tatooine
+Endor
+C-3PO
+R2-D2
+
+Sorted names: 
+Alderan
+C-3PO
+Chewie
+Endor
+Han
+Leia
+Luke
+Naboo
+Obi-Wan
+R2-D2
+Tatooine
+Vader
+Enter output file name (including extension): list_s.txt
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ls
+list_s.txt  [0m[01;32mp1[0m            Project1.cpp~    typescript
+list.txt    Project1.cpp  ProjectDesc.txt
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ gedit list_s.txt
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exit
+exit
+
+Script done on Mon 25 Jan 2016 07:37:18 PM PST
+Script started on Tue 26 Jan 2016 01:47:23 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ./p1
+Input the name of the file to be read (Include the extension, must be less than 48 characters): list_provided.txt
+Input the number of names: 10
+Found the following entries in list_provided.txt:
+Milda
+Dan
+Dale
+Letha
+Kurt
+Daniel
+Kandy
+Tammy
+Malisa
+Corey
+The following chars were found in entry 3: 
+'L'
+'e'
+'t'
+'h'
+'a'
+Comparing DanDale
+S: D | U: D
+S: A | U: A
+S: N | U: L
+Comparing DanDaniel
+S: D | U: D
+S: A | U: A
+S: N | U: N
+Comparing KurtKandy
+S: K | U: K
+S: U | U: A
+Comparing MildaMalisa
+S: M | U: M
+S: I | U: A
+
+Sorted names: 
+Corey
+Dale
+Dan
+Daniel
+Kandy
+Kurt
+Letha
+Malisa
+Milda
+Tammy
+Enter output file name (including extension): list_s.txt
+Sorted list successfully stored in list_s.txt
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exit
+exit
+
+Script done on Tue 26 Jan 2016 01:47:45 PM PST
+Script started on Wed 27 Jan 2016 11:18:47 AM PST
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ g++ pr[K[KProject1.cpp -o p1
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ./p1
+Do Debug Output? [Y/N]:N
+Input the name of the file to be read (Include the extension, must be less than 48 characters): list_provided.txt
+Input the number of names: 10
+Found the following entries in list_provided.txt:
+Milda
+Dan
+Dale
+Letha
+Kurt
+Daniel
+Kandy
+Tammy
+Malisa
+Corey
+Comparing DanDale
+Comparing DanDaniel
+Comparing KurtKandy
+Comparing MildaMalisa
+
+Sorted names: 
+Corey
+Dale
+Dan
+Daniel
+Kandy
+Kurt
+Letha
+Malisa
+Milda
+Tammy
+Enter output file name (including extension): output_listt .txt
+Sorted list successfully stored in output_list.txt
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ exit
+exit
+
+Script done on Wed 27 Jan 2016 11:19:42 AM PST

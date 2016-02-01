@@ -1,0 +1,505 @@
+Script started on Sun 31 Jan 2016 10:54:23 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2
+Project2.cpp:17:13: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int year = 0;
+             ^
+Project2.cpp:18:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  float price = 0.00;
+                ^
+Project2.cpp:19:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  bool available = false;
+                   ^
+Project2.cpp:21:1: error: expected ‘;’ after struct definition
+ }
+ ^
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In copy constructor ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:786:5: error: ‘std::ios_base::ios_base(const std::ios_base&)’ is private
+     ios_base(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/streambuf: In copy constructor ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’:
+/usr/include/c++/4.8/streambuf:802:7: error: ‘std::basic_streambuf<_CharT, _Traits>::basic_streambuf(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       basic_streambuf(const basic_streambuf& __sb)
+       ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream:72:11: error: within this context
+     class basic_filebuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:27: note: synthesized method ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’ first required here 
+  ReadData(carList, carData);
+                           ^
+Project2.cpp:24:6: error:   initializing argument 2 of ‘void ReadData(RentalCar*, std::ifstream)’
+ void ReadData (RentalCar carList[10], ifstream data);
+      ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit
+exit
+
+Script done on Sun 31 Jan 2016 10:54:50 PM PST
+Script started on Sun 31 Jan 2016 10:55:34 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+Project2.cpp:17:13: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int year = 0;
+             ^
+Project2.cpp:18:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  float price = 0.00;
+                ^
+Project2.cpp:19:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  bool available = false;
+                   ^
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In copy constructor ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:786:5: error: ‘std::ios_base::ios_base(const std::ios_base&)’ is private
+     ios_base(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/streambuf: In copy constructor ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’:
+/usr/include/c++/4.8/streambuf:802:7: error: ‘std::basic_streambuf<_CharT, _Traits>::basic_streambuf(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       basic_streambuf(const basic_streambuf& __sb)
+       ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream:72:11: error: within this context
+     class basic_filebuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:27: note: synthesized method ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’ first required here 
+  ReadData(carList, carData);
+                           ^
+Project2.cpp:24:6: error:   initializing argument 2 of ‘void ReadData(RentalCar*, std::ifstream)’
+ void ReadData (RentalCar carList[10], ifstream data);
+      ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 10:56:29 PM PST
+Script started on Sun 31 Jan 2016 10:56:57 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In copy constructor ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:786:5: error: ‘std::ios_base::ios_base(const std::ios_base&)’ is private
+     ios_base(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/streambuf: In copy constructor ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’:
+/usr/include/c++/4.8/streambuf:802:7: error: ‘std::basic_streambuf<_CharT, _Traits>::basic_streambuf(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       basic_streambuf(const basic_streambuf& __sb)
+       ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream:72:11: error: within this context
+     class basic_filebuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:27: note: synthesized method ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’ first required here 
+  ReadData(carList, carData);
+                           ^
+Project2.cpp:24:6: error:   initializing argument 2 of ‘void ReadData(RentalCar*, std::ifstream)’
+ void ReadData (RentalCar carList[10], ifstream data);
+      ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 10:58:09 PM PST
+Script started on Sun 31 Jan 2016 11:01:31 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In copy constructor ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:786:5: error: ‘std::ios_base::ios_base(const std::ios_base&)’ is private
+     ios_base(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/streambuf: In copy constructor ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’:
+/usr/include/c++/4.8/streambuf:802:7: error: ‘std::basic_streambuf<_CharT, _Traits>::basic_streambuf(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       basic_streambuf(const basic_streambuf& __sb)
+       ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream:72:11: error: within this context
+     class basic_filebuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:31: note: synthesized method ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’ first required here 
+  ReadData(&carList[0], carData);
+                               ^
+Project2.cpp:24:6: error:   initializing argument 2 of ‘void ReadData(RentalCar*, std::ifstream)’
+ void ReadData (RentalCar* carList, ifstream data);
+      ^
+Project2.cpp: In function ‘void PrintData(RentalCar*)’:
+Project2.cpp:55:31: error: conversion from ‘RentalCar*’ to non-scalar type ‘RentalCar’ requested
+   RentalCar thisCar = carList + i;
+                               ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:02:08 PM PST
+Script started on Sun 31 Jan 2016 11:05:38 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:28: error: cannot convert ‘RentalCar (*)[10]’ to ‘RentalCar*’ for argument ‘1’ to ‘void ReadData(RentalCar*, std::ifstream)’
+  ReadData(&carList, carData);
+                            ^
+Project2.cpp: In function ‘void PrintData(RentalCar*)’:
+Project2.cpp:55:36: error: lvalue required as unary ‘&’ operand
+   RentalCar thisCar = &(carList + i);
+                                    ^
+Project2.cpp: In function ‘void ReadData(RentalCar*, std::ifstream)’:
+Project2.cpp:88:36: error: lvalue required as unary ‘&’ operand
+   RentalCar thisCar = &(carList + i);
+                                    ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:06:06 PM PST
+Script started on Sun 31 Jan 2016 11:06:51 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In copy constructor ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:786:5: error: ‘std::ios_base::ios_base(const std::ios_base&)’ is private
+     ios_base(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/streambuf: In copy constructor ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’:
+/usr/include/c++/4.8/streambuf:802:7: error: ‘std::basic_streambuf<_CharT, _Traits>::basic_streambuf(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       basic_streambuf(const basic_streambuf& __sb)
+       ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream:72:11: error: within this context
+     class basic_filebuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:27: note: synthesized method ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’ first required here 
+  ReadData(carList, carData);
+                           ^
+Project2.cpp:24:6: error:   initializing argument 2 of ‘void ReadData(RentalCar*, std::ifstream)’
+ void ReadData (RentalCar* carList, ifstream data);
+      ^
+Project2.cpp: In function ‘void PrintData(RentalCar*)’:
+Project2.cpp:55:32: error: conversion from ‘RentalCar*’ to non-scalar type ‘RentalCar’ requested
+   RentalCar thisCar = (carList + i);
+                                ^
+Project2.cpp: In function ‘void ReadData(RentalCar*, std::ifstream)’:
+Project2.cpp:88:32: error: conversion from ‘RentalCar*’ to non-scalar type ‘RentalCar’ requested
+   RentalCar thisCar = (carList + i);
+                                ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:07:05 PM PST
+Script started on Sun 31 Jan 2016 11:07:24 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+In file included from /usr/include/c++/4.8/ios:42:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/ios_base.h: In copy constructor ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’:
+/usr/include/c++/4.8/bits/ios_base.h:786:5: error: ‘std::ios_base::ios_base(const std::ios_base&)’ is private
+     ios_base(const ios_base&);
+     ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:66:11: error: within this context
+     class basic_ios : public ios_base
+           ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_ios<char>::basic_ios(const std::basic_ios<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+In file included from /usr/include/c++/4.8/ios:43:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/streambuf: In copy constructor ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’:
+/usr/include/c++/4.8/streambuf:802:7: error: ‘std::basic_streambuf<_CharT, _Traits>::basic_streambuf(const std::basic_streambuf<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]’ is private
+       basic_streambuf(const basic_streambuf& __sb)
+       ^
+In file included from Project2.cpp:9:0:
+/usr/include/c++/4.8/fstream:72:11: error: within this context
+     class basic_filebuf : public basic_streambuf<_CharT, _Traits>
+           ^
+/usr/include/c++/4.8/fstream: In copy constructor ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’:
+/usr/include/c++/4.8/fstream:427:11: note: synthesized method ‘std::basic_filebuf<char>::basic_filebuf(const std::basic_filebuf<char>&)’ first required here 
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+           ^
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:27: note: synthesized method ‘std::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)’ first required here 
+  ReadData(carList, carData);
+                           ^
+Project2.cpp:24:6: error:   initializing argument 2 of ‘void ReadData(RentalCar*, std::ifstream)’
+ void ReadData (RentalCar* carList, ifstream data);
+      ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:07:45 PM PST
+Script started on Sun 31 Jan 2016 11:08:37 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:27: error: invalid user-defined conversion from ‘std::ifstream {aka std::basic_ifstream<char>}’ to ‘std::ifstream* {aka std::basic_ifstream<char>*}’ [-fpermissive]
+  ReadData(carList, carData);
+                           ^
+In file included from /usr/include/c++/4.8/ios:44:0,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project2.cpp:8:
+/usr/include/c++/4.8/bits/basic_ios.h:115:7: note: candidate is: std::basic_ios<_CharT, _Traits>::operator void*() const [with _CharT = char; _Traits = std::char_traits<char>] <near match>
+       operator void*() const
+       ^
+/usr/include/c++/4.8/bits/basic_ios.h:115:7: note:   no known conversion for implicit ‘this’ parameter from ‘void*’ to ‘std::ifstream* {aka std::basic_ifstream<char>*}’
+Project2.cpp: In function ‘void ReadData(RentalCar*, std::ifstream*)’:
+Project2.cpp:90:19: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘int’ to binary ‘operator>>’
+   data >> thisCar.year;
+                   ^
+Project2.cpp:91:19: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘char [50]’ to binary ‘operator>>’
+   data >> thisCar.make;
+                   ^
+Project2.cpp:92:19: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘char [50]’ to binary ‘operator>>’
+   data >> thisCar.model;
+                   ^
+Project2.cpp:93:19: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘float’ to binary ‘operator>>’
+   data >> thisCar.price;
+                   ^
+Project2.cpp:97:11: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘int’ to binary ‘operator>>’
+   data >> tempCondition;
+           ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:09:13 PM PST
+Script started on Sun 31 Jan 2016 11:11:49 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+Project2.cpp: In function ‘void ReadData(RentalCar*, std::ifstream*)’:
+Project2.cpp:90:19: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘int’ to binary ‘operator>>’
+   data >> thisCar.year;
+                   ^
+Project2.cpp:91:19: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘char [50]’ to binary ‘operator>>’
+   data >> thisCar.make;
+                   ^
+Project2.cpp:92:19: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘char [50]’ to binary ‘operator>>’
+   data >> thisCar.model;
+                   ^
+Project2.cpp:93:19: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘float’ to binary ‘operator>>’
+   data >> thisCar.price;
+                   ^
+Project2.cpp:97:11: error: invalid operands of types ‘std::ifstream* {aka std::basic_ifstream<char>*}’ and ‘int’ to binary ‘operator>>’
+   data >> tempCondition;
+           ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:12:13 PM PST
+Script started on Sun 31 Jan 2016 11:17:53 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:29: error: cannot convert ‘char*’ to ‘std::ifstream* {aka std::basic_ifstream<char>*}’ for argument ‘2’ to ‘void ReadData(RentalCar*, std::ifstream*)’
+  ReadData(carList, inputFile);
+                             ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:18:22 PM PST
+Script started on Sun 31 Jan 2016 11:18:50 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ ./p1[K2[K[K[K[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:19:44 PM PST
+Script started on Sun 31 Jan 2016 11:20:53 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[Kg++ Project2.cpp -o p2[K./p2
+Enter the car data file name: carData
+32667
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ ls
+carData  [0m[01;32mp2[0m  Project2.cpp  Project2.cpp~  typescript
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit
+exit
+
+Script done on Sun 31 Jan 2016 11:21:21 PM PST
+Script started on Sun 31 Jan 2016 11:21:59 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit[2Pls./p2g++ Project2.cpp -o p2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[K[2Pls./p2
+Enter the car data file name: carDta  ata
+32729  
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit
+exit
+
+Script done on Sun 31 Jan 2016 11:22:21 PM PST
+Script started on Sun 31 Jan 2016 11:22:41 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit./p2g++ Project2.cpp -o p2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[K./p2
+Enter the car data file name: carDtat   ata
+32592  
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit
+exit
+
+Script done on Sun 31 Jan 2016 11:22:57 PM PST
+Script started on Sun 31 Jan 2016 11:24:38 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit./p2
+Enter the car data file name: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ ./p2exit./p2g++ Project2.cpp -o p2
+Project2.cpp: In function ‘int main()’:
+Project2.cpp:41:30: error: cannot convert ‘RentalCar (*)[10]’ to ‘RentalCar*’ for argument ‘1’ to ‘void ReadData(RentalCar*, char*)’
+  ReadData(&carList, inputFile);
+                              ^
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2./p2[Kexit
+exit
+
+Script done on Sun 31 Jan 2016 11:24:53 PM PST
+Script started on Sun 31 Jan 2016 11:25:19 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exitg++ Project2.cpp -o p2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ ./p2
+Enter the car data file name: carDt ata
+32711  
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ ./p2g++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:25:37 PM PST
+Script started on Sun 31 Jan 2016 11:26:55 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit./p2g++ Project2.cpp -o p2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[K./p2
+Enter the car data file name: carData
+Read in: 2014ToyotaTacoma115.12
+Read in: 2012HondaCRV85.1
+Read in: 2015FordFusion90.89
+Read in: 2013GMCYukon110.43
+Read in: 2009DodgeNeon45.25
+Read in: 2011ToyotaRav465.02
+Read in: 2012MazdaCX586.75
+Read in: 2016SubaruOutback71.27
+Read in: 2015FordF150112.83
+Read in: 2010ToyotaCorolla50.36
+32696  
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ ./p2g++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:29:52 PM PST
+Script started on Sun 31 Jan 2016 11:30:51 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit./p2g++ Project2.cpp -o p2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[K./p2
+Enter the car data file name: carData
+Read in: 2014ToyotaTacoma115.12
+Read in: 2012HondaCRV85.1
+Read in: 2015FordFusion90.89
+Read in: 2013GMCYukon110.43
+Read in: 2009DodgeNeon45.25
+Read in: 2011ToyotaRav465.02
+Read in: 2012MazdaCX586.75
+Read in: 2016SubaruOutback71.27
+Read in: 2015FordF150112.83
+Read in: 2010ToyotaCorolla50.36
+2012 Honda CRV
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ ./p2g++ Project2.cpp -o p2exit[K
+exit
+
+Script done on Sun 31 Jan 2016 11:31:38 PM PST

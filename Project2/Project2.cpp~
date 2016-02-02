@@ -20,6 +20,9 @@ struct RentalCar
 
 };
 
+void PrintData (RentalCar* carList, int mode);
+void CalculateCost (int &dayAmount, float cost); 
+void GetMostExpensive (RentalCar* carList);
 int PrintMenu ();
 void ReadData (RentalCar* carList, char fileName[50]);
 
@@ -42,9 +45,11 @@ int main ()
 	//Debug Output
 	cout << carList[1].year << " " << carList[1].make << " " << carList[1].model << endl;
 	
+	int option;
+	
 	do
 	{
-		int option = PrintMenu();
+		option = PrintMenu();
 		
 		if (option == 6)
 		{
@@ -57,6 +62,8 @@ int main ()
 		switch (option)
 		{
 			case 1:
+				//Read new file
+				
 				cout << "Enter the car data file name: ";
 				cin >> inputFile;
 				
@@ -64,25 +71,62 @@ int main ()
 				
 				ReadData(&carList[0], inputFile);
 				
+				PrintData(&carList[0], 0);
+				
 				break;
 				
 			case 2:
 				//Print data
+				
+				PrintData(&carList[0], 0);
 				
 				break;
 			
 			case 3:
 				//Estimate Cost
 				
+				PrintData(&carList[0], 1);
+				
+				cout << "Please select a car: ";
+				
+				int car;
+				
+				do
+				{
+					cin >> car;
+					
+					if ((car < 1) || (car > 10))
+					{
+						cout << "Please enter a number between 1 and 10." << endl;
+						cout << "Please select a car: ";
+						
+					}
+				
+				} while ((car < 1) || (car > 10));
+				
+				cout << "Enter the number of days you want the car: ";
+				
+				int days;
+				
+				cin >> days;
+				
+				cout << "The " << carList[car - 1].make << " " << carList[car - 1].model;
+				cout << " will cost $";
+				
+				CalculateCost(days, carList[car - 1].price);
+				
 				break;
 				
 			case 4:
-				//Expensive Car
+				//Find most expensive car
+				GetMostExpensive(&carList[0]);
 				
 				break;
 				
 			case 5:
 				//Print available
+				
+				PrintData(&carList[0], 2);
 				
 				break;
 				
@@ -94,10 +138,97 @@ int main ()
 		}
 	
 	} while (option != 6);
-	//PrintData(carList);
 	
 	return 0;	
 
+}
+
+void PrintData (RentalCar* carList, int mode)
+{
+	if (mode == 0) //Just print the data
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			cout << carList[i].year << " " << carList[i].make;
+			cout << " " << carList[i].model << " (Cost/Day: $" << carList[i].price;
+			cout << ")";
+			
+			if (carList[i].available)
+			{
+				cout << " (Available)" << endl;
+			
+			} else
+			{
+				cout << " (Not Available)" << endl;
+			
+			}
+					
+		}
+	
+	} else if (mode == 1) //Print the data as a numbered list
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			cout << (i + 1) << ". " << carList[i].year << " " << carList[i].make;
+			cout << " " << carList[i].model << " (Cost/Day: $" << carList[i].price;
+			cout << ")" << endl;
+					
+		}
+	
+	} else if (mode == 2) //Print only the available cars
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			if (carList[i].available)
+			{
+				cout << carList[i].year << " " << carList[i].make;
+				cout << " " << carList[i].model << " (Cost/Day: $" << carList[i].price;
+				cout << ")";
+			
+			}
+		
+		}
+	
+	}
+	
+	return;
+
+}
+
+
+//This function fufills the pass by reference rerquirement
+void CalculateCost (int &dayAmount, float cost)
+{
+	float total = (float) dayAmount * cost;
+	
+	cout << total << " for " << dayAmount << " days." << endl;
+	
+	return;
+	
+}
+
+void GetMostExpensive (RentalCar* carList)
+{
+	int top = 0;
+	float highPrice = 0.0;
+	
+	for (int i = 0; i < 10; i++)
+	{
+		if (carList[i].price > highPrice)
+		{
+			highPrice = carList[i].price;
+			
+			top = i;
+			
+		}
+	
+	}
+	
+	cout << "The most expensive car is the " << carList[top].make << " " << carList[top].model;
+	cout << " at " << carList[top].price << " per day. " << endl;
+	
+	return;
+	
 }
 
 int PrintMenu ()
@@ -124,6 +255,7 @@ int PrintMenu ()
 			cout << endl << "INVALID OPTION, CHOOSE A NUMBER FROM 1 TO 6!" << endl;
 			cout << "Option: ";
 		}
+		
 	} while ((option <1) || (option > 6));
 	
 	return option;
@@ -166,7 +298,7 @@ void ReadData (RentalCar* carList, char fileName[50])
 		
 		}
 		
-		cout << "Read in: " << carList[i].year << carList[i].make << carList[i].model << carList[i].price << endl;
+		//cout << "Read in: " << carList[i].year << carList[i].make << carList[i].model << carList[i].price << endl;
 	}
 	
 	data.close();

@@ -20,9 +20,8 @@ struct RentalCar
 
 };
 
-//void PrintData (RentalCar* carList);
+int PrintMenu ();
 void ReadData (RentalCar* carList, char fileName[50]);
-
 
 int main ()
 {
@@ -40,49 +39,96 @@ int main ()
 	
 	ReadData(&carList[0], inputFile);
 	
+	//Debug Output
 	cout << carList[1].year << " " << carList[1].make << " " << carList[1].model << endl;
 	
+	do
+	{
+		int option = PrintMenu();
+		
+		if (option == 6)
+		{
+			cout << "Terminating program... " << endl;
+			
+			return 0;
+			
+		}
+		
+		switch (option)
+		{
+			case 1:
+				cout << "Enter the car data file name: ";
+				cin >> inputFile;
+				
+				inputFile[49] = '\0';		
+				
+				ReadData(&carList[0], inputFile);
+				
+				break;
+				
+			case 2:
+				//Print data
+				
+				break;
+			
+			case 3:
+				//Estimate Cost
+				
+				break;
+				
+			case 4:
+				//Expensive Car
+				
+				break;
+				
+			case 5:
+				//Print available
+				
+				break;
+				
+			default:
+				cout << "Unrecognized input, terminating program. " << endl;
+				
+				return 0;
+				break;
+		}
+	
+	} while (option != 6);
 	//PrintData(carList);
 	
 	return 0;	
 
 }
-/*
-void PrintData (RentalCar* carList)
+
+int PrintMenu ()
 {
-	cout << "===========================================================" << endl;
-
-	for (int i = 0; i < 10; i++)
-	{	
-		RentalCar thisCar = carList[i];
+	cout << "======================================================" << endl;
+	cout <<	"Enter the number to a corresponding menu optin below: " << endl;
+	cout << "1. Use a different car data file. " << endl;
+	cout << "2. Print all car data to screen. " << endl;
+	cout << "3. Estimate car rental cost. " << endl;
+	cout << "4. Print the most expensive car's data to screen. " << endl;
+	cout << "5. Print only the available cars to screen. " << endl;
+	cout << "6. Exit. " << endl;
+	cout << "======================================================" << endl;
+	cout << "Option: ";
+	
+	int option;
+	
+	do
+	{
+		cin >> option;
 		
-		cout << thisCar.year << " " << thisCar.make << " " << thisCar.model << endl;
-		
-		switch (thisCar.available)
+		if ((option < 1) || (option > 6))
 		{
-			case false:
-				cout << "This car is not available. (Price: " << thisCar.price << ")" << endl;
-				
-				break;
-			
-			case true:
-				cout << "This car is available for " << thisCar.price << " per day!" << endl;
-				
-				break;
-			
-			default:
-				cout << "There was an error reading this car's availability." << endl;
-				
-				break;
-		
+			cout << endl << "INVALID OPTION, CHOOSE A NUMBER FROM 1 TO 6!" << endl;
+			cout << "Option: ";
 		}
+	} while ((option <1) || (option > 6));
 	
-	}
-	
-	cout << "===========================================================" << endl;
-
+	return option;
 }
-*/
+
 void ReadData (RentalCar* carList, char fileName[50])
 {
 	ifstream data;

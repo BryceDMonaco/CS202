@@ -644,3 +644,70 @@ Terminating program...
 exit
 
 Script done on Tue 02 Feb 2016 01:35:09 PM PST
+Script started on Tue 02 Feb 2016 01:35:24 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ exit./p2g++ Project2.cpp -o p2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ g++ Project2.cpp -o p2exit[K./p2
+Enter the car data file name: carData
+2012 Honda CRV
+======================================================
+Enter the number to a corresponding menu optin below: 
+1. Use a different car data file. 
+2. Print all car data to screen. 
+3. Estimate car rental cost. 
+4. Print the most expensive car's data to screen. 
+5. Print only the available cars to screen. 
+6. Exit. 
+======================================================
+Option: 2
+2014 Toyota Tacoma (Cost/Day: $115.12) (Available)
+2012 Honda CRV (Cost/Day: $85.1) (Not Available)
+2015 Ford Fusion (Cost/Day: $90.89) (Not Available)
+2013 GMC Yukon (Cost/Day: $110.43) (Not Available)
+2009 Dodge Neon (Cost/Day: $45.25) (Available)
+2011 Toyota Rav4 (Cost/Day: $65.02) (Available)
+2012 Mazda CX5 (Cost/Day: $86.75) (Available)
+2016 Subaru Outback (Cost/Day: $71.27) (Not Available)
+2015 Ford F150 (Cost/Day: $112.83) (Available)
+2010 Toyota Corolla (Cost/Day: $50.36) (Available)
+======================================================
+Enter the number to a corresponding menu optin below: 
+1. Use a different car data file. 
+2. Print all car data to screen. 
+3. Estimate car rental cost. 
+4. Print the most expensive car's data to screen. 
+5. Print only the available cars to screen. 
+6. Exit. 
+======================================================
+Option: 5
+2014 Toyota Tacoma (Cost/Day: $115.12)
+2009 Dodge Neon (Cost/Day: $45.25)
+2011 Toyota Rav4 (Cost/Day: $65.02)
+2012 Mazda CX5 (Cost/Day: $86.75)
+2015 Ford F150 (Cost/Day: $112.83)
+2010 Toyota Corolla (Cost/Day: $50.36)
+======================================================
+Enter the number to a corresponding menu optin below: 
+1. Use a different car data file. 
+2. Print all car data to screen. 
+3. Estimate car rental cost. 
+4. Print the most expensive car's data to screen. 
+5. Print only the available cars to screen. 
+6. Exit. 
+======================================================
+Option: 4
+The most expensive car is the Toyota Tacoma at 115.12 per day. 
+======================================================
+Enter the number to a corresponding menu optin below: 
+1. Use a different car data file. 
+2. Print all car data to screen. 
+3. Estimate car rental cost. 
+4. Print the most expensive car's data to screen. 
+5. Print only the available cars to screen. 
+6. Exit. 
+======================================================
+Option: 6
+Terminating program... 
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ cd ..
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git add -A
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git commit
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6     File: /home/bryce/CS202/.git/COMMIT_EDITMSG                [4;1H(B[m# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d# On branch master[7d# Changes to be committed:[8d#[9Gmodified:   Project2/Project2.cpp[9d#[9Gmodified:   Project2/Project2.cpp~[10d#[9Gmodified:   Project2/p2[11d#[9Gmodified:   Project2/typescript[12d#[22;32H(B[0;7m[ Read 10 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[1;71H(B[0;7mModified[3d(B[mUdated     pdata ed Projec[22d[K[3;15Ht2[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(

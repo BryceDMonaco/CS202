@@ -1,0 +1,51 @@
+CS 202 - Computer Science II
+
+-- C++ Structs with Arrays--
+
+Due: February 3rd
+
+Objectives:  This project should test your ability to create and use structs with arrays. A review of your knowledge of arrays, iostream, file i/o and C-style strings is included. 
+
+
+For this project, you are to create a program that will assist users who want to rent a car. You are given a datafile with 10 different cars, and you must read in all of the car data from the file and store it in an array of structs. You must also create a menu with the functionality defined below. Although an example file is provided, for grading purposes your project will be tested against a different test file that will not be provided to you beforehand. Our test file will be in the same format as the example file.
+
+The RentalCar struct will contain the following data members:
+
+	make, a C-style string 
+	model, a C-style string
+	year, an int 
+	price, a float (price per day)
+	available, a bool (1 = true; 0 = false; try to display true/false using the "boolalpha" flag)
+
+The menu must have the following functionality:
+
+	Read data from file
+	Print out ALL data for all of the cars
+	Estimate car rental cost - prompt the user for a car number (first car in file is #1), and the number of days to rent the car
+	Find the most expensive car
+	Print out only the available cars 
+	Exit program
+
+The following minimum functionality and structure is required:
+
+	Ask the user for the input file name.
+	The list of cars must be stored in an array of structs.
+	Use character arrays (i.e., C-style) to hold your strings.
+	Write multiple functions (Hint: each menu option should be a function).
+	At least one function must use pass by reference.
+	Write your own string copy, string compare (or other) functions as needed.
+
+ 
+
+The other functionality and structure of the program should remain the same as Project #1, including writing to screen and file and restrictions on string libraries, global variables and constants, etc.
+
+The completed project should have the following properties:
+
+	Written, complied and tested using Linux.
+	It must compile using the g++ compiler.
+	The code must be commented.
+	Test cases run and documented with the script program.
+	Coding should conform to this course's coding standards. See course policies on the 'Policies' link.
+	A one page (minimum) typed sheet documenting your code. This should include the overall purpose of the program, your design, bugs, and any changes you would make given more time.
+
+Turn in: .cpp file; test case documentation; project documentation.

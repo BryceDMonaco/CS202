@@ -710,4 +710,369 @@ Terminating program...
 ]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ cd ..
 ]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git add -A
 ]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git commit
-[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6     File: /home/bryce/CS202/.git/COMMIT_EDITMSG                [4;1H(B[m# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d# On branch master[7d# Changes to be committed:[8d#[9Gmodified:   Project2/Project2.cpp[9d#[9Gmodified:   Project2/Project2.cpp~[10d#[9Gmodified:   Project2/p2[11d#[9Gmodified:   Project2/typescript[12d#[22;32H(B[0;7m[ Read 10 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[1;71H(B[0;7mModified[3d(B[mUdated     pdata ed Projec[22d[K[3;15Ht2[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6     File: /home/bryce/CS202/.git/COMMIT_EDITMSG                [4;1H(B[m# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d# On branch master[7d# Changes to be committed:[8d#[9Gmodified:   Project2/Project2.cpp[9d#[9Gmodified:   Project2/Project2.cpp~[10d#[9Gmodified:   Project2/p2[11d#[9Gmodified:   Project2/typescript[12d#[22;32H(B[0;7m[ Read 10 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[1;71H(B[0;7mModified[3d(B[mUdated     pdata ed Projec[22d[K[3;15Ht2[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: /home/bryce/CS202/.git/COMMIT_EDITMSG   [23d^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[22;58H[23d[39;49m(B[m[J[1;71H(B[0;7m        [22;31H(B[m[1K (B[0;7m[ Wrote 10 lines ](B[m[K[24;80H[24;1H[?1049l[?1l>[master ccebc5d] Updated Project2
+ 4 files changed, 412 insertions(+), 8 deletions(-)
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git push cs202 master
+Username for 'https://github.com': brycedmonaco
+Password for 'https://brycedmonaco@github.com': 
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 5.93 KiB | 0 bytes/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+To https://github.com/BryceDMonaco/CS202.git
+   241e946..ccebc5d  master -> master
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ cd Project [K1
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ ls
+Documentation.txt  list.txt         [0m[01;32mp1[0m                    Project1.cpp~
+list_provided.txt  list.txt~        [01;31mPA1_Monaco_Bryce.zip[0m  ProjectDesc.txt
+list_s.txt         output_list.txt  Project1.cpp          typescript
+]0;bryce@Brycbuntu: ~/CS202/Project1bryce@Brycbuntu:~/CS202/Project1$ cd ..
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ cd Project2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ gedi[Kit ProjectDesc.txxt[K[Kt
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ cd ..
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git add 0A[K[K-A
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git commit
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6     File: /home/bryce/CS202/.git/COMMIT_EDITMSG                [4;1H(B[m# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d# On branch master[7d# Changes to be committed:[8d#[9Gnew file:   Project2/ProjectDesc.txt[9d#[9Gmodified:   Project2/typescript[10d#[22;33H(B[0;7m[ Read 8 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[1;71H(B[0;7mModified[3d(B[mAdded Project2 Description[22d[K[3;27H[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: /home/bryce/CS202/.git/COMMIT_EDITMSG   [23d^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[22;58H[23d[39;49m(B[m[J[1;71H(B[0;7m        [22;31H(B[m[1K (B[0;7m[ Wrote 8 lines ](B[m[K[24;80H[24;1H[?1049l[?1l>[master 3330859] Added Project2 Description
+ 2 files changed, 118 insertions(+)
+ create mode 100644 Project2/ProjectDesc.txt
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git push cs0[K22 [K[K02 master
+Username for 'https://github.com': brycedmonaco
+Password for 'https://brycedmonaco@github.com': 
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 2.32 KiB | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To https://github.com/BryceDMonaco/CS202.git
+   ccebc5d..3330859  master -> master
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ ca car[K[K[K[Kt carData
+cat: carData: No such file or directory
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ ls
+[0m[01;34mLabs[0m  [01;34mProject1[0m  [01;34mProject2[0m  README.md  README.md~
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ cd Project2
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ ls
+carData  [0m[01;32mp2[0m  Project2.cpp  Project2.cpp~  ProjectDesc.txt  typescript
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ cat carData
+2014 Toyota Tacoma 115.12 1
+2012 Honda CRV 85.10 0
+2015 Ford Fusion 90.89 0
+2013 GMC Yukon 110.43 0
+2009 Dodge Neon 45.25 1
+2011 Toyota Rav4 65.02 1
+2012 Mazda CX5 86.75 1
+2016 Subaru Outback 71.27 0
+2015 Ford F150 112.83 1
+2010 Toyota Corolla 50.36 1
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ zip PA1_Monaco[K[K[K[K[K[K[K[K2_Monaco_Bryce.zip
+
+zip error: Nothing to do! (PA2_Monaco_Bryce.zip)
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ zip PA2_Monaco_Bryce.zip[C[C[C[C PA2_Monaco_Bryce.zip[C PA2_Monaco_Bryce.zip[1@P[1@r[1@o[1@j[1@e[1@c[1@t[1@2[1@.[1@c[1@p[1@p
+	zip warning: missing end signature--probably not a zip file (did you
+	zip warning: remember to use binary mode when you transferred it?)
+	zip warning: (if you are trying to read a damaged archive try -F)
+
+zip error: Zip file structure invalid (Project2.cpp)
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ gedit Documentation.txt
+]0;bryce@Brycbuntu: ~/CS202/Project2bryce@Brycbuntu:~/CS202/Project2$ cat Project2.cpp
+/*
+	Bryce Monaco
+	CS202-1102
+	
+	Project 2
+*/
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+struct RentalCar
+{
+	char make[50];
+	char model[50];
+	int year;
+	float price;
+	bool available;
+
+};
+
+void PrintData (RentalCar* carList, int mode);
+void CalculateCost (int &dayAmount, float cost); 
+void GetMostExpensive (RentalCar* carList);
+int PrintMenu ();
+void ReadData (RentalCar* carList, char fileName[50]);
+
+int main ()
+{
+	char inputFile[50];
+	
+	cout << "Enter the car data file name: ";
+	cin >> inputFile;
+	
+	inputFile[49] = '\0';
+	
+	//ifstream carData;
+	//carData.open(inputFile);
+	
+	RentalCar carList[10];
+	
+	ReadData(&carList[0], inputFile);
+	
+	//Debug Output
+	cout << carList[1].year << " " << carList[1].make << " " << carList[1].model << endl;
+	
+	int option;
+	
+	do
+	{
+		option = PrintMenu();
+		
+		if (option == 6)
+		{
+			cout << "Terminating program... " << endl;
+			
+			return 0;
+			
+		}
+		
+		switch (option)
+		{
+			case 1:
+				//Read new file
+				
+				cout << "Enter the car data file name: ";
+				cin >> inputFile;
+				
+				inputFile[49] = '\0';		
+				
+				ReadData(&carList[0], inputFile);
+				
+				PrintData(&carList[0], 0);
+				
+				break;
+				
+			case 2:
+				//Print data
+				
+				PrintData(&carList[0], 0);
+				
+				break;
+			
+			case 3:
+				//Estimate Cost
+				
+				PrintData(&carList[0], 1);
+				
+				cout << "Please select a car: ";
+				
+				int car;
+				
+				do
+				{
+					cin >> car;
+					
+					if ((car < 1) || (car > 10))
+					{
+						cout << "Please enter a number between 1 and 10." << endl;
+						cout << "Please select a car: ";
+						
+					}
+				
+				} while ((car < 1) || (car > 10));
+				
+				cout << "Enter the number of days you want the car: ";
+				
+				int days;
+				
+				cin >> days;
+				
+				cout << "The " << carList[car - 1].make << " " << carList[car - 1].model;
+				cout << " will cost $";
+				
+				CalculateCost(days, carList[car - 1].price);
+				
+				break;
+				
+			case 4:
+				//Find most expensive car
+				GetMostExpensive(&carList[0]);
+				
+				break;
+				
+			case 5:
+				//Print available
+				
+				PrintData(&carList[0], 2);
+				
+				break;
+				
+			default:
+				cout << "Unrecognized input, terminating program. " << endl;
+				
+				return 0;
+				break;
+		}
+	
+	} while (option != 6);
+	
+	return 0;	
+
+}
+
+void PrintData (RentalCar* carList, int mode)
+{
+	if (mode == 0) //Just print the data
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			cout << carList[i].year << " " << carList[i].make;
+			cout << " " << carList[i].model << " (Cost/Day: $" << carList[i].price;
+			cout << ")";
+			
+			if (carList[i].available)
+			{
+				cout << " (Available)" << endl;
+			
+			} else
+			{
+				cout << " (Not Available)" << endl;
+			
+			}
+					
+		}
+	
+	} else if (mode == 1) //Print the data as a numbered list
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			cout << (i + 1) << ". " << carList[i].year << " " << carList[i].make;
+			cout << " " << carList[i].model << " (Cost/Day: $" << carList[i].price;
+			cout << ")" << endl;
+					
+		}
+	
+	} else if (mode == 2) //Print only the available cars
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			if (carList[i].available)
+			{
+				cout << carList[i].year << " " << carList[i].make;
+				cout << " " << carList[i].model << " (Cost/Day: $" << carList[i].price;
+				cout << ")" << endl;
+			
+			}
+		
+		}
+	
+	}
+	
+	return;
+
+}
+
+
+//This function fufills the pass by reference rerquirement
+void CalculateCost (int &dayAmount, float cost)
+{
+	float total = (float) dayAmount * cost;
+	
+	cout << total << " for " << dayAmount << " days." << endl;
+	
+	return;
+	
+}
+
+void GetMostExpensive (RentalCar* carList)
+{
+	int top = 0;
+	float highPrice = 0.0;
+	
+	for (int i = 0; i < 10; i++)
+	{
+		if (carList[i].price > highPrice)
+		{
+			highPrice = carList[i].price;
+			
+			top = i;
+			
+		}
+	
+	}
+	
+	cout << "The most expensive car is the " << carList[top].make << " " << carList[top].model;
+	cout << " at " << carList[top].price << " per day. " << endl;
+	
+	return;
+	
+}
+
+int PrintMenu ()
+{
+	cout << "======================================================" << endl;
+	cout <<	"Enter the number to a corresponding menu optin below: " << endl;
+	cout << "1. Use a different car data file. " << endl;
+	cout << "2. Print all car data to screen. " << endl;
+	cout << "3. Estimate car rental cost. " << endl;
+	cout << "4. Print the most expensive car's data to screen. " << endl;
+	cout << "5. Print only the available cars to screen. " << endl;
+	cout << "6. Exit. " << endl;
+	cout << "======================================================" << endl;
+	cout << "Option: ";
+	
+	int option;
+	
+	do
+	{
+		cin >> option;
+		
+		if ((option < 1) || (option > 6))
+		{
+			cout << endl << "INVALID OPTION, CHOOSE A NUMBER FROM 1 TO 6!" << endl;
+			cout << "Option: ";
+		}
+		
+	} while ((option <1) || (option > 6));
+	
+	return option;
+}
+
+void ReadData (RentalCar* carList, char fileName[50])
+{
+	ifstream data;
+	data.open(fileName);
+	
+	for (int i = 0; i < 10; i++)
+	{
+		
+		data >> carList[i].year;
+		data >> carList[i].make;
+		data >> carList[i].model;
+		data >> carList[i].price;
+		
+		int tempCondition;
+		
+		data >> tempCondition;
+		
+		switch (tempCondition)
+		{
+			case 0:
+				carList[i].available = false;
+				
+				break;
+			
+			case 1:
+				carList[i].available = true;
+				
+				break;
+			
+			default:
+				//If the input is incorretly formatted, assume unavailable
+				carList[i].available = false;
+				
+				break;
+		
+		}
+		
+		//cout << "Read in: " <

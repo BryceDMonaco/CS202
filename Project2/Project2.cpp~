@@ -183,7 +183,7 @@ void PrintData (RentalCar* carList, int mode)
 			{
 				cout << carList[i].year << " " << carList[i].make;
 				cout << " " << carList[i].model << " (Cost/Day: $" << carList[i].price;
-				cout << ")";
+				cout << ")" << endl;
 			
 			}
 		

@@ -1,0 +1,54 @@
+CS 202 - Computer Science II
+
+-- C++ Pointers --
+
+Due: February 10th
+
+Objectives:  This project should test your ability to create and use pointers. A review of your knowledge of structs, arrays, iostream, file i/o and C-style strings is included. 
+
+This project will expand Project 2 by adding additional functionality, using pointers, and addressing abstract data types (ADTs) as data members.  Pointers must be used for all array manipulation, including arrays with ADTs, e.g, cars. Pointers must also be used in function prototypes and function parameter lists - not square brackets. Be sure and change your string functions (e.g. string copy) using pointers. Square brackets should only be used when declaring an array. Pointers can only be moved by incrementing or decrementing (i.e., ++ or - -), or by setting the pointer back to the base address using the array name. All pointers must be passed by value. Until further notice do not use arrow (->) notation with your pointers.
+
+The additional functionality is as follow: you are given an updated data file where there are 3 rental car locations, where each location has 5 cars. You will have the same menu options, but the functionality has been updated below. Note: using multiple helper functions to do smaller tasks will make this project significantly easier. You may want to create a function that will get a car from a location based on the location and car indices.
+
+The Agency ADT will contain the following data members:
+	name, a C-style string. 
+	zipcode, an int array of size 5.
+	inventory, an array of Car objects with a size of 5.
+	
+The menu must have the updated functionality:
+	Read data from file - the file has been structured where the first line is the car agency info, followed by 5 cars.
+	Print out ALL data for all 3 agencies and cars.
+	Estimate car rental cost - prompt for an agency (e.g., Hertz) and car number (where 1-5 are the cars at each Agency).
+	Find the most expensive car - print the single most expensive car out of all 3 Agencies.
+	Print out only the available cars - from all 3 Agencies.
+	Exit program.
+	
+The following minimum functionality and structure is required:
+	Ask the user for the input file name.
+
+The list of agencies must be stored in an 1-d array of structs.
+Use character arrays (i.e., C-style) to hold your strings.
+Write multiple functions (Hint: each menu option should be a function).
+
+At least one function must use pass by reference.
+Write your own string copy, string compare (or other) functions as needed.
+
+The other functionality and structure of the program should remain the same as Project 2, including writing to screen and file and restrictions on string libraries, global variables and constants, etc. The Car ADT will remain the same as Project 2.
+
+The completed project should have the following properties:
+
+Written, complied and tested using Linux.
+
+It must compile using the g++ compiler.
+
+The code must be commented.
+
+Test cases run and documented with the script program.
+
+Coding should conform to this course's coding standards. See course policies on the 'Policies' link.
+
+A one page (minimum) typed sheet documenting your code. This should include the overall purpose of the program, your design, bugs, and any changes you would make given more time.
+
+Turn in: .cpp file; test case documentation; project documentation.
+
+

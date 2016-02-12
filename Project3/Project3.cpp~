@@ -195,7 +195,7 @@ void PrintData (Agency *agencyList)
 	
 	for (int i = 0; i < AGENCY_SIZE; i++)
 	{
-		cout << "Agency: " << (*thisAgency).name << "| ZIP: ";
+		cout << "Agency: " << (*thisAgency).name << " | ZIP: ";
 		
 		int *zipPtr = (*thisAgency).zip;
 		
@@ -248,7 +248,7 @@ void PrintDataNumbered (Agency *agencyList)
 	{
 		cout << "(";
 		
-		cout << (i + 1) << ". Agency: " << (*thisAgency).name << "| ZIP: ";
+		cout << (i + 1) << ". Agency: " << (*thisAgency).name << " | ZIP: ";
 		
 		int *zipPtr = (*thisAgency).zip;
 		
@@ -299,7 +299,7 @@ void PrintDataAvailable (Agency *agencyList)
 	
 	for (int i = 0; i < AGENCY_SIZE; i++)
 	{
-		cout << "Agency: " << (*thisAgency).name << "| ZIP: ";
+		cout << "Agency: " << (*thisAgency).name << " | ZIP: ";
 		
 		int *zipPtr = (*thisAgency).zip;
 		
@@ -554,8 +554,10 @@ void CopyString (char *string1, char *string2) //Copy 1 into 2
 {
 	for (int i = 0; i < MAX_STRING_SIZE; i++)
 	{	
-		*(string2 + i) = *(string1 + i);
-	
+		*(string2) = *(string1);
+		
+		string2++;
+		string1++;
 	}
 	
 	return;
@@ -566,10 +568,13 @@ void CharArrayToIntArray (char *charArr, int *intArr) //For zip
 {
 	for (int i = 0; i < 5; i++)
 	{
-		int thisChar = *(charArr + i) - '0';
+		int thisChar = * - '0';
 		
-		*(intArr + i) = thisChar;
-	
+		*(intArr) = thisChar;
+		
+		charArr++;
+		intArr++;
+		
 	}
 	
 	return;

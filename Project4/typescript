@@ -1491,3 +1491,1198 @@ I do not fear computers, I fear the lack of them.
 exit
 
 Script done on Mon 15 Feb 2016 04:10:31 PM PST
+Script started on Tue 16 Feb 2016 01:17:59 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ git push cs202 master[11Pcommitadd -Acommitpush cs202 master[Kg++ Project4.cpp -o pr[K4
+Project4.cpp: In function ‘int CrackTheCode(Pieces*, int*, int, int, char*)’:
+Project4.cpp:214:2: error: return-statement with no value, in function returning ‘int’ [-fpermissive]
+  return;
+  ^
+Project4.cpp: In function ‘void ReadDataInitial(std::ifstream&, int&, int&)’:
+Project4.cpp:223:9: error: ‘boundTracker’ was not declared in this scope
+  return boundTracker;
+         ^
+Project4.cpp:223:9: error: return-statement with a value, in function returning 'void' [-fpermissive]
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[1Pit push cs202 master[11Pcommitpush cs202 master++ Project4.cpp -o p4[Kgedit pro[K[K[KPr[Kroject4.cpp
+
+(gedit:6068): Gtk-WARNING **: GtkScrolledWindow 0x18d0880 is mapped but visible child GtkScrollbar 0x1c7cac0 is not mapped
+
+(gedit:6068): Gtk-WARNING **: GtkScrolledWindow 0x18d0880 is mapped but visible child GtkScrollbar 0x1c7ccc0 is not mapped
+
+(gedit:6068): Gtk-WARNING **: GtkScrolledWindow 0x18d0880 is mapped but visible child GtkScrollbar 0x1c7cac0 is not mapped
+
+(gedit:6068): Gtk-WARNING **: GtkScrolledWindow 0x18d0880 is mapped but visible child GtkScrollbar 0x1c7ccc0 is not mapped
+
+(gedit:6068): Gtk-WARNING **: GtkScrolledWindow 0x18d0880 is mapped but visible child GtkScrollbar 0x1c7ccc0 is not mapped
+
+(gedit:6068): Gtk-WARNING **: GtkScrolledWindow 0x18d0880 is mapped but visible child GtkScrollbar 0x1c7cac0 is not mapped
+
+(gedit:6068): Gtk-WARNING **: GtkScrolledWindow 0x18d0880 is mapped but visible child GtkScrollbar 0x1c7ccc0 is not mapped
+
+(gedit:6068): Gtk-WARNING **: GtkScrolledWindow 0x18d0880 is mapped but visible child GtkScrollbar 0x1c7cac0 is not mapped
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+Project4.cpp: In function ‘void ReadDataInitial(std::ifstream&, int&, int&)’:
+Project4.cpp:223:9: error: ‘boundTracker’ was not declared in this scope
+  return boundTracker;
+         ^
+Project4.cpp:223:9: error: return-statement with a value, in function returning 'void' [-fpermissive]
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. random random random random random random random random random random random 
+random
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+
+(gedit:6099): Gtk-WARNING **: GtkScrolledWindow 0x240a880 is mapped but visible child GtkScrollbar 0x27b6ac0 is not mapped
+
+(gedit:6099): Gtk-WARNING **: GtkScrolledWindow 0x240a880 is mapped but visible child GtkScrollbar 0x27b6cc0 is not mapped
+
+(gedit:6099): Gtk-WARNING **: GtkScrolledWindow 0x240a880 is mapped but visible child GtkScrollbar 0x27b6ac0 is not mapped
+
+(gedit:6099): Gtk-WARNING **: GtkScrolledWindow 0x240a880 is mapped but visible child GtkScrollbar 0x27b6cc0 is not mapped
+
+(gedit:6099): Gtk-WARNING **: GtkScrolledWindow 0x240a880 is mapped but visible child GtkScrollbar 0x27b6cc0 is not mapped
+
+(gedit:6099): Gtk-WARNING **: GtkScrolledWindow 0x240a880 is mapped but visible child GtkScrollbar 0x27b6ac0 is not mapped
+
+(gedit:6099): Gtk-WARNING **: GtkScrolledWindow 0x240a880 is mapped but visible child GtkScrollbar 0x27b6cc0 is not mapped
+
+(gedit:6099): Gtk-WARNING **: GtkScrolledWindow 0x240a880 is mapped but visible child GtkScrollbar 0x27b6ac0 is not mapped
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. random red the pool not random pool open of dog ]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[Kgedit Project4.cpp++ Project4.cpp -o p4./p4[K[Kcat data
+23
+11
+
+Java 2 linux 3 fear 0 pool 2 do 0 red 1 lock. 1 I 0 random 2 computers, 0 not 0 the 0 open 2 car! 2 C, 0 lack 0 of 0 dog 1 green 2 C++ 0 bottle 2 wrong, 2 them. 0
+
+5 1 10 21 9 6 21 11 13 16 20
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ cat data[4P./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp[10Pcat data[4P./p4g++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp[10Pcat data[4P./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. I do not fear computers, I fear the lack of them. 
+I
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+Project4.cpp: In function ‘int main()’:
+Project4.cpp:140:43: error: too few arguments to function ‘void CopyStringNS(char*, char*, int)’
+    CopyStringNS(outputStorage, finalOutput);
+                                           ^
+Project4.cpp:33:6: note: declared here
+ void CopyStringNS (char *string1, char *string2, int size); //Copy 1 into 2, null -> space
+      ^
+Project4.cpp:154:15: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+    *nullAdder = NULL;
+               ^
+Project4.cpp: In function ‘int CrackTheCode(Pieces*, int*, int, int, char*)’:
+Project4.cpp:243:42: error: invalid conversion from ‘char*’ to ‘int’ [-fpermissive]
+   CombineStrings(output, (*piecePtr).word);
+                                          ^
+Project4.cpp:243:42: error: too few arguments to function ‘void CombineStrings(char*, int, char*, int)’
+Project4.cpp:31:6: note: declared here
+ void CombineStrings (char *string1, int s1Len, char *string2, int s2Len); //Fufills the strConcat requirement
+      ^
+Project4.cpp: In function ‘void CombineStrings(char*, int, char*, int)’:
+Project4.cpp:331:2: error: ‘outPtr’ was not declared in this scope
+  outPtr = string1;
+  ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+Project4.cpp: In function ‘int main()’:
+Project4.cpp:154:15: warning: converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+    *nullAdder = NULL;
+               ^
+Project4.cpp: In function ‘int CrackTheCode(Pieces*, int*, int, int, char*)’:
+Project4.cpp:243:42: error: invalid conversion from ‘char*’ to ‘int’ [-fpermissive]
+   CombineStrings(output, (*piecePtr).word);
+                                          ^
+Project4.cpp:243:42: error: too few arguments to function ‘void CombineStrings(char*, int, char*, int)’
+Project4.cpp:31:6: note: declared here
+ void CombineStrings (char *string1, int s1Len, char *string2, int s2Len); //Fufills the strConcat requirement
+      ^
+Project4.cpp: In function ‘void CombineStrings(char*, int, char*, int)’:
+Project4.cpp:331:2: error: ‘outPtr’ was not declared in this scope
+  outPtr = string1;
+  ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+Project4.cpp: In function ‘int CrackTheCode(Pieces*, int*, int, int, char*)’:
+Project4.cpp:243:42: error: invalid conversion from ‘char*’ to ‘int’ [-fpermissive]
+   CombineStrings(output, (*piecePtr).word);
+                                          ^
+Project4.cpp:243:42: error: too few arguments to function ‘void CombineStrings(char*, int, char*, int)’
+Project4.cpp:31:6: note: declared here
+ void CombineStrings (char *string1, int s1Len, char *string2, int s2Len); //Fufills the strConcat requirement
+      ^
+Project4.cpp: In function ‘void CombineStrings(char*, int, char*, int)’:
+Project4.cpp:331:2: error: ‘outPtr’ was not declared in this scope
+  outPtr = string1;
+  ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+Project4.cpp: In function ‘void CombineStrings(char*, int, char*, int)’:
+Project4.cpp:332:2: error: ‘outPtr’ was not declared in this scope
+  outPtr = string1;
+  ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: datt a
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+I       s,   
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+I       s,   
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+I       s,   
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+Project4.cpp: In function ‘void CombineStrings(char*, char*)’:
+Project4.cpp:332:2: error: ‘outPtr’ was not declared in this scope
+  outPtr = string1;
+  ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[Kgedit Project4.cpp
+
+(gedit:6765): Gtk-WARNING **: GtkScrolledWindow 0xf54880 is mapped but visible child GtkScrollbar 0x1300ac0 is not mapped
+
+(gedit:6765): Gtk-WARNING **: GtkScrolledWindow 0xf54880 is mapped but visible child GtkScrollbar 0x1300cc0 is not mapped
+
+(gedit:6765): Gtk-WARNING **: GtkScrolledWindow 0xf54880 is mapped but visible child GtkScrollbar 0x1300ac0 is not mapped
+
+(gedit:6765): Gtk-WARNING **: GtkScrolledWindow 0xf54880 is mapped but visible child GtkScrollbar 0x1300cc0 is not mapped
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+I-------s,---
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[Kgedit Project4.cpp./p4[K
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+I-------s,---
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+Project4.cpp: In function ‘int main()’:
+Project4.cpp:148:35: error: expected primary-expression before ‘,’ token
+    cout << "AF: " << finalOutput <, endl:
+                                   ^
+Project4.cpp:148:41: error: expected ‘;’ before ‘:’ token
+    cout << "AF: " << finalOutput <, endl:
+                                         ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+
+(gedit:7569): Gtk-WARNING **: GtkScrolledWindow 0x14dc880 is mapped but visible child GtkScrollbar 0x1888ac0 is not mapped
+
+(gedit:7569): Gtk-WARNING **: GtkScrolledWindow 0x14dc880 is mapped but visible child GtkScrollbar 0x1888cc0 is not mapped
+
+(gedit:7569): Gtk-WARNING **: GtkScrolledWindow 0x14dc880 is mapped but visible child GtkScrollbar 0x1888ac0 is not mapped
+
+(gedit:7569): Gtk-WARNING **: GtkScrolledWindow 0x14dc880 is mapped but visible child GtkScrollbar 0x1888cc0 is not mapped
+
+(gedit:7569): Gtk-WARNING **: GtkScrolledWindow 0x14dc880 is mapped but visible child GtkScrollbar 0x1888cc0 is not mapped
+
+(gedit:7569): Gtk-WARNING **: GtkScrolledWindow 0x14dc880 is mapped but visible child GtkScrollbar 0x1888ac0 is not mapped
+
+(gedit:7569): Gtk-WARNING **: GtkScrolledWindow 0x14dc880 is mapped but visible child GtkScrollbar 0x1888cc0 is not mapped
+
+(gedit:7569): Gtk-WARNING **: GtkScrolledWindow 0x14dc880 is mapped but visible child GtkScrollbar 0x1888ac0 is not mapped
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+Project4.cpp: In function ‘int main()’:
+Project4.cpp:148:41: error: expected ‘;’ before ‘:’ token
+    cout << "AF: " << finalOutput << endl:
+                                         ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. OS: IFO: IAF: I-
+OS: I-FO: I-AF: I--
+OS: I--FO: I--AF: I---
+OS: I---FO: I---AF: I----
+OS: I----FO: I----AF: I-----
+OS: I-----FO: I-----AF: I------
+OS: I------FO: I------AF: I-------s,
+OS: I-------s,FO: I-------s,AF: I-------s,-
+OS: I-------s,-FO: I-------s,-AF: I-------s,--
+OS: I-------s,--FO: I-------s,--AF: I-------s,---
+
+I-------s,---
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+OS: IFO: IAF: I-
+OS: I-FO: I-AF: I--
+OS: I--FO: I--AF: I---
+OS: I---FO: I---AF: I----
+OS: I----FO: I----AF: I-----
+OS: I-----FO: I-----AF: I------
+OS: I------FO: I------AF: I-------s,
+OS: I-------s,FO: I-------s,AF: I-------s,-
+OS: I-------s,-FO: I-------s,-AF: I-------s,--
+OS: I-------s,--FO: I-------s,--AF: I-------s,---
+I-------s,---
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+Project4.cpp: In function ‘int main()’:
+Project4.cpp:148:4: error: expected ‘;’ before ‘CombineStrings’
+    CombineStrings(finalOutput, (*piecePtr).word);
+    ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+OS: I FO: I CS: do AF: I-
+OS: I- FO: I- CS: not AF: I--
+OS: I-- FO: I-- CS: fear AF: I---
+OS: I--- FO: I--- CS: computers, AF: I----
+OS: I---- FO: I---- CS: I AF: I-----
+OS: I----- FO: I----- CS: - AF: I------
+OS: I------ FO: I------ CS: the AF: I-------s,
+OS: I-------s, FO: I-------s, CS: lack AF: I-------s,-
+OS: I-------s,- FO: I-------s,- CS: of AF: I-------s,--
+OS: I-------s,-- FO: I-------s,-- CS: them. AF: I-------s,---
+I-------s,---
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+OS: I FO: I CS: do AF: I-do
+OS: I-do FO: I-do CS: not AF: I-do-not
+OS: I-do-not FO: I-do-not CS: fear AF: I-do-not-fear
+OS: I-do-not-fear FO: I-do-not-fear CS: computers, AF: I-do-not-fear-computers,
+OS: I-do-not-fear-computers, FO: I-do-not-fear-computers, CS: I AF: I-do-not-fear-computers,-I
+OS: I-do-not-fear-computers,-I FO: I-do-not-fear-computers,-I CS: fear AF: I-do-not-fear-computers,-I-fear
+OS: I-do-not-fear-computers,-I-fear FO: I-do-not-fear-computers,-I-fear CS: the AF: I-do-not-fear-computers,-I-fear-the
+OS: I-do-not-fear-computers,-I-fear-the FO: I-do-not-fear-computers,-I-fear-the CS: lack AF: I-do-not-fear-computers,-I-fear-the-lack
+OS: I-do-not-fear-computers,-I-fear-the-lack FO: I-do-not-fear-computers,-I-fear-the-lack CS: of AF: I-do-not-fear-computers,-I-fear-the-lack-of
+OS: I-do-not-fear-computers,-I-fear-the-lack-of FO: I-do-not-fear-computers,-I-fear-the-lack-of CS: them. AF: I-do-not-fear-computers,-I-fear-the-lack-of-them.
+I-do-not-fear-computers,-I-fear-the-lack-of-them.
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kgedit Project4.cpp[Kgedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	

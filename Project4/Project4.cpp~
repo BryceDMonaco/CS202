@@ -20,9 +20,9 @@ struct Pieces
 
 //A constant variable to enable/disable debug statements through the code
 //Set to either 0 or 1 and recompile
-const int DEBUG = 1;
+const int DEBUG = 0;
 
-void CrackTheCode (Pieces *pieces, int *keys, int onKey, int wordAmt, char *output);
+int CrackTheCode (Pieces *pieces, int *keys, int onKey, int wordAmt, char *output);
 void ReadDataInitial (ifstream &input, int &wordAmt, int &keyAmt);
 void ReadData (ifstream &input, Pieces *pieces, int *keys, int wordAmt, int keyAmt);
 
@@ -30,6 +30,7 @@ void ReadData (ifstream &input, Pieces *pieces, int *keys, int wordAmt, int keyA
 int GetStringLength(char *str);
 void CombineStrings (char *string1, char *string2); //Fufills the strConcat requirement
 void CopyString (char *string1, char *string2, int size); //Copy 1 into 2
+void CopyStringNS (char *string1, char *string2, int size); //Copy 1 into 2, null -> space
 
 int main ()
 {
@@ -84,12 +85,77 @@ int main ()
 		}
 	}
 	
-	char *finalOutput = new char[1];
+	char *finalOutput;
+	int *wordLocations = new int[keyAmount];
+	int *locPtr = wordLocations;
+	
 	
 	for (int i = 0; i < keyAmount; i++)
 	{
-		CrackTheCode(cipherArray, keys, i, wordAmount, finalOutput);
+		*locPtr = CrackTheCode(cipherArray, keys, i, wordAmount, finalOutput);
+		
+		locPtr++;
+		
+	}
 	
+	locPtr = wordLocations;
+	piecePtr = cipherArray;
+	
+	for (int i = 0; i < keyAmount; i++)
+	{
+		piecePtr = cipherArray;
+		
+		for (int ii = 0; ii < (*locPtr); ii++)
+		{
+			piecePtr++;
+		
+		}
+		
+		//cout << (*piecePtr).word << " ";
+		
+		if (i == 0)
+		{
+			finalOutput = new char[GetStringLength((*piecePtr).word)];
+			
+			CopyString((*piecePtr).word, finalOutput, GetStringLength((*piecePtr).word));
+		
+		} else
+		{
+			//Combine here
+			int currentLength = GetStringLength(finalOutput);
+			
+			char *outputStorage = new char[currentLength];
+			
+			CopyString(finalOutput, outputStorage, currentLength);
+			
+			//cout << endl << "OS: " << outputStorage;
+			
+			int comingLength = GetStringLength((*piecePtr).word);
+			
+			int newLength = comingLength + currentLength;
+			
+			delete[] finalOutput;
+			//finalOutput = NULL;
+			
+			finalOutput = new char[newLength];
+			
+			CopyString(outputStorage, finalOutput,  currentLength);
+			
+			//cout << " FO: " << finalOutput;
+			
+			//cout << " CS: " << (*piecePtr).word;
+			
+			CombineStrings(finalOutput, (*piecePtr).word);
+			
+			//cout << " AF: " << finalOutput;
+			
+			delete[] outputStorage;
+			outputStorage = NULL;
+			
+		}
+		
+		locPtr++;
+		
 	}
 	
 	cout << endl << finalOutput << endl;
@@ -101,11 +167,14 @@ int main ()
 	delete[] cipherArray;
 	cipherArray = NULL;
 	
+	delete[] wordLocations;
+	wordLocations = NULL;
+	
 	return 0;
 	
 }
 
-void CrackTheCode (Pieces *pieces, int *keys, int onKey, int wordAmt, char *output)
+int CrackTheCode (Pieces *pieces, int *keys, int onKey, int wordAmt, char *output)
 {
 	int *keyPtr = keys;
 	int boundTracker = 0; //Cannot be greater than (wordAmt - 1)
@@ -161,20 +230,12 @@ void CrackTheCode (Pieces *pieces, int *keys, int onKey, int wordAmt, char *outp
 		}
 	}
 	
-	cout << (*piecePtr).word << " ";
+	//cout << boundTracker << (*piecePtr).word << " ";
+
+	keyPtr = NULL;
+	piecePtr = NULL;
 	
-	if (onKey == 0)
-	{
-		output = new char[GetStringLength((*piecePtr).word)];
-		CopyString((*piecePtr).word, output, GetStringLength((*piecePtr).word));
-		
-	} else
-	{
-		CombineStrings(output, (*piecePtr).word);
-		
-	}
-	
-	return;
+	return  boundTracker;
 
 }
 
@@ -189,14 +250,6 @@ void ReadDataInitial (ifstream &input, int &wordAmt, int &keyAmt)
 
 void ReadData (ifstream &input, Pieces *pieces, int *keys, int wordAmt, int keyAmt)
 {
-	/*
-	//trash is meant to clear the key and word amount
-	int trash;
-	
-	input >> trash;
-	input >> trash;
-	*/
-	
 	char *buffer = new char[20];	
 	
 	for (int i = 0; i < wordAmt; i++)
@@ -255,124 +308,34 @@ int GetStringLength(char *str) //Fufills the strLen requirement
 //puts all of 2 at the end of 1, so 1 should be the output string
 void CombineStrings (char *string1, char *string2) //Fufills the strConcat requirement
 {
-	if (DEBUG)
-	{
-		cout << "1" << endl;
-	
-	}
-	
-	int s1Length = GetStringLength(string1);
-	int s2Length = GetStringLength(string2);
-	int newLength = (s1Length -1) + (s2Length - 1) + 3; //+3 to add a space and null char
-	
-	char *str1Ptr = string1, *str2Ptr = string2;
-	
-	if (DEBUG)
-	{
-		cout << "2" << endl;
-	
-	}
-	
-	for (int i = 0; i < s1Length; i++)
-	{
-		if (*str1Ptr == '\0')
-		{
-			*str1Ptr = ' ';
-		
-		}
-		
-		str1Ptr++;
-		
-	}
-	
-	if (DEBUG)
-	{
-		cout << "3" << endl;
-	
-	}
-	
-	for (int i = 0; i < s2Length; i++)
-	{
-		if (*str2Ptr == '\0')
-		{
-			*str2Ptr = ' ';
-		
-		}
-		
-		str2Ptr++;
-	
-	}
-	
-	str1Ptr = string1;
-	str2Ptr = string2;
-	
-	if (DEBUG)
-	{
-		cout << "4" << endl;
-	
-	}
-	
-	//Store the output temporarily
-	char *outStorage = new char[s1Length];
-	CopyString(string1, outStorage, s1Length);
-	
-	if (DEBUG)
-	{
-		cout << "5" << endl;
-	
-	}
-	
-	delete[] string1;
-	string1 = new char[newLength];
-	
-	if (DEBUG)
-	{
-		cout << "6" << endl;
-	
-	}
-	
 	char *outPtr = string1;
-	char *storPtr = outStorage;
+	char *comingPtr = string2;
 	
-	//Copy 1 into the new string
-	for (int i = 0; i < s1Length; i++)
+	for (int i = 0; *outPtr != '\0'; i++)
 	{
-		(*outPtr) = (*storPtr);
+		outPtr++;
+	
+	}
+	
+	*outPtr = ' ';
+	
+	outPtr++;
+	
+	for (int i = 0; *comingPtr != '\0'; i++)
+	{
+		*outPtr = *comingPtr;
 		
 		outPtr++;
-		storPtr++;
-	
-	}
-	
-	if (DEBUG)
-	{
-		cout << "7" << endl;
-	
-	}
-	
-	//Copy 2 into the new string
-	for (int i = 0; i < s2Length; i++)
-	{
-		(*outPtr) = (*string2);
+		comingPtr++;
 		
-		outPtr++;
-		string2++;
-	
 	}
 	
-	if (DEBUG)
-	{
-		cout << "8" << endl;
+	*outPtr = '\0';
 	
-	}
+	//CopyString(outPtr, string2, GetStringLength(string2));
 	
-	(*outPtr) = '\0';
-	
-	if (DEBUG)
-	{
-		cout << "9" << endl;
-	
-	}
+	outPtr = NULL;
+	comingPtr = NULL;
 	
 	return;
 	
@@ -383,6 +346,28 @@ void CopyString (char *string1, char *string2, int size) //Copy 1 into 2
 	for (int i = 0; i < size; i++)
 	{	
 		*(string2) = *(string1);
+		
+		string2++;
+		string1++;
+	}
+	
+	return;
+
+}
+
+void CopyStringNS (char *string1, char *string2, int size) //Copy 1 into 2, null -> space
+{
+	for (int i = 0; i < size; i++)
+	{	
+		if (*string1 != '\0')
+		{
+			*(string2) = *(string1);
+		
+		} else
+		{
+			*(string2) = '+';
+		
+		}
 		
 		string2++;
 		string1++;

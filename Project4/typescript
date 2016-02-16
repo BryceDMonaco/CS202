@@ -1,0 +1,1493 @@
+Script started on Mon 15 Feb 2016 02:51:44 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ git push cs202 master[11Pcommitadd -Acommitpush cs202 master[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+I fear the them. not I them. C, C, them. do 
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ cat data
+23
+11
+
+Java 2 linux 3 fear 0 pool 2 do 0 red 1 lock. 1 I 0 random 2 computers, 0 not 0 the 0 open 2 car! 2 C, 0 lack 0 of 0 dog 1 green 2 C++ 0 bottle 2 wrong, 2 them. 0
+
+5 1 10 21 9 6 21 11 13 16 20
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ cat data[4P./p4g++ Project4.cpp -o p4[1Pit push cs202 master[11Pcommitpush cs202 master++ Project4.cpp -o p4./p4[Kcat data[Kgedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp[10Pcat data[4P./p4g++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp[10Pcat data[4P./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+I do not do computers, I do the lack of them. 
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ cat ata[K[K[Kdata
+23
+11
+
+Java 2 linux 3 fear 0 pool 2 do 0 red 1 lock. 1 I 0 random 2 computers, 0 not 0 the 0 open 2 car! 2 C, 0 lack 0 of 0 dog 1 green 2 C++ 0 bottle 2 wrong, 2 them. 0
+
+5 1 10 21 9 6 21 11 13 16 20
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ cat data[4P./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp[10Pcat data[4P./p4g++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp[10Pcat data[4P./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+I do not fear computers, I fear the lack of them. 
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+Project4.cpp: In function ‘int main()’:
+Project4.cpp:91:61: error: too many arguments to function ‘void CrackTheCode(Pieces*, int*, int, int)’
+   CrackTheCode(cipherArray, keys, i, wordAmount, finalOutput);
+                                                             ^
+Project4.cpp:25:6: note: declared here
+ void CrackTheCode (Pieces *pieces, int *keys, int onKey, int wordAmt);
+      ^
+Project4.cpp: In function ‘void CrackTheCode(Pieces*, int*, int, int, char*)’:
+Project4.cpp:172:41: error: too many arguments to function ‘void CombineStrings()’
+  CombineStrings(output, (*piecePtr).word);
+                                         ^
+Project4.cpp:31:6: note: declared here
+ void CombineStrings (); //Fufills the strConcat requirement
+      ^
+Project4.cpp: In function ‘void CombineStrings(char*, char*)’:
+Project4.cpp:261:35: error: expected ‘;’ before ‘)’ token
+  for (int i = 0; i < s1Length, i++)
+                                   ^
+Project4.cpp:273:35: error: expected ‘;’ before ‘)’ token
+  for (int i = 0; i < s2Length, i++)
+                                   ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+Project4.cpp: In function ‘void CrackTheCode(Pieces*, int*, int, int, char*)’:
+Project4.cpp:172:41: error: too many arguments to function ‘void CombineStrings()’
+  CombineStrings(output, (*piecePtr).word);
+                                         ^
+Project4.cpp:31:6: note: declared here
+ void CombineStrings (); //Fufills the strConcat requirement
+      ^
+Project4.cpp: In function ‘void CombineStrings(char*, char*)’:
+Project4.cpp:261:35: error: expected ‘;’ before ‘)’ token
+  for (int i = 0; i < s1Length, i++)
+                                   ^
+Project4.cpp:273:35: error: expected ‘;’ before ‘)’ token
+  for (int i = 0; i < s2Length, i++)
+                                   ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+Project4.cpp: In function ‘void CombineStrings(char*, char*)’:
+Project4.cpp:261:35: error: expected ‘;’ before ‘)’ token
+  for (int i = 0; i < s1Length, i++)
+                                   ^
+Project4.cpp:273:35: error: expected ‘;’ before ‘)’ token
+  for (int i = 0; i < s2Length, i++)
+                                   ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+
+(gedit:3703): Gtk-WARNING **: GtkScrolledWindow 0x12a6880 is mapped but visible child GtkScrollbar 0x1652ac0 is not mapped
+
+(gedit:3703): Gtk-WARNING **: GtkScrolledWindow 0x12a6880 is mapped but visible child GtkScrollbar 0x1652cc0 is not mapped
+
+(gedit:3703): Gtk-WARNING **: GtkScrolledWindow 0x12a6880 is mapped but visible child GtkScrollbar 0x1652ac0 is not mapped
+
+(gedit:3703): Gtk-WARNING **: GtkScrolledWindow 0x12a6880 is mapped but visible child GtkScrollbar 0x1652cc0 is not mapped
+
+(gedit:3703): Gtk-WARNING **: GtkScrolledWindow 0x12a6880 is mapped but visible child GtkScrollbar 0x1652cc0 is not mapped
+
+(gedit:3703): Gtk-WARNING **: GtkScrolledWindow 0x12a6880 is mapped but visible child GtkScrollbar 0x1652ac0 is not mapped
+
+(gedit:3703): Gtk-WARNING **: GtkScrolledWindow 0x12a6880 is mapped but visible child GtkScrollbar 0x1652cc0 is not mapped
+
+(gedit:3703): Gtk-WARNING **: GtkScrolledWindow 0x12a6880 is mapped but visible child GtkScrollbar 0x1652ac0 is not mapped
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+I do not fear computers, I fear the lack of them. 
+
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+
+(gedit:3767): Gtk-WARNING **: GtkScrolledWindow 0x1c10880 is mapped but visible child GtkScrollbar 0x1fbcac0 is not mapped
+
+(gedit:3767): Gtk-WARNING **: GtkScrolledWindow 0x1c10880 is mapped but visible child GtkScrollbar 0x1fbccc0 is not mapped
+
+(gedit:3767): Gtk-WARNING **: GtkScrolledWindow 0x1c10880 is mapped but visible child GtkScrollbar 0x1fbcac0 is not mapped
+
+(gedit:3767): Gtk-WARNING **: GtkScrolledWindow 0x1c10880 is mapped but visible child GtkScrollbar 0x1fbccc0 is not mapped
+
+(gedit:3767): Gtk-WARNING **: GtkScrolledWindow 0x1c10880 is mapped but visible child GtkScrollbar 0x1fbccc0 is not mapped
+
+(gedit:3767): Gtk-WARNING **: GtkScrolledWindow 0x1c10880 is mapped but visible child GtkScrollbar 0x1fbcac0 is not mapped
+
+(gedit:3767): Gtk-WARNING **: GtkScrolledWindow 0x1c10880 is mapped but visible child GtkScrollbar 0x1fbccc0 is not mapped
+
+(gedit:3767): Gtk-WARNING **: GtkScrolledWindow 0x1c10880 is mapped but visible child GtkScrollbar 0x1fbcac0 is not mapped
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: daa ta
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+Project4.cpp: In function ‘void CombineStrings(char*, char*)’:
+Project4.cpp:260:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "1" >> endl;
+        ^
+Project4.cpp:260:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:260:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "1" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:260:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "1" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:260:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "1" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:260:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "1" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:260:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "1" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:260:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "1" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:260:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "1" >> endl;
+           ^
+Project4.cpp:272:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "2" >> endl;
+        ^
+Project4.cpp:272:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:272:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "2" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:272:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "2" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:272:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "2" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:272:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "2" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:272:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "2" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:272:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "2" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:272:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "2" >> endl;
+           ^
+Project4.cpp:290:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "3" >> endl;
+        ^
+Project4.cpp:290:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:290:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "3" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:290:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "3" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:290:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "3" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:290:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "3" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:290:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "3" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:290:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "3" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:290:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "3" >> endl;
+           ^
+Project4.cpp:311:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "4" >> endl;
+        ^
+Project4.cpp:311:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:311:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "4" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:311:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "4" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:311:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "4" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:311:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "4" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:311:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "4" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:311:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "4" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:311:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "4" >> endl;
+           ^
+Project4.cpp:321:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "5" >> endl;
+        ^
+Project4.cpp:321:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:321:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "5" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:321:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "5" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:321:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "5" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:321:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "5" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:321:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "5" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:321:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "5" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:321:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "5" >> endl;
+           ^
+Project4.cpp:330:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "6" >> endl;
+        ^
+Project4.cpp:330:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:330:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "6" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:330:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "6" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:330:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "6" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:330:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "6" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:330:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "6" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:330:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "6" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:330:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "6" >> endl;
+           ^
+Project4.cpp:349:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "7" >> endl;
+        ^
+Project4.cpp:349:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:349:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "7" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:349:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "7" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:349:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "7" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:349:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "7" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:349:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "7" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:349:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "7" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:349:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "7" >> endl;
+           ^
+Project4.cpp:365:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "8" >> endl;
+        ^
+Project4.cpp:365:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:365:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "8" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:365:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "8" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:365:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "8" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:365:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "8" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:365:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "8" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:365:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "8" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:365:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "8" >> endl;
+           ^
+Project4.cpp:373:8: error: no match for ‘operator>>’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘const char [2]’)
+   cout >> "9" >> endl;
+        ^
+Project4.cpp:373:8: note: candidates are:
+In file included from /usr/include/c++/4.8/string:53:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/4.8/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+Project4.cpp:373:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "9" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+Project4.cpp:373:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "9" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/istream:882:0,
+                 from /usr/include/c++/4.8/iostream:40,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/4.8/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+Project4.cpp:373:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   cout >> "9" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/4.8/istream:727:5: note:   template argument deduction/substitution failed:
+Project4.cpp:373:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "9" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/4.8/istream:732:5: note:   template argument deduction/substitution failed:
+Project4.cpp:373:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "9" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/4.8/istream:774:5: note:   template argument deduction/substitution failed:
+Project4.cpp:373:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "9" >> endl;
+           ^
+In file included from /usr/include/c++/4.8/iostream:40:0,
+                 from Project4.cpp:9:
+/usr/include/c++/4.8/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/4.8/istream:779:5: note:   template argument deduction/substitution failed:
+Project4.cpp:373:11: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘std::basic_istream<char, _Traits>’
+   cout >> "9" >> endl;
+           ^
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+I do 1
+2
+3
+4
+5
+6
+7
+8
+9
+not 1
+2
+3
+4
+5
+6
+7
+8
+9
+fear 1
+2
+3
+4
+5
+6
+7
+8
+9
+computers, 1
+2
+3
+4
+5
+6
+7
+8
+9
+I 1
+2
+3
+4
+5
+6
+7
+8
+9
+fear  1
+2
+3
+4
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+Name: data(EOF MARKER)
+Read: Java
+Read: linux
+Read: fear
+Read: pool
+Read: do
+Read: red
+Read: lock.
+Read: I
+Read: random
+Read: computers,
+Read: not
+Read: the
+Read: open
+Read: car!
+Read: C,
+Read: lack
+Read: of
+Read: dog
+Read: green
+Read: C++
+Read: bottle
+Read: wrong,
+Read: them.
+Piece 0: 
+	Java Jump: 2
+Piece 1: 
+	linux Jump: 3
+Piece 2: 
+	fear Jump: 0
+Piece 3: 
+	pool Jump: 2
+Piece 4: 
+	do Jump: 0
+Piece 5: 
+	red Jump: 1
+Piece 6: 
+	lock. Jump: 1
+Piece 7: 
+	I Jump: 0
+Piece 8: 
+	random Jump: 2
+Piece 9: 
+	computers, Jump: 0
+Piece 10: 
+	not Jump: 0
+Piece 11: 
+	the Jump: 0
+Piece 12: 
+	open Jump: 2
+Piece 13: 
+	car! Jump: 2
+Piece 14: 
+	C, Jump: 0
+Piece 15: 
+	lack Jump: 0
+Piece 16: 
+	of Jump: 0
+Piece 17: 
+	dog Jump: 1
+Piece 18: 
+	green Jump: 2
+Piece 19: 
+	C++ Jump: 0
+Piece 20: 
+	bottle Jump: 2
+Piece 21: 
+	wrong, Jump: 2
+Piece 22: 
+	them. Jump: 0
+I do not fear computers, I fear the lack of them. 
+
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp++ Project4.cpp -o p4./p4[K[Kexit
+exit
+
+Script done on Mon 15 Feb 2016 04:10:31 PM PST

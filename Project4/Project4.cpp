@@ -19,14 +19,16 @@ struct Pieces
 };
 
 //A constant variable to enable/disable debug statements through the code
+//Set to either 0 or 1 and recompile
 const int DEBUG = 1;
 
+void CrackTheCode (Pieces *pieces, int *keys, int onKey, int wordAmt, char *output);
 void ReadDataInitial (ifstream &input, int &wordAmt, int &keyAmt);
-void ReadData (ifstream &input, Pieces *pieces, int wordAmt, int keyAmt);
+void ReadData (ifstream &input, Pieces *pieces, int *keys, int wordAmt, int keyAmt);
 
 //Utility Functions
 int GetStringLength(char *str);
-void CombineStrings (); //Fufills the strConcat requirement
+void CombineStrings (char *string1, char *string2); //Fufills the strConcat requirement
 void CopyString (char *string1, char *string2, int size); //Copy 1 into 2
 
 int main ()
@@ -62,8 +64,9 @@ int main ()
 	
 	//***Cipher array declaration here***
 	Pieces *cipherArray = new Pieces[wordAmount];
+	int *keys = new int[keyAmount];
 	
-	ReadData(inputFile, cipherArray, wordAmount, keyAmount);
+	ReadData(inputFile, cipherArray, keys, wordAmount, keyAmount);
 	
 	inputFile.close();
 	
@@ -81,6 +84,16 @@ int main ()
 		}
 	}
 	
+	char *finalOutput = new char[1];
+	
+	for (int i = 0; i < keyAmount; i++)
+	{
+		CrackTheCode(cipherArray, keys, i, wordAmount, finalOutput);
+	
+	}
+	
+	cout << endl << finalOutput << endl;
+	
 	//Clear the heap below
 	delete[] fileName;
 	fileName = NULL;
@@ -92,6 +105,79 @@ int main ()
 	
 }
 
+void CrackTheCode (Pieces *pieces, int *keys, int onKey, int wordAmt, char *output)
+{
+	int *keyPtr = keys;
+	int boundTracker = 0; //Cannot be greater than (wordAmt - 1)
+	
+	for (int i = 0; i < onKey; i++)
+	{
+		keyPtr++;
+	
+	}
+	
+	int keyValue = *keyPtr;
+	
+	Pieces *piecePtr = pieces;
+	
+	for (int i = 0; i < keyValue; i++)
+	{
+		piecePtr++;
+		boundTracker++;
+		
+	}
+	
+	while ((*piecePtr).jump != 0)
+	{
+		int jumpVal = (*piecePtr).jump;
+		
+		if ((jumpVal + boundTracker) >= wordAmt) //Pointer goes out of bounds
+		{
+			int tempJump = (wordAmt - 1) - boundTracker;
+			jumpVal -= tempJump;
+			
+			for (int i = 0; i < tempJump; i++)
+			{
+				piecePtr++;
+			
+			}
+			
+			piecePtr = pieces;
+			boundTracker = 0;
+			
+			for (int i = 0; i < (jumpVal + 1); i++)
+			{
+				piecePtr++;
+				boundTracker++;
+			}
+		
+		} else
+		{
+			for (int i = 0; i < jumpVal; i++)
+			{
+				piecePtr++;
+				boundTracker++;	
+			}
+		}
+	}
+	
+	cout << (*piecePtr).word << " ";
+	
+	if (onKey == 0)
+	{
+		output = new char[GetStringLength((*piecePtr).word)];
+		CopyString((*piecePtr).word, output, GetStringLength((*piecePtr).word));
+		
+	} else
+	{
+		CombineStrings(output, (*piecePtr).word);
+		
+	}
+	
+	return;
+
+}
+
 void ReadDataInitial (ifstream &input, int &wordAmt, int &keyAmt)
 {
 	input >> wordAmt;
@@ -101,7 +187,7 @@ void ReadDataInitial (ifstream &input, int &wordAmt, int &keyAmt)
 	
 }
 
-void ReadData (ifstream &input, Pieces *pieces, int wordAmt, int keyAmt)
+void ReadData (ifstream &input, Pieces *pieces, int *keys, int wordAmt, int keyAmt)
 {
 	/*
 	//trash is meant to clear the key and word amount
@@ -135,6 +221,14 @@ void ReadData (ifstream &input, Pieces *pieces, int wordAmt, int keyAmt)
 		
 	}
 	
+	for (int i = 0; i < keyAmt; i++)
+	{
+		input >> (*keys);
+		
+		keys++;
+	
+	}
+	
 	delete[] buffer;
 	buffer = NULL;
 	
@@ -144,7 +238,7 @@ void ReadData (ifstream &input, Pieces *pieces, int wordAmt, int keyAmt)
 
 
 //Utility Functions
-int GetStringLength(char *str)
+int GetStringLength(char *str) //Fufills the strLen requirement
 {
 	int length = 0;
 	
@@ -158,9 +252,11 @@ int GetStringLength(char *str)
 
 }
 
-void CombineStrings () //Fufills the strConcat requirement
+//puts all of 2 at the end of 1, so 1 should be the output string
+void CombineStrings (char *string1, char *string2) //Fufills the strConcat requirement
 {
-
+	//Crying here
+	
 	return;
 	
 }

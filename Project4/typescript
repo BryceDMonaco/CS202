@@ -2685,4 +2685,51 @@ Piece 20:
 Piece 21: 
 	wrong, Jump: 2
 Piece 22: 
-	
+	them. Jump: 0
+7I 4do 10not 2fear 9computers, 7I 2fear 11the 15lack 16of 22them. 
+OS: I FO: I CS: do AF: I do
+OS: I do FO: I do CS: not AF: I do not
+OS: I do not FO: I do not CS: fear AF: I do not fear
+OS: I do not fear FO: I do not fear CS: computers, AF: I do not fear computers,
+OS: I do not fear computers, FO: I do not fear computers, CS: I AF: I do not fear computers, I
+OS: I do not fear computers, I FO: I do not fear computers, I CS: fear AF: I do not fear computers, I fear
+OS: I do not fear computers, I fear FO: I do not fear computers, I fear CS: the AF: I do not fear computers, I fear the
+OS: I do not fear computers, I fear the FO: I do not fear computers, I fear the CS: lack AF: I do not fear computers, I fear the lack
+OS: I do not fear computers, I fear the lack FO: I do not fear computers, I fear the lack CS: of AF: I do not fear computers, I fear the lack of
+OS: I do not fear computers, I fear the lack of FO: I do not fear computers, I fear the lack of CS: them. AF: I do not fear computers, I fear the lack of them.
+I do not fear computers, I fear the lack of them.
+
+I do not fear computers, I fear the lack of them.
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kgedit Project4.cpp
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+
+I do not fear computers, I fear the lack of them.
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ ./p4g++ Project4.cpp -o p4[4Pedit Project4.cpp
+
+(gedit:7766): Gtk-WARNING **: GtkScrolledWindow 0x1ee0880 is mapped but visible child GtkScrollbar 0x228cac0 is not mapped
+
+(gedit:7766): Gtk-WARNING **: GtkScrolledWindow 0x1ee0880 is mapped but visible child GtkScrollbar 0x228ccc0 is not mapped
+
+(gedit:7766): Gtk-WARNING **: GtkScrolledWindow 0x1ee0880 is mapped but visible child GtkScrollbar 0x228cac0 is not mapped
+
+(gedit:7766): Gtk-WARNING **: GtkScrolledWindow 0x1ee0880 is mapped but visible child GtkScrollbar 0x228ccc0 is not mapped
+
+(gedit:7766): Gtk-WARNING **: GtkScrolledWindow 0x1ee0880 is mapped but visible child GtkScrollbar 0x228ccc0 is not mapped
+
+(gedit:7766): Gtk-WARNING **: GtkScrolledWindow 0x1ee0880 is mapped but visible child GtkScrollbar 0x228cac0 is not mapped
+
+(gedit:7766): Gtk-WARNING **: GtkScrolledWindow 0x1ee0880 is mapped but visible child GtkScrollbar 0x228ccc0 is not mapped
+
+(gedit:7766): Gtk-WARNING **: GtkScrolledWindow 0x1ee0880 is mapped but visible child GtkScrollbar 0x228cac0 is not mapped
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ gedit Project4.cpp./p4[Kg++ Project4.cpp -o p4
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ g++ Project4.cpp -o p4[4Pedit Project4.cpp./p4[K
+Enter the cipher file name: data
+
+I do not fear computers, I fear the lack of them.
+]0;bryce@Brycbuntu: ~/CS202/Project4bryce@Brycbuntu:~/CS202/Project4$ cd.[K ..
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git add -A
+]0;bryce@Brycbuntu: ~/CS202bryce@Brycbuntu:~/CS202$ git pus[K[K[Kcommit
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6     File: /home/bryce/CS202/.git/COMMIT_EDITMSG                [4;1H(B[m# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d# On branch master[7d# Changes to be committed:[8d#[9Gmodified:   Project4/Project4.cpp[9d#[9Gmodified:   Project4/Project4.cpp~[10d#[9

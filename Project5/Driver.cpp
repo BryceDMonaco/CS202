@@ -9,8 +9,8 @@ void CopyString (char *string1, char *string2, int size); //Copy 1 into 2
 
 int main ()
 {
-	String firstString;
-	String secondString;
+	String *firstString = new String;
+	String *secondString = new String;
 	String *words = new String[12];
 	String *wordsTrav = words;
 	
@@ -85,12 +85,12 @@ int main ()
 	
 	cout << "Copying first to second" << endl;
 	
-	wordsTrav = secondString;
+	//wordsTrav = secondString;
 	
-	(firstString).copy(secondString); 
+	(*firstString).copy(*secondString); 
 	
-	(firstString).print();
-	(secondString).print();
+	(*firstString).print();
+	(*secondString).print();
 	
 	delete[] tempName;
 	tempName = NULL;

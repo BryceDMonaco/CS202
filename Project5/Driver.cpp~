@@ -55,7 +55,7 @@ int main ()
 		{
 			cout << "Second Instance: " << endl;
 			
-			wordsTrav = secondString;
+			wordsTrav = &secondString;
 			
 			(*wordsTrav).initialize(buffer);
 			(*wordsTrav).print();
@@ -85,7 +85,7 @@ int main ()
 	
 	cout << "Copying first to second" << endl;
 	
-	wordsTrav = secondString;
+	//wordsTrav = secondString;
 	
 	(*firstString).copy(*secondString); 
 	
@@ -101,11 +101,11 @@ int main ()
 	delete[] words;
 	words = NULL;
 	
-	delete firstString;
-	firstString = NULL;
+	//delete firstString;
+	//firstString = NULL;
 	
-	delete secondString;
-	secondString = NULL;
+	//delete secondString;
+	//secondString = NULL;
 	
 	return 0;
 

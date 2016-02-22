@@ -87,7 +87,7 @@ private:
 	{
 		cout << "A" << endl; //Debug
 		
-		delete buffer;
+		delete[] buffer;
 		
 		if (buffer != NULL)
 		{
@@ -109,7 +109,7 @@ private:
 		
 		//char *str = location.buffer;
 		cout << "ding" << endl;
-		location.print();
+		//location.print();
 		cout << "-" << location.buffer << endl;
 		
 		initialize(location.buffer);	

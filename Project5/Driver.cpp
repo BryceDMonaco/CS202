@@ -9,8 +9,8 @@ void CopyString (char *string1, char *string2, int size); //Copy 1 into 2
 
 int main ()
 {
-	String *firstString = new String;
-	String *secondString = new String;
+	String firstString;
+	String secondString;
 	String *words = new String[12];
 	String *wordsTrav = words;
 	
@@ -87,10 +87,10 @@ int main ()
 	
 	wordsTrav = secondString;
 	
-	(*firstString).copy(*secondString); 
+	(firstString).copy(secondString); 
 	
-	(*firstString).print();
-	(*secondString).print();
+	(firstString).print();
+	(secondString).print();
 	
 	delete[] tempName;
 	tempName = NULL;
@@ -101,11 +101,11 @@ int main ()
 	delete[] words;
 	words = NULL;
 	
-	delete firstString;
-	firstString = NULL;
+	//delete firstString;
+	//firstString = NULL;
 	
-	delete secondString;
-	secondString = NULL;
+	//delete secondString;
+	//secondString = NULL;
 	
 	return 0;
 

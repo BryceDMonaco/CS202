@@ -87,7 +87,7 @@ int main ()
 	
 	wordsTrav = secondString;
 	
-	(*firstString).copy(*wordsTrav); 
+	(*firstString).copy(*secondString); 
 	
 	(*firstString).print();
 	(*secondString).print();

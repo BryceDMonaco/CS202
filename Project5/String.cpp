@@ -23,31 +23,39 @@ private:
 
 	void String::initialize (char *string)
 	{
-		cout << "a" << endl;
+		cout << "a" << endl; //Debug
 		
 		deallocate();
 		
-		cout << "b" << endl;
+		cout << "b" << endl; //Debug
 		
 		char *inputTrav = string;
 		int length = 0;
 		
 		for (length = 0; (*inputTrav) != '\0'; length++)
 		{	
+			cout << length << endl;
+		
 			length++;
 			inputTrav++;
 		
 		}
 		
-		length = (length/2);
+		cout << "bb" << endl; //Debug
+		
+		length = (length/2); //For some reason the length is doubled ¯\_(ツ)_/¯
 		
 		wordLength = length;
 		
-		cout << length << "Length: " << wordLength << endl;
+		cout << "bbb" << endl; //Debug
+		
+		cout << length << "Length: " << wordLength << endl; //Debug
+		
+		cout << "bbbb" << endl; //Debug
 		
 		buffer = new char[length + 1];
 		
-		cout << "c" << endl;
+		cout << "c" << endl; //Debug
 		
 		inputTrav = string;
 		char *buffTrav = buffer;
@@ -61,12 +69,12 @@ private:
 		
 		} 
 		
-		cout << "d" << endl;
+		cout << "d" << endl; //Debug
 		
 		buffTrav++;
 		*buffTrav = '\0';
 	
-		cout << "e" << endl;
+		cout << "e" << endl; //Debug
 	
 		inputTrav = NULL;
 		buffTrav = NULL;
@@ -77,9 +85,9 @@ private:
 	
 	void String::deallocate ()
 	{
-		cout << "A" << endl;
+		cout << "A" << endl; //Debug
 		
-		//delete buffer;
+		delete buffer;
 		
 		if (buffer != NULL)
 		{
@@ -87,16 +95,27 @@ private:
 		
 		}
 		
-		cout << "B" << endl;
+		cout << "B" << endl; //Debug
 		
 		return;
 		
 	}
 	
-	void String::copy (const String& location)
+	void String::copy (const String& location) //Copy location into caller
 	{
-	
-	
+		//char *otherStr = *location;
+		//int otherLength = (*otherStr).length();
+		//int thisLength = wordLength;
+		
+		//char *str = location.buffer;
+		cout << "ding" << endl;
+		location.print();
+		cout << "-" << location.buffer << endl;
+		
+		initialize(location.buffer);	
+		
+		return;
+		
 	}
 	
 	int String::length ()
@@ -113,12 +132,13 @@ private:
 	
 	int String::compare (const String& otherString)
 	{
-	
+		
 	
 	}
 	
 	void String::print ()
 	{
 		cout << buffer << endl;
-	
+		
+		return;
 	} 

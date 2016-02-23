@@ -1,3 +1,5 @@
+//THE MAKEFILE WILL GIVE A COMPILE WARNING ABOUT A C-STYLE STRING, PLEASE IGNORE
+
 #include <iostream>
 #include <fstream>
 #include "String.h"
@@ -22,18 +24,18 @@ int main ()
 	
 	fileLength = GetStringLength(tempName) + 1;
 	
-	cout << "boop" << tempName << endl;
+	//cout << "boop" << tempName << endl;
 	
 	fileName = new char[fileLength];
 	
 	CopyString(tempName, fileName, fileLength);
 	
-	cout << "bop" << fileName << endl;
+	//cout << "bop" << fileName << endl;
 	
 	ifstream input;
 	input.open(fileName);
 	
-	cout << "bang" << endl;
+	//cout << "bang" << endl;
 	
 	for (int i = 0; i < 12; i++)
 	{
@@ -49,17 +51,17 @@ int main ()
 			
 			(*wordsTrav).initialize(buffer);
 			(*wordsTrav).print();
-			(*wordsTrav).deallocate();
+			//(*wordsTrav).deallocate();
 		
 		} else if (i == 1)
 		{
 			cout << "Second Instance: " << endl;
 			
-			wordsTrav = &secondString;
+			wordsTrav = secondString;
 			
 			(*wordsTrav).initialize(buffer);
 			(*wordsTrav).print();
-			(*wordsTrav).deallocate();
+			//(*wordsTrav).deallocate();
 		
 		} else if (i > 1)
 		{
@@ -73,7 +75,7 @@ int main ()
 			
 			(*wordsTrav).initialize(buffer);
 			(*wordsTrav).print();
-			(*wordsTrav).deallocate();
+			//(*wordsTrav).deallocate();
 		
 			wordsTrav++;
 			
@@ -83,14 +85,116 @@ int main ()
 		
 	}
 	
-	cout << "Copying first to second" << endl;
+	wordsTrav = words;
+	
+	cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" << endl;
+	cout << "Copy Function: " << endl;
+	cout << "Copying the second instance to the first..." << endl;
+	
+	cout << "The calling string's buffer is: ";
+	(*firstString).print();
+	
+	cout << "The argument string's buffer is: ";
+	(*secondString).print();
 	
 	//wordsTrav = secondString;
 	
 	(*firstString).copy(*secondString); 
 	
+	cout << "After copy(): " << endl;
+	
+	cout << "The calling string's buffer is now: ";
 	(*firstString).print();
+	
+	cout << "The argument string's buffer is now: ";
 	(*secondString).print();
+	
+	cout << endl << "Now the second array entry will be copied to the first instance..." << endl;
+	
+	for (int i = 0; i < 2; i++)
+	{
+		wordsTrav++;
+	
+	}
+	
+	cout << "The calling string's buffer is: ";
+	(*firstString).print();
+	
+	cout << "The argument string's buffer is: ";
+	(*wordsTrav).print();
+	
+	//wordsTrav = secondString;
+	
+	(*firstString).copy(*wordsTrav); 
+	
+	cout << "After copy(): " << endl;
+	
+	cout << "The calling string's buffer is now: ";
+	(*firstString).print();
+	
+	cout << "The argument string's buffer is now: ";
+	(*wordsTrav).print();
+	
+	cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" << endl;
+	cout << "Concat Function: " << endl;
+	
+	cout << "The second instance will be concated to the first instance..." << endl;
+	cout << "Before concat, the first instance buffer was: ";
+	(*firstString).print();
+	cout << "And the second instance buffer is: ";
+	(*secondString).print();
+	
+	(*firstString).concat(*secondString);
+	
+	cout << "The first instance buffer is now: ";
+	(*firstString).print();
+	
+	cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" << endl;
+	cout << "Compare Function: " << endl;
+	cout << "Comparing the second instance to the second array entry..." << endl;
+	
+	cout << "The second instance is: ";
+	(*secondString).print();
+	
+	wordsTrav = words;
+	wordsTrav++;
+	
+	cout << "The second array entry is: ";
+	(*wordsTrav).print();
+	
+	cout << "Comparing..." << endl;
+	
+	int compReturn = (*wordsTrav).compare(*secondString);
+	
+	cout << "The compare() function returned " << compReturn << " so ";
+	
+	if (compReturn == -1)
+	{
+		cout << "the second array entry is less than the second instance." << endl;
+	
+	} else if (compReturn == 0)
+	{
+		cout << "the second array entry and the second instance are equal." << endl;
+	
+	} else if (compReturn == 1)
+	{
+		cout << "the second array entry is greater than the second instance." << endl;
+	
+	}
+	
+	//Complete deallocation
+	(*firstString).deallocate();
+	(*secondString).deallocate();
+	
+	wordsTrav = words;
+	
+	for (int i = 0; i < 10; i++)
+	{
+		(*wordsTrav).deallocate();
+		
+		wordsTrav++;
+	
+	}
 	
 	delete[] tempName;
 	tempName = NULL;
@@ -101,11 +205,11 @@ int main ()
 	delete[] words;
 	words = NULL;
 	
-	//delete firstString;
-	//firstString = NULL;
+	delete firstString;
+	firstString = NULL;
 	
-	//delete secondString;
-	//secondString = NULL;
+	delete secondString;
+	secondString = NULL;
 	
 	return 0;
 

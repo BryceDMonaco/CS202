@@ -1,5 +1,3 @@
-//THE MAKEFILE WILL GIVE A COMPILE WARNING ABOUT A C-STYLE STRING, PLEASE IGNORE
-
 #include <iostream>
 #include <fstream>
 #include "String.h"

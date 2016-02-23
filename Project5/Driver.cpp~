@@ -180,7 +180,14 @@ int main ()
 	{
 		cout << "the second array entry is greater than the second instance." << endl;
 	
+	} else
+	{
+		cout << "(Error comparing)" << endl;
+	
 	}
+	
+	cout << "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" << endl;
+	cout << "Deallocating..." << endl;
 	
 	//Complete deallocation
 	(*firstString).deallocate();
@@ -210,6 +217,8 @@ int main ()
 	
 	delete secondString;
 	secondString = NULL;
+	
+	cout << "All strings and pointers successfully deallocated!" << endl;
 	
 	return 0;
 

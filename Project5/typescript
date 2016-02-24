@@ -1,0 +1,64 @@
+Script started on Wed 24 Feb 2016 02:27:33 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project5bryce@Brycbuntu:~/CS202/Project5$ make
+g++ Driver.cpp String.o -o StringTest
+]0;bryce@Brycbuntu: ~/CS202/Project5bryce@Brycbuntu:~/CS202/Project5$ ./StringTest 
+Enter the file name: strings
+First Instance: 
+cat
+Second Instance: 
+dog
+Array Instance 0: 
+apple
+Array Instance 1: 
+grapes
+Array Instance 2: 
+orange
+Array Instance 3: 
+banana
+Array Instance 4: 
+pear
+Array Instance 5: 
+grape
+Array Instance 6: 
+grapefruit
+Array Instance 7: 
+peach
+Array Instance 8: 
+Lemon
+Array Instance 9: 
+Lime
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Copy Function: 
+Copying the second instance to the first...
+The calling string's buffer is: cat
+The argument string's buffer is: dog
+After copy(): 
+The calling string's buffer is now: dog
+The argument string's buffer is now: dog
+
+Now the second array entry will be copied to the first instance...
+The calling string's buffer is: dog
+The argument string's buffer is: orange
+After copy(): 
+The calling string's buffer is now: orange
+The argument string's buffer is now: orange
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Concat Function: 
+The second instance will be concated to the first instance...
+Before concat, the first instance buffer was: orange
+And the second instance buffer is: dog
+The first instance buffer is now: orangedog
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Compare Function: 
+Comparing the second instance to the second array entry...
+The second instance is: dog
+The second array entry is: grapes
+Comparing...
+The compare() function returned 1 so the second array entry is greater than the second instance.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Deallocating...
+All strings and pointers successfully deallocated!
+]0;bryce@Brycbuntu: ~/CS202/Project5bryce@Brycbuntu:~/CS202/Project5$ exit
+exit
+
+Script done on Wed 24 Feb 2016 02:27:52 PM PST

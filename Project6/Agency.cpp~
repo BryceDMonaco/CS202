@@ -1,44 +1,11 @@
 #include <iostream>
 #include <fstream>
-
+#include "Agency.h"
 using namespace std;
 
 ////////////////////////////////////////////////////////////////////////////////
 //							Begin Car Implementation						  //
 ////////////////////////////////////////////////////////////////////////////////
-
-class Car
-{
-
-public:
-	Car();
-	Car(char *, char *, int, float, bool);
-	Car(const Car&);
-	~Car();
-
-	void copy(Car);
-	void print() const;
-
-	char * getMake() const;
-	char * getModel() const;
-	int getYear() const;
-	float getPrice() const;
-	bool getAvailable() const;
-
-	void setMake(char *);
-	void setModel(char *);
-	void setYear(int);
-	void setPrice(float);
-	void setAvailable(bool);
-
-private:
-	char * make;
-	char * model;
-	int year;
-	float price;
-	bool available;
-	
-};
 
 //Constructors
 Car::Car ()
@@ -223,7 +190,7 @@ void Car::copy(Car sentCar)
 
 void Car::print() const
 {
-	cout << year << " " << make << " " << model << " (Price: $" << price << ")(";
+	cout << "\t" << year << " " << make << " " << model << " (Price: $" << price << ")(";
 	
 	if (available)
 	{
@@ -361,35 +328,6 @@ void Car::setAvailable(bool avail)
 ////////////////////////////////////////////////////////////////////////////////
 //							Begin Agency Implementation						  //
 ////////////////////////////////////////////////////////////////////////////////
-class Agency
-{
-
-public:
-
-	Agency();
-	Agency(const Agency&);
-	~Agency();
-
-	void readInData(char *);
-
-	void print() const;
-	void printAvailableCars() const;
-
-	void findMostExpensive() const;
-	float estimateCost(int, int) const;
-
-	void sortByMake();    // alphabetical
-	void sortByPrice();   // highest to lowest
-
-	void searchByMake(char *) const;
-
-private:
-
-	char * name;
-	int * zipcode;
-	Car * inventory;
-
-};
 
 //Constructors
 Agency::Agency()
@@ -658,21 +596,170 @@ float Agency::estimateCost(int carNumber, int dayAmount) const
 
 }
 
+//Bubble
+	/*
+		Compare each pair of adjacent elements from the beginning of an array
+		and, if they are in reversed order, swap them.
+		
+		If at least one swap has been done, repeat step 1.
+	*/ 
 void Agency::sortByMake() // alphabetical
 {
-	//Insert tears here
-
+	int sortCount;
+	
+	do
+	{
+		Car *onCar = inventory;
+		Car *adjCar = inventory; //Adjacent Car, i+1
+		adjCar++;
+		
+		for (int i = 0; i < 14; i++) //14 so that adjCar stays in bounds
+		{
+			sortCount = 0;
+			
+			char *onCarChar = (*onCar).getMake();
+			char *adjCarChar = (*adjCar).getMake();
+			
+			if (*onCarChar > *adjCarChar) //Adj is lower alphabetically
+			{
+				Car onCarBuff(*onCar); //Should hopefully call the copy const
+				
+				//Pull a switch-a-roo
+				(*onCar).copy(*adjCar);
+				(*adjCar).copy(onCarBuff);
+				
+				sortCount++;
+				
+				break; //Stop the for loop and start over	
+					
+			}
+			
+			onCar++;
+			adjCar++;
+			
+			
+		}
+		
+		onCar = NULL;
+		adjCar = NULL;
+	
+	} while (sortCount != 0);
+	
+	return;
+	
 }
 
+//Selection Sort
 void Agency::sortByPrice() // highest to lowest
 {
-	//Nope
+	Car *currentLocation = inventory;
+	
+	for (int i = 0; i < 15; i++)
+	{
+		Car *highestCar;
+		Car *invTrav = inventory;
+		
+		float currentHigh = 0.0;
+		
+		for (int ii = 0; ii < i; ii++)
+		{
+			invTrav++;
+		
+		}
+		
+		for (int ii = 0; ii < (15 - i); ii++)
+		{
+			float checkPrice = (*invTrav).getPrice();
+			
+			if (checkPrice > currentHigh)
+			{
+				highestCar = invTrav;
+				
+				currentHigh = checkPrice;
+			
+			}
+			
+			invTrav++;
+			
+		}
+		
+		Car currentBuff(*currentLocation);
+		(*currentLocation).copy(*highestCar);
+		(*highestCar).copy(currentBuff);
+		
+		highestCar = NULL;
+		invTrav = NULL;
+		
+		currentLocation++;
+	
+	}
+	
+	currentLocation = NULL;
+	
+	return;
 
 }
 
-void Agency::searchByMake(char *) const
+void Agency::searchByMake(char *sentMake) const
 {
-	//https://youtu.be/mm4Ip_8aZjI
+	int foundCount = 0;
+	Car *invTrav = inventory;
+	
+	for (int i = 0; i < 15; i++)
+	{
+		char sentFirstChar = (*sentMake);
+		char checkFirstChar = *((*invTrav).getMake());
+		
+		if (sentFirstChar == checkFirstChar)
+		{
+			int isSame = 1; //Assume same until proven different
+			
+			char *sentTrav = sentMake;
+			char *checkTrav = (*invTrav).getMake();
+			
+			//Go through each character and compare them
+			for (int ii = 0; ii < 20; ii++)
+			{
+				if (*sentTrav != *checkTrav)
+				{
+					isSame = 0;
+					
+					break;
+				
+				}
+				
+				sentTrav++;
+				checkTrav++;
+			
+			}
+			
+			if (isSame == 1) //They are the same
+			{
+				if (foundCount == 0)
+				{
+					cout << "The following cars were found: " << endl;
+				
+				}
+				
+				(*invTrav).print();
+				
+				foundCount++;
+			
+			}
+			
+			invTrav++;
+		
+		}
+	
+	}
+	
+	if (foundCount == 0)
+	{
+		cout << "No cars with the make \"" << sentMake << "\" could be found. " << endl;
+	
+	}
+	
+	return;
 
 }
 

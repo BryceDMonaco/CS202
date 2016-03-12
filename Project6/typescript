@@ -1,0 +1,234 @@
+Script started on Wed 09 Mar 2016 01:03:01 PM PST
+]0;bryce@Brycbuntu: ~/CS202/Project6bryce@Brycbuntu:~/CS202/Project6$ make
+make: Nothing to be done for `all'.
+]0;bryce@Brycbuntu: ~/CS202/Project6bryce@Brycbuntu:~/CS202/Project6$ ./AgencyTest 
+Enter the data file name (max. 18 chars.): carData
+Raw Agency Data (in the order it was read in): 
+Agency: National (Zip: 93619)
+1. 	2014 Toyota Tacoma (Price: $115.12)(Available)
+2. 	2012 Honda CRV (Price: $85.1)(Not Available)
+3. 	2015 Ford Fusion (Price: $90.89)(Not Available)
+4. 	2013 GMC Yukon (Price: $110.43)(Not Available)
+5. 	2009 Dodge Neon (Price: $45.25)(Available)
+6. 	2011 Toyota Rav4 (Price: $65.02)(Available)
+7. 	2012 Mazda CX5 (Price: $86.75)(Available)
+8. 	2016 Subaru Outback (Price: $71.27)(Not Available)
+9. 	2015 Ford F150 (Price: $112.83)(Available)
+10. 	2010 Toyota Corolla (Price: $50.36)(Available)
+11. 	2008 Ford Fiesta (Price: $42.48)(Not Available)
+12. 	2009 Dodge Charger (Price: $55.36)(Available)
+13. 	2012 Chevy Volt (Price: $89.03)(Not Available)
+14. 	2007 Subaru Legacy (Price: $59.19)(Not Available)
+15. 	2010 Nissan Maxima (Price: $51.68)(Available)
+
+Sorted by Price Agency Data: 
+Agency: National (Zip: 93619)
+1. 	2014 Toyota Tacoma (Price: $115.12)(Available)
+2. 	2015 Ford F150 (Price: $112.83)(Available)
+3. 	2013 GMC Yukon (Price: $110.43)(Not Available)
+4. 	2015 Ford Fusion (Price: $90.89)(Not Available)
+5. 	2012 Chevy Volt (Price: $89.03)(Not Available)
+6. 	2012 Mazda CX5 (Price: $86.75)(Available)
+7. 	2012 Honda CRV (Price: $85.1)(Not Available)
+8. 	2016 Subaru Outback (Price: $71.27)(Not Available)
+9. 	2011 Toyota Rav4 (Price: $65.02)(Available)
+10. 	2007 Subaru Legacy (Price: $59.19)(Not Available)
+11. 	2009 Dodge Charger (Price: $55.36)(Available)
+12. 	2010 Nissan Maxima (Price: $51.68)(Available)
+13. 	2010 Toyota Corolla (Price: $50.36)(Available)
+14. 	2009 Dodge Neon (Price: $45.25)(Available)
+15. 	2008 Ford Fiesta (Price: $42.48)(Not Available)
+Agency Menu: 
+1. Sort Inventory by Make
+2. Sort Inventory by Price
+3. Rental Price Quote
+4. Print Agency (prints in current sorted or unsorted state)
+5. Search for a Car by Make
+6. Find the Most Expensive Car
+7. Print All Available Cars
+0. Exit
+Enter the number of an option: 1
+
+Sorted by Make Agency Data: 
+Agency: National (Zip: 93619)
+1. 	2012 Chevy Volt (Price: $89.03)(Not Available)
+2. 	2009 Dodge Charger (Price: $55.36)(Available)
+3. 	2009 Dodge Neon (Price: $45.25)(Available)
+4. 	2015 Ford F150 (Price: $112.83)(Available)
+5. 	2015 Ford Fusion (Price: $90.89)(Not Available)
+6. 	2008 Ford Fiesta (Price: $42.48)(Not Available)
+7. 	2013 GMC Yukon (Price: $110.43)(Not Available)
+8. 	2012 Honda CRV (Price: $85.1)(Not Available)
+9. 	2012 Mazda CX5 (Price: $86.75)(Available)
+10. 	2010 Nissan Maxima (Price: $51.68)(Available)
+11. 	2016 Subaru Outback (Price: $71.27)(Not Available)
+12. 	2007 Subaru Legacy (Price: $59.19)(Not Available)
+13. 	2014 Toyota Tacoma (Price: $115.12)(Available)
+14. 	2011 Toyota Rav4 (Price: $65.02)(Available)
+15. 	2010 Toyota Corolla (Price: $50.36)(Available)
+----------------------------------------------------------------
+Agency Menu: 
+1. Sort Inventory by Make
+2. Sort Inventory by Price
+3. Rental Price Quote
+4. Print Agency (prints in current sorted or unsorted state)
+5. Search for a Car by Make
+6. Find the Most Expensive Car
+7. Print All Available Cars
+0. Exit
+Enter the number of an option: 2
+
+Sorted by Price Agency Data: 
+Agency: National (Zip: 93619)
+1. 	2014 Toyota Tacoma (Price: $115.12)(Available)
+2. 	2015 Ford F150 (Price: $112.83)(Available)
+3. 	2013 GMC Yukon (Price: $110.43)(Not Available)
+4. 	2015 Ford Fusion (Price: $90.89)(Not Available)
+5. 	2012 Chevy Volt (Price: $89.03)(Not Available)
+6. 	2012 Mazda CX5 (Price: $86.75)(Available)
+7. 	2012 Honda CRV (Price: $85.1)(Not Available)
+8. 	2016 Subaru Outback (Price: $71.27)(Not Available)
+9. 	2011 Toyota Rav4 (Price: $65.02)(Available)
+10. 	2007 Subaru Legacy (Price: $59.19)(Not Available)
+11. 	2009 Dodge Charger (Price: $55.36)(Available)
+12. 	2010 Nissan Maxima (Price: $51.68)(Available)
+13. 	2010 Toyota Corolla (Price: $50.36)(Available)
+14. 	2009 Dodge Neon (Price: $45.25)(Available)
+15. 	2008 Ford Fiesta (Price: $42.48)(Not Available)
+----------------------------------------------------------------
+Agency Menu: 
+1. Sort Inventory by Make
+2. Sort Inventory by Price
+3. Rental Price Quote
+4. Print Agency (prints in current sorted or unsorted state)
+5. Search for a Car by Make
+6. Find the Most Expensive Car
+7. Print All Available Cars
+0. Exit
+Enter the number of an option: 3
+Agency: National (Zip: 93619)
+1. 	2014 Toyota Tacoma (Price: $115.12)(Available)
+2. 	2015 Ford F150 (Price: $112.83)(Available)
+3. 	2013 GMC Yukon (Price: $110.43)(Not Available)
+4. 	2015 Ford Fusion (Price: $90.89)(Not Available)
+5. 	2012 Chevy Volt (Price: $89.03)(Not Available)
+6. 	2012 Mazda CX5 (Price: $86.75)(Available)
+7. 	2012 Honda CRV (Price: $85.1)(Not Available)
+8. 	2016 Subaru Outback (Price: $71.27)(Not Available)
+9. 	2011 Toyota Rav4 (Price: $65.02)(Available)
+10. 	2007 Subaru Legacy (Price: $59.19)(Not Available)
+11. 	2009 Dodge Charger (Price: $55.36)(Available)
+12. 	2010 Nissan Maxima (Price: $51.68)(Available)
+13. 	2010 Toyota Corolla (Price: $50.36)(Available)
+14. 	2009 Dodge Neon (Price: $45.25)(Available)
+15. 	2008 Ford Fiesta (Price: $42.48)(Not Available)
+Enter the number for the corresponding car: 2
+Enter the duration of the rental period: 3
+Renting this car for 3 days will cost $338.49
+----------------------------------------------------------------
+Agency Menu: 
+1. Sort Inventory by Make
+2. Sort Inventory by Price
+3. Rental Price Quote
+4. Print Agency (prints in current sorted or unsorted state)
+5. Search for a Car by Make
+6. Find the Most Expensive Car
+7. Print All Available Cars
+0. Exit
+Enter the number of an option: 4
+Agency: National (Zip: 93619)
+1. 	2014 Toyota Tacoma (Price: $115.12)(Available)
+2. 	2015 Ford F150 (Price: $112.83)(Available)
+3. 	2013 GMC Yukon (Price: $110.43)(Not Available)
+4. 	2015 Ford Fusion (Price: $90.89)(Not Available)
+5. 	2012 Chevy Volt (Price: $89.03)(Not Available)
+6. 	2012 Mazda CX5 (Price: $86.75)(Available)
+7. 	2012 Honda CRV (Price: $85.1)(Not Available)
+8. 	2016 Subaru Outback (Price: $71.27)(Not Available)
+9. 	2011 Toyota Rav4 (Price: $65.02)(Available)
+10. 	2007 Subaru Legacy (Price: $59.19)(Not Available)
+11. 	2009 Dodge Charger (Price: $55.36)(Available)
+12. 	2010 Nissan Maxima (Price: $51.68)(Available)
+13. 	2010 Toyota Corolla (Price: $50.36)(Available)
+14. 	2009 Dodge Neon (Price: $45.25)(Available)
+15. 	2008 Ford Fiesta (Price: $42.48)(Not Available)
+----------------------------------------------------------------
+Agency Menu: 
+1. Sort Inventory by Make
+2. Sort Inventory by Price
+3. Rental Price Quote
+4. Print Agency (prints in current sorted or unsorted state)
+5. Search for a Car by Make
+6. Find the Most Expensive Car
+7. Print All Available Cars
+0. Exit
+Enter the number of an option: 5
+
+Enter a car make to search for: 
+Fard
+No cars with the make "Fard" could be found. 
+----------------------------------------------------------------
+Agency Menu: 
+1. Sort Inventory by Make
+2. Sort Inventory by Price
+3. Rental Price Quote
+4. Print Agency (prints in current sorted or unsorted state)
+5. Search for a Car by Make
+6. Find the Most Expensive Car
+7. Print All Available Cars
+0. Exit
+Enter the number of an option: 6
+The most expensive car is: 
+	2014 Toyota Tacoma (Price: $115.12)(Available)
+----------------------------------------------------------------
+Agency Menu: 
+1. Sort Inventory by Make
+2. Sort Inventory by Price
+3. Rental Price Quote
+4. Print Agency (prints in current sorted or unsorted state)
+5. Search for a Car by Make
+6. Find the Most Expensive Car
+7. Print All Available Cars
+0. Exit
+Enter the number of an option: 7
+1. 	2014 Toyota Tacoma (Price: $115.12)(Available)
+2. 	2015 Ford F150 (Price: $112.83)(Available)
+6. 	2012 Mazda CX5 (Price: $86.75)(Available)
+9. 	2011 Toyota Rav4 (Price: $65.02)(Available)
+11. 	2009 Dodge Charger (Price: $55.36)(Available)
+12. 	2010 Nissan Maxima (Price: $51.68)(Available)
+13. 	2010 Toyota Corolla (Price: $50.36)(Available)
+14. 	2009 Dodge Neon (Price: $45.25)(Available)
+----------------------------------------------------------------
+Agency Menu: 
+1. Sort Inventory by Make
+2. Sort Inventory by Price
+3. Rental Price Quote
+4. Print Agency (prints in current sorted or unsorted state)
+5. Search for a Car by Make
+6. Find the Most Expensive Car
+7. Print All Available Cars
+0. Exit
+Enter the number of an option: 0
+----------------------------------------------------------------
+
+Agency: National (Zip: 93619)
+1. 	2014 Toyota Tacoma (Price: $115.12)(Available)
+2. 	2015 Ford F150 (Price: $112.83)(Available)
+3. 	2013 GMC Yukon (Price: $110.43)(Not Available)
+4. 	2015 Ford Fusion (Price: $90.89)(Not Available)
+5. 	2012 Chevy Volt (Price: $89.03)(Not Available)
+6. 	2012 Mazda CX5 (Price: $86.75)(Available)
+7. 	2012 Honda CRV (Price: $85.1)(Not Available)
+8. 	2016 Subaru Outback (Price: $71.27)(Not Available)
+9. 	2011 Toyota Rav4 (Price: $65.02)(Available)
+10. 	2007 Subaru Legacy (Price: $59.19)(Not Available)
+11. 	2009 Dodge Charger (Price: $55.36)(Available)
+12. 	2010 Nissan Maxima (Price: $51.68)(Available)
+13. 	2010 Toyota Corolla (Price: $50.36)(Available)
+14. 	2009 Dodge Neon (Price: $45.25)(Available)
+15. 	2008 Ford Fiesta (Price: $42.48)(Not Available)
+]0;bryce@Brycbuntu: ~/CS202/Project6bryce@Brycbuntu:~/CS202/Project6$ exit
+exit
+
+Script done on Wed 09 Mar 2016 01:03:41 PM PST

@@ -84,7 +84,22 @@ int main ()
 		
 	}
 	
+	polyTrav = polys;
+	
+	cout <<"TestTestTest: " << endl;
+	
+	for (int i = 0; i < numPolys; i++)
+	{
+		cout << *polyTrav << endl;
+		
+		polyTrav++;
+	
+	}
+	
 	input.close();
+	
+	delete[] polys;
+	polys = NULL;
 	
 	delete[] fileName;
 	fileName = NULL;

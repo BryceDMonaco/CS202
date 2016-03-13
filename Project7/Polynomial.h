@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 class Polynomial
 {
 	public:
@@ -18,7 +22,8 @@ class Polynomial
 		Polynomial operator*(const int scalar);
 		
 		//Friend Functions
-			//I'm confused on these, still :/
+		friend ostream& operator<<(ostream& os, const Polynomial& sentPoly);
+		friend istream& operator>>(istream& is, Polynomial& sentPoly);
 		
 	private:
 		int *coeffs;

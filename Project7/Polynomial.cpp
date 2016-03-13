@@ -19,7 +19,8 @@ class Polynomial
 		Polynomial operator*(const int scalar);
 		
 		//Friend Functions
-			//I'm confused on these, still :/
+		friend ostream& operator<<(ostream& os, const Polynomial& sentPoly);
+		friend istream& operator>>(istream& is, Polynomial& sentPoly);
 		
 	private:
 		int *coeffs;
@@ -145,6 +146,8 @@ void Polynomial::operator=(const Polynomial& sentPoly)
 {
 	maxDegree = sentPoly.maxDegree;
 	
+	delete[] coeffs;
+	
 	coeffs = new int[maxDegree + 1];
 	
 	int *coeffTrav = coeffs;
@@ -160,5 +163,172 @@ void Polynomial::operator=(const Polynomial& sentPoly)
 	}
 	
 	return;
+
+}
+
+bool Polynomial::operator==(const Polynomial& sentPoly)
+{
+	if (maxDegree == sentPoly.maxDegree)
+	{
+		int *coeffTrav = coeffs;
+		int *sentTrav = sentPoly.coeffs;
+		
+		for (int i = 0; i <= maxDegree; i++)
+		{
+			if (*coeffTrav != *sentTrav)
+			{
+				coeffTrav = NULL;
+				sentTrav = NULL;
+				
+				return false;
+			
+			}
+			
+			coeffTrav++;
+			sentTrav++;
+		
+		}
+	
+	} else
+	{
+		return false;
+	
+	}
+	
+	return true;
+
+}
+
+bool Polynomial::operator!=(const Polynomial& sentPoly)
+{
+	if (maxDegree == sentPoly.maxDegree)
+	{
+		int *coeffTrav = coeffs;
+		int *sentTrav = sentPoly.coeffs;
+		
+		for (int i = 0; i <= maxDegree; i++)
+		{
+			if (*coeffTrav != *sentTrav)
+			{
+				coeffTrav = NULL;
+				sentTrav = NULL;
+				
+				return true;
+			
+			}
+			
+			coeffTrav++;
+			sentTrav++;
+		
+		}
+		
+		coeffTrav = NULL;
+		sentTrav = NULL;
+		
+	} else
+	{
+		return true;
+	
+	}
+	
+	
+	
+	return false;
+
+}
+
+Polynomial Polynomial::operator*(const Polynomial& sentPoly)
+{
+
+
+}
+
+Polynomial Polynomial::operator*(const int scalar)
+{
+	int *coeffTrav = coeffs;
+	
+	for (int i = 0; i <= maxDegree; i++)
+	{
+		(*coeffTrav) *= scalar;
+		
+		coeffTrav++;
+	
+	}
+	
+	coeffTrav = NULL;
+	
+	Polynomial tempPoly(maxDegree, coeffs);
+	
+	return tempPoly;
+
+}
+
+//Output
+ostream& operator<<(ostream& os, const Polynomial& sentPoly)
+{
+
+	int thisMaxDegree = sentPoly.maxDegree;
+	
+	int *coeffTrav = sentPoly.coeffs;
+	
+	for (int i = thisMaxDegree; i >= 0; i--)
+	{
+		if (i == thisMaxDegree)
+		{
+			if (*coeffTrav != 0)
+			{
+				os << *coeffTrav << "x^" << i; //First term in the poly
+			
+			}
+			
+		} else if (i != thisMaxDegree && i != 0 && *coeffTrav != 0)
+		{
+			if (i != 1)
+			{
+				if (*coeffTrav > 0)
+				{
+					os << " + " << *coeffTrav << "x^" << i;
+				
+				} else if (*coeffTrav < 0)
+				{
+					os << " - " << ((*coeffTrav) * -1) << "x^" << i;
+				
+				}
+				
+			} else if (i == 1)
+			{
+				if (*coeffTrav > 0)
+				{
+					os << " + " << *coeffTrav << "x";
+				
+				} else if (*coeffTrav < 0)
+				{
+					os << " - " << ((*coeffTrav) * -1) << "x";
+				
+				}
+			
+			}
+			
+		} else if (i == 0 && *coeffTrav != 0)
+		{
+			if (*coeffTrav > 0)
+				{
+					os << " + " << *coeffTrav;
+				
+				} else if (*coeffTrav < 0)
+				{
+					os << " - " << ((*coeffTrav) * -1);
+				
+				}
+		
+		}
+		
+		coeffTrav++;
+	
+	}
+	
+	coeffTrav = NULL;
+	
+	return os;
 
 }

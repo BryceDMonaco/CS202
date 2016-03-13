@@ -1,0 +1,7 @@
+all: Poly
+Poly: Driver.cpp Poly.o
+	g++ Driver.cpp Poly.o -o Poly
+Poly.o: Polynomial.cpp
+	g++ -c Polynomial.cpp
+clean:
+	rm -rf *.o Poly

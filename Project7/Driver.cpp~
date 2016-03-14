@@ -29,50 +29,16 @@ int main ()
 	//For each poly in the array
 	for (int i = 0; i < numPolys; i++)
 	{
-		int tempDegree;
-		
-		input >> tempDegree;
-		
-		//cout << "Read tempDegree" << endl;
-		
-		int *coeffs = new int[tempDegree + 1];
-		int *coeffTrav = coeffs;
-		
-		//cout << "Coeff array made" << endl;
-		
-		cout << "DEBUG: \tDEG: " << tempDegree << "COEFFS: ";
-		
-		for (int ii = 0; ii <= tempDegree; ii++)
-		{
-			//cout << "On Coeff #" << ii
-			input >> *coeffTrav;
-			
-			cout << *coeffTrav << " ";
-			
-			coeffTrav++;
-		
-		}
-		
-		cout << endl;
-		
-		//cout << endl << "Coeffs read in" << endl;
-		
-		Polynomial tempPoly(tempDegree, coeffs);
-		
-		(*polyTrav) = tempPoly; //Should call the parameterized constructor
-		
-		//cout << "Set the poly equal to" << endl;
+		input >> (*polyTrav);
 		
 		polyTrav++;
-		
-		delete[] coeffs;
-		
-		coeffTrav = NULL;
 		
 	}
 	
 	//cout << "Done reading..." << endl;
-	
+
+	input.close();
+
 	polyTrav = polys;
 	
 	for (int i = 0; i < numPolys; i++)
@@ -86,6 +52,8 @@ int main ()
 	
 	polyTrav = polys;
 	
+	cout <<"TestTestTest: " << endl;
+	
 	for (int i = 0; i < numPolys; i++)
 	{
 		cout << *polyTrav << endl;
@@ -94,7 +62,16 @@ int main ()
 	
 	}
 	
-	input.close();
+	Polynomial *addPoly = polys;
+	
+	polyTrav = polys;
+	polyTrav++;
+	
+	*addPoly = (*addPoly) + (*polyTrav);
+	
+	cout << *addPoly << endl;
+	
+	*addPoly = (*addPoly) - (*polyTrav);
 	
 	delete[] polys;
 	polys = NULL;

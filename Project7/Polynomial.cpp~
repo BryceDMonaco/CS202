@@ -21,6 +21,8 @@ class Polynomial
 		//Friend Functions
 		friend ostream& operator<<(ostream& os, const Polynomial& sentPoly);
 		friend istream& operator>>(istream& is, Polynomial& sentPoly);
+		friend Polynomial operator+(Polynomial poly1, Polynomial poly2);
+		friend Polynomial operator-(Polynomial poly1, Polynomial poly2);
 		
 	private:
 		int *coeffs;
@@ -275,9 +277,13 @@ ostream& operator<<(ostream& os, const Polynomial& sentPoly)
 	{
 		if (i == thisMaxDegree)
 		{
-			if (*coeffTrav != 0)
+			if (*coeffTrav != 0 && *coeffTrav != 1)
 			{
 				os << *coeffTrav << "x^" << i; //First term in the poly
+			
+			} else if (*coeffTrav != 0 && *coeffTrav == 1)
+			{
+				os << "x^" << i; //First term in the poly
 			
 			}
 			
@@ -331,4 +337,231 @@ ostream& operator<<(ostream& os, const Polynomial& sentPoly)
 	
 	return os;
 
+}
+
+istream& operator>>(istream& is, Polynomial& sentPoly)
+{
+	is >> sentPoly.maxDegree;
+	
+	delete[] sentPoly.coeffs;
+	
+	sentPoly.coeffs = new int[sentPoly.maxDegree + 1];
+	int *coeffTrav = sentPoly.coeffs;
+	
+	for (int i = 0; i <= sentPoly.maxDegree; i++)
+	{
+		is >> *coeffTrav;
+			
+		coeffTrav++;
+	
+	}
+	
+	coeffTrav = NULL;
+	
+	return is;
+
+}
+
+Polynomial operator+(Polynomial poly1, Polynomial poly2)
+{
+	int highDegree, lowDegree;
+	int poly1Deg = poly1.maxDegree;
+	int poly2Deg = poly2.maxDegree;
+	
+	if (poly1Deg > poly2Deg || poly1Deg == poly2Deg)
+	{
+		highDegree = poly1Deg;
+		
+	} else
+	{
+		highDegree = poly2Deg;
+	
+	}
+	
+	int *temp1Coeffs = new int[highDegree + 1];
+	int *temp2Coeffs = new int[highDegree + 1];
+	int *coeff1Trav = temp1Coeffs;
+	int *coeff2Trav = temp2Coeffs;
+	int *sent1Trav = poly1.coeffs;
+	int *sent2Trav = poly2.coeffs;
+	
+	for (int i = 0; i <= highDegree; i++)
+	{
+		if (poly1Deg == highDegree)
+		{
+			*coeff1Trav = *sent1Trav;
+			*coeff2Trav = 0;
+			
+			if (i >= (highDegree - poly2Deg))
+			{
+				*coeff2Trav = *sent2Trav;
+				
+				sent2Trav++;
+				
+			}
+			
+			sent1Trav++;
+			
+		
+		} else if (poly2Deg == highDegree)
+		{
+			*coeff2Trav = *sent2Trav;
+			*coeff1Trav = 0;
+			
+			if (i >= (highDegree - poly1Deg))
+			{
+				*coeff1Trav = *sent1Trav;
+				
+				sent1Trav++;
+				
+			}
+			
+			sent2Trav++;
+		}
+		
+		coeff1Trav++;
+		coeff2Trav++;
+	
+	}
+	
+	coeff1Trav = temp1Coeffs;
+	coeff2Trav = temp2Coeffs;
+	int *finalCoeffs = new int[highDegree + 1];
+	int *finalTrav = finalCoeffs;
+	
+	for (int i = 0; i <= highDegree; i++)
+	{
+		*finalTrav = (*coeff1Trav) + (*coeff2Trav);
+		
+		coeff1Trav++;
+		coeff2Trav++;
+		finalTrav++;
+	
+	}
+	
+	delete[] temp1Coeffs;
+	temp1Coeffs = NULL;
+	
+	delete[] temp2Coeffs;
+	temp2Coeffs = NULL;
+	
+	coeff1Trav = NULL;
+	
+	coeff2Trav = NULL;
+	
+	sent1Trav = NULL;
+	
+	sent2Trav = NULL;
+	
+	Polynomial sumPoly(highDegree, finalCoeffs);
+	
+	delete[] finalCoeffs;
+	finalCoeffs = NULL;
+	
+	finalTrav = NULL;
+	
+	return sumPoly;
+	
+}
+
+Polynomial operator-(Polynomial poly1, Polynomial poly2)
+{
+	int highDegree, lowDegree;
+	int poly1Deg = poly1.maxDegree;
+	int poly2Deg = poly2.maxDegree;
+	
+	if (poly1Deg > poly2Deg || poly1Deg == poly2Deg)
+	{
+		highDegree = poly1Deg;
+		
+	} else
+	{
+		highDegree = poly2Deg;
+	
+	}
+	
+	int *temp1Coeffs = new int[highDegree + 1];
+	int *temp2Coeffs = new int[highDegree + 1];
+	int *coeff1Trav = temp1Coeffs;
+	int *coeff2Trav = temp2Coeffs;
+	int *sent1Trav = poly1.coeffs;
+	int *sent2Trav = poly2.coeffs;
+	
+	for (int i = 0; i <= highDegree; i++)
+	{
+		if (poly1Deg == highDegree)
+		{
+			*coeff1Trav = *sent1Trav;
+			*coeff2Trav = 0;
+			
+			if (i >= (highDegree - poly2Deg))
+			{
+				*coeff2Trav = *sent2Trav;
+				
+				sent2Trav++;
+				
+			}
+			
+			sent1Trav++;
+			
+		
+		} else if (poly2Deg == highDegree)
+		{
+			*coeff2Trav = *sent2Trav;
+			*coeff1Trav = 0;
+			
+			if (i >= (highDegree - poly1Deg))
+			{
+				*coeff1Trav = *sent1Trav;
+				
+				sent1Trav++;
+				
+			}
+			
+			sent2Trav++;
+		}
+		
+		coeff1Trav++;
+		coeff2Trav++;
+	
+	}
+	
+	coeff1Trav = temp1Coeffs;
+	coeff2Trav = temp2Coeffs;
+	int *finalCoeffs = new int[highDegree + 1];
+	int *finalTrav = finalCoeffs;
+	
+	for (int i = 0; i <= highDegree; i++)
+	{
+		*finalTrav = (*coeff1Trav) - (*coeff2Trav);
+		
+		coeff1Trav++;
+		coeff2Trav++;
+		finalTrav++;
+	
+	}
+	
+	delete[] temp1Coeffs;
+	temp1Coeffs = NULL;
+	
+	delete[] temp2Coeffs;
+	temp2Coeffs = NULL;
+	
+	coeff1Trav = NULL;
+	
+	coeff2Trav = NULL;
+	
+	sent1Trav = NULL;
+	
+	sent2Trav = NULL;
+	
+	Polynomial sumPoly(highDegree, finalCoeffs);
+	
+	delete[] finalCoeffs;
+	finalCoeffs = NULL;
+	
+	finalTrav = NULL;
+	
+	return sumPoly;
+	
 }

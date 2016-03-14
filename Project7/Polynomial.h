@@ -24,6 +24,8 @@ class Polynomial
 		//Friend Functions
 		friend ostream& operator<<(ostream& os, const Polynomial& sentPoly);
 		friend istream& operator>>(istream& is, Polynomial& sentPoly);
+		friend Polynomial operator+(Polynomial poly1, Polynomial poly2);
+		friend Polynomial operator-(Polynomial poly1, Polynomial poly2);
 		
 	private:
 		int *coeffs;

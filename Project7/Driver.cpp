@@ -66,7 +66,10 @@ int main ()
 	
 	polyTrav = polys;
 	polyTrav++;
+	polyTrav++;
+	polyTrav++;
 	
+	/*
 	*addPoly = (*addPoly) + (*polyTrav);
 	
 	cout << *addPoly << endl;
@@ -74,6 +77,15 @@ int main ()
 	*addPoly = (*addPoly) - (*polyTrav);
 	
 	cout << *addPoly << endl;
+	*/
+	
+	cout << "Multiplying Polys: " << endl;
+	cout << "\tFirst Poly:  \t" << *polyTrav << endl;
+	cout << "\tSecond Poly: \t" << *addPoly << endl;
+	
+	*addPoly = (*addPoly) * (*polyTrav);
+	
+	cout << "Product: " << *addPoly << endl;
 	
 	delete[] polys;
 	polys = NULL;

@@ -1,0 +1,1793 @@
+Script started on Mon 14 Mar 2016 04:52:49 PM PDT
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+Polynomial.cpp: In member function ‘Polynomial Polynomial::operator*(const Polynomial&)’:
+Polynomial.cpp:280:17: error: ‘highestDegree’ was not declared in this scope
+    int powLoc = highestDegree - (thisOnDegree)+(sentOnDegree); //Find the power of the product
+                 ^
+make: *** [Polynomial.o] Error 1
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ makeping google.commake[K[Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: pp olys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Initialized...
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [7Pmake./PolyTest [7Pmake./PolyTest [7Pmake./PolyTest [Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Initialized...
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [7Pmake./PolyTest [7Pmake./PolyTest [Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Initialized...
+Starting first loop iteration #0
+Starting second loop iteration #0
+Ending second loop iteration #0
+Starting second loop iteration #1
+Ending second loop iteration #1
+Starting second loop iteration #2
+Ending second loop iteration #2
+Starting second loop iteration #3
+Ending second loop iteration #3
+Starting second loop iteration #4
+Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+Starting second loop iteration #0
+Ending second loop iteration #0
+Starting second loop iteration #1
+Ending second loop iteration #1
+Starting second loop iteration #2
+Ending second loop iteration #2
+Starting second loop iteration #3
+Ending second loop iteration #3
+Starting second loop iteration #4
+Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+Starting second loop iteration #0
+Ending second loop iteration #0
+Starting second loop iteration #1
+Ending second loop iteration #1
+Starting second loop iteration #2
+Ending second loop iteration #2
+Starting second loop iteration #3
+Ending second loop iteration #3
+Starting second loop iteration #4
+Ending second loop iteration #4
+Ending first loop iteration #2
+Starting first loop iteration #3
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Initialized...
+Starting first loop iteration #0
+Starting second loop iteration #0
+Ending second loop iteration #0
+Starting second loop iteration #1
+Ending second loop iteration #1
+Starting second loop iteration #2
+Ending second loop iteration #2
+Starting second loop iteration #3
+Ending second loop iteration #3
+Starting second loop iteration #4
+Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+Starting second loop iteration #0
+Ending second loop iteration #0
+Starting second loop iteration #1
+Ending second loop iteration #1
+Starting second loop iteration #2
+Ending second loop iteration #2
+Starting second loop iteration #3
+Ending second loop iteration #3
+Starting second loop iteration #4
+Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+Starting second loop iteration #0
+Ending second loop iteration #0
+Starting second loop iteration #1
+Ending second loop iteration #1
+Starting second loop iteration #2
+Ending second loop iteration #2
+Starting second loop iteration #3
+Ending second loop iteration #3
+Starting second loop iteration #4
+Ending second loop iteration #4
+Ending first loop iteration #2
+Starting first loop iteration #3
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [7Pmake./PolyTest [7Pmake./PolyTest [7Pmake./PolyTest [Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Initialized...
+Starting first loop iteration #0
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Starting first loop iteration #3
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ 
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polts  ys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Starting first loop iteration #3
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polts  ys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Starting first loop iteration #3
+1
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [Kmake
+g++ -c Polynomial.cpp
+Polynomial.cpp: In member function ‘Polynomial Polynomial::operator*(const Polynomial&)’:
+Polynomial.cpp:252:23: error: invalid conversion from ‘const int*’ to ‘int*’ [-fpermissive]
+  int *sentCoeffTrav = sentCoeffLoc;
+                       ^
+Polynomial.cpp:286:17: error: invalid conversion from ‘const int*’ to ‘int*’ [-fpermissive]
+   sentCoeffTrav = sentCoeffLoc;
+                 ^
+make: *** [Polynomial.o] Error 1
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make[Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Starting first loop iteration #3
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #78
+Ending first loop iteration #3
+Starting first loop iteration #4
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #4
+Multiplied...
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [7Pmake./PolyTest [Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polts  ys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+Assigned...
+Sent Terms: 5
+This Terms: 5
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Starting first loop iteration #3
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #78
+Ending first loop iteration #3
+Starting first loop iteration #4
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #4
+Multiplied...
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+6x^4 + 27x^2 + 13x
+0 + 15x^2 + 13x
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	0 + 15x^2 + 13x
+This Poly: 0 + 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 5
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Starting first loop iteration #3
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #3
+Starting first loop iteration #4
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #4
+Multiplied...
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [7Pmake./PolyTest [Kmake
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Poly before return: 0 + 180Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polt ys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Poly before return: 0 + 180
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [7Pmake./PolyTest [Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 6 = 90
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * 0 = 0
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 12 = 180
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		15 * 0 = 0
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		15 * 0 = 0
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 6 = 78
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * 0 = 0
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 12 = 156
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		13 * 0 = 0
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		13 * 0 = 0
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 6 = 0
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * 0 = 0
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 12 = 0
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		0 * 0 = 0
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		0 * 0 = 0
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Poly before return: 0 + 180
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [Kmake
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 6 = 90x^14
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * 0 = 0x^13
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 12 = 180x^12
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		15 * 0 = 0x^11
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		15 * 0 = 0x^10
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 6 = 78x^15
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * 0 = 0x^14
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 12 = 156x^13
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		13 * 0 = 0x^12
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		13 * 0 = 0x^11
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 6 = 0x^16
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * 0 = 0x^15
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 12 = 0x^14
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		0 * 0 = 0x^13
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		0 * 0 = 0x^12
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Poly before return: 0 + 180
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 6 = 90x^6
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * 0 = 0x^5
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 12 = 180x^4
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		15 * 0 = 0x^3
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		15 * 0 = 0x^2
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 6 = 78x^5
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * 0 = 0x^4
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 12 = 156x^3
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		13 * 0 = 0x^2
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		13 * 0 = 0x^1
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 6 = 0x^4
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * 0 = 0x^3
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 12 = 0x^2
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		0 * 0 = 0x^1
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		0 * 0 = 0x^0
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Poly before return: 0 + 180
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 6 = 90x^6
+		Stored in [8][1]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * 0 = 0x^5
+		Stored in [7][0]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 12 = 180x^4
+		Stored in [6][0]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		15 * 0 = 0x^3
+		Stored in [5][0]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		15 * 0 = 0x^2
+		Stored in [4][0]
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 6 = 78x^5
+		Stored in [9][0]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * 0 = 0x^4
+		Stored in [8][2]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 12 = 156x^3
+		Stored in [7][0]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		13 * 0 = 0x^2
+		Stored in [6][1]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		13 * 0 = 0x^1
+		Stored in [5][0]
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 6 = 0x^4
+		Stored in [10][3]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * 0 = 0x^3
+		Stored in [9][4]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 12 = 0x^2
+		Stored in [8][2]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		0 * 0 = 0x^1
+		Stored in [7][2]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		0 * 0 = 0x^0
+		Stored in [6][1]
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Poly before return: 0 + 180
+Product: 0 + 180
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 6 = 90x^6
+		Stored in [0][0]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * 0 = 0x^5
+		Stored in [1][0]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 12 = 180x^4
+		Stored in [2][0]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		15 * 0 = 0x^3
+		Stored in [3][0]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		15 * 0 = 0x^2
+		Stored in [4][0]
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 6 = 78x^5
+		Stored in [1][0]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * 0 = 0x^4
+		Stored in [2][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 12 = 156x^3
+		Stored in [3][0]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		13 * 0 = 0x^2
+		Stored in [4][0]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		13 * 0 = 0x^1
+		Stored in [5][0]
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 6 = 0x^4
+		Stored in [2][1]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * 0 = 0x^3
+		Stored in [3][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 12 = 0x^2
+		Stored in [4][0]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		0 * 0 = 0x^1
+		Stored in [5][0]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		0 * 0 = 0x^0
+		Stored in [6][0]
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Poly before return: 90x^6 + 78x^5 + 180x^4 + 156x^3
+Product: 90x^6 + 78x^5 + 180x^4 + 156x^3
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest [K./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	6x^4 + 12x^2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: 6x^4 + 12x^2
+Assigned...
+Sent Terms: 5
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 6 = 90x^6
+		Stored in [0][0]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * 0 = 0x^5
+		Stored in [1][0]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 12 = 180x^4
+		Stored in [2][0]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		15 * 0 = 0x^3
+		Stored in [3][0]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		15 * 0 = 0x^2
+		Stored in [4][0]
+	Ending second loop iteration #4
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 6 = 78x^5
+		Stored in [1][0]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * 0 = 0x^4
+		Stored in [2][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 12 = 156x^3
+		Stored in [3][0]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		13 * 0 = 0x^2
+		Stored in [4][0]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		13 * 0 = 0x^1
+		Stored in [5][0]
+	Ending second loop iteration #4
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 6 = 0x^4
+		Stored in [2][1]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * 0 = 0x^3
+		Stored in [3][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 12 = 0x^2
+		Stored in [4][0]
+	Ending second loop iteration #2
+	Starting second loop iteration #3
+		0 * 0 = 0x^1
+		Stored in [5][0]
+	Ending second loop iteration #3
+	Starting second loop iteration #4
+		0 * 0 = 0x^0
+		Stored in [6][0]
+	Ending second loop iteration #4
+Ending first loop iteration #2
+Multiplied...
+Final hT: 6
+Poly before return: 90x^6 + 78x^5 + 180x^4 + 156x^3
+Product: 90x^6 + 78x^5 + 180x^4 + 156x^3
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	x^2 - 2x + 2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: x^2 - 2x + 2
+Assigned...
+Sent Terms: 3
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 1 = 15x^4
+		Stored in [0][0]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * -2 = -30x^3
+		Stored in [1][0]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 2 = 30x^2
+		Stored in [2][0]
+	Ending second loop iteration #2
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 1 = 13x^3
+		Stored in [1][1]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * -2 = -26x^2
+		Stored in [2][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 2 = 26x^1
+		Stored in [3][0]
+	Ending second loop iteration #2
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 1 = 0x^2
+		Stored in [2][2]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * -2 = 0x^1
+		Stored in [3][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 2 = 0x^0
+		Stored in [4][0]
+	Ending second loop iteration #2
+Ending first loop iteration #2
+Multiplied...
+Final hT: 4
+Poly before return: 15x^4 - 17x^3 + 4x^2 + 26x
+Product: 15x^4 - 17x^3 + 4x^2 + 26x
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+Polynomial.cpp: In member function ‘Polynomial Polynomial::operator*(int)’:
+Polynomial.cpp:380:3: error: ‘thisCoeffTrav’ was not declared in this scope
+  *thisCoeffTrav = NULL;
+   ^
+Polynomial.cpp:381:3: error: ‘sentCoeffLoc’ was not declared in this scope
+  *sentCoeffLoc = NULL;
+   ^
+Polynomial.cpp:382:3: error: ‘sentCoeffTrav’ was not declared in this scope
+  *sentCoeffTrav = NULL;
+   ^
+Polynomial.cpp:384:11: error: ‘newCoeffs’ was not declared in this scope
+  delete[] newCoeffs;
+           ^
+Polynomial.cpp:387:3: error: ‘newCoeffTrav’ was not declared in this scope
+  *newCoeffTrav = NULL;
+   ^
+make: *** [Polynomial.o] Error 1
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make[Kmake
+g++ -c Polynomial.cpp
+Polynomial.cpp: In member function ‘Polynomial Polynomial::operator*(const Polynomial&)’:
+Polynomial.cpp:367:16: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  *newCoeffTrav = NULL;
+                ^
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ make
+g++ -c Polynomial.cpp
+g++ Driver.cpp Polynomial.o -o PolyTest
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ ./PolyTest 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	x^2 - 2x + 2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: x^2 - 2x + 2
+Assigned...
+Sent Terms: 3
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 1 = 15x^4
+		Stored in [0][0]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * -2 = -30x^3
+		Stored in [1][0]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 2 = 30x^2
+		Stored in [2][0]
+	Ending second loop iteration #2
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 1 = 13x^3
+		Stored in [1][1]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * -2 = -26x^2
+		Stored in [2][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 2 = 26x^1
+		Stored in [3][0]
+	Ending second loop iteration #2
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 1 = 0x^2
+		Stored in [2][2]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * -2 = 0x^1
+		Stored in [3][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 2 = 0x^0
+		Stored in [4][0]
+	Ending second loop iteration #2
+Ending first loop iteration #2
+Multiplied...
+Final hT: 4
+Poly before return: 15x^4 - 17x^3 + 4x^2 + 26x
+Product: 15x^4 - 17x^3 + 4x^2 + 26x
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ valgrind ./PolyTest
+==5920== Memcheck, a memory error detector
+==5920== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5920== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==5920== Command: ./PolyTest
+==5920== 
+Input the file name: polys
+Poly result 0 is: 440
+Poly result 1 is: 4050
+Poly result 2 is: 254
+Poly result 3 is: 17
+Poly result 4 is: 2221639
+TestTestTest: 
+15x^2 + 13x
+6x^4 + 12x^2
+2x^3 + 1x - 1
+x^2 - 2x + 2
+5x^8 + 3x^7 + 10x^5 + 4x^4 + 2x^3 + 3x^2 + 9x + 19
+Multiplying Polys: 
+	First Poly:  	x^2 - 2x + 2
+	Second Poly: 	15x^2 + 13x
+This Poly: 15x^2 + 13x
+Sent Poly: x^2 - 2x + 2
+Assigned...
+Sent Terms: 3
+This Terms: 3
+Initialized...
+Starting first loop iteration #0
+1
+2
+	Starting second loop iteration #0
+		15 * 1 = 15x^4
+		Stored in [0][0]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		15 * -2 = -30x^3
+		Stored in [1][0]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		15 * 2 = 30x^2
+		Stored in [2][0]
+	Ending second loop iteration #2
+Ending first loop iteration #0
+Starting first loop iteration #1
+1
+2
+	Starting second loop iteration #0
+		13 * 1 = 13x^3
+		Stored in [1][1]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		13 * -2 = -26x^2
+		Stored in [2][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		13 * 2 = 26x^1
+		Stored in [3][0]
+	Ending second loop iteration #2
+Ending first loop iteration #1
+Starting first loop iteration #2
+1
+2
+	Starting second loop iteration #0
+		0 * 1 = 0x^2
+		Stored in [2][2]
+	Ending second loop iteration #0
+	Starting second loop iteration #1
+		0 * -2 = 0x^1
+		Stored in [3][1]
+	Ending second loop iteration #1
+	Starting second loop iteration #2
+		0 * 2 = 0x^0
+		Stored in [4][0]
+	Ending second loop iteration #2
+Ending first loop iteration #2
+Multiplied...
+Final hT: 4
+Poly before return: 15x^4 - 17x^3 + 4x^2 + 26x
+Product: 15x^4 - 17x^3 + 4x^2 + 26x
+==5920== 
+==5920== HEAP SUMMARY:
+==5920==     in use at exit: 0 bytes in 0 blocks
+==5920==   total heap usage: 17 allocs, 17 frees, 9,104 bytes allocated
+==5920== 
+==5920== All heap blocks were freed -- no leaks are possible
+==5920== 
+==5920== For counts of detected and suppressed errors, rerun with: -v
+==5920== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;bryce@Brycbuntu: ~/CS202/Project7bryce@Brycbuntu:~/CS202/Project7$ exit
+exit
+
+Script done on Mon 14 Mar 2016 08:12:34 PM PDT

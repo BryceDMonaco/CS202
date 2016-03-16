@@ -364,7 +364,7 @@ Polynomial Polynomial::operator*(const Polynomial& sentPoly)
 	delete[] newCoeffs;
 	newCoeffs = NULL;
 	
-	*newCoeffTrav = NULL;
+	newCoeffTrav = NULL;
 	
 	return tempPoly;
 	

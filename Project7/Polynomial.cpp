@@ -241,8 +241,8 @@ bool Polynomial::operator!=(const Polynomial& sentPoly)
 
 Polynomial Polynomial::operator*(const Polynomial& sentPoly)
 {
-	cout << "This Poly: " << *this << endl;
-	cout << "Sent Poly: " << sentPoly << endl;
+	//cout << "This Poly: " << *this << endl;
+	//cout << "Sent Poly: " << sentPoly << endl;
 
 	int totalTerms = (maxDegree + 1) * (sentPoly.maxDegree + 1); //The number of terms before combine
 	int combTerms = (maxDegree + sentPoly.maxDegree) + 1; //The number of combined terms
@@ -262,8 +262,8 @@ Polynomial Polynomial::operator*(const Polynomial& sentPoly)
 												//[combTerms][x] are the lowest (so x^0)
 												//Intentionally oversized
 	
-	cout << "Assigned..." << endl;
-	cout << "Sent Terms: " << sentPolyTerms << endl << "This Terms: " << thisPolyTerms << endl;
+	//cout << "Assigned..." << endl;
+	//cout << "Sent Terms: " << sentPolyTerms << endl << "This Terms: " << thisPolyTerms << endl;
 										
 	//Initialize the array to zero
 	for (int i = 0; i < combTerms; i++)
@@ -276,25 +276,25 @@ Polynomial Polynomial::operator*(const Polynomial& sentPoly)
 	
 	}
 	
-	cout << "Initialized..." << endl;
+	//cout << "Initialized..." << endl;
 	
 	//Multiply coefficients, For each coeff in the calling object
 	for (int i = 0; i < thisPolyTerms; i++)
 	{
-		cout << "Starting first loop iteration #" << i << endl;
+		//cout << "Starting first loop iteration #" << i << endl;
 		
 		sentOnDegree = sentDegree;
 		
-		cout << "1" << endl;
+		//cout << "1" << endl;
 		
 		sentCoeffTrav = sentCoeffLoc;
 		
-		cout << "2" << endl;
+		//cout << "2" << endl;
 		
 		//For each coeff in the sent object
 		for (int ii = 0; ii < sentPolyTerms; ii++)
 		{
-			cout << "\tStarting second loop iteration #" << ii << endl;
+			//cout << "\tStarting second loop iteration #" << ii << endl;
 			
 			int powLoc = highestTerm - ((thisOnDegree) + (sentOnDegree)); //Find the power of the product
 			int productLoc = 0;
@@ -306,28 +306,28 @@ Polynomial Polynomial::operator*(const Polynomial& sentPoly)
 			
 			int newCoeff = (*thisCoeffTrav) * (*sentCoeffTrav);
 			
-			cout << "\t\t" << *thisCoeffTrav << " * " << *sentCoeffTrav << " = " << newCoeff;
-			cout << "x^" << (thisOnDegree + sentOnDegree) << endl;
+			//cout << "\t\t" << *thisCoeffTrav << " * " << *sentCoeffTrav << " = " << newCoeff;
+			//cout << "x^" << (thisOnDegree + sentOnDegree) << endl;
 			
 			unsortedResults[powLoc][productLoc] = newCoeff;
 			
-			cout << "\t\tStored in [" << powLoc << "][" << productLoc << "]" << endl;
+			//cout << "\t\tStored in [" << powLoc << "][" << productLoc << "]" << endl;
 			
 			sentCoeffTrav++;
 			sentOnDegree--;
 			
-			cout << "\tEnding second loop iteration #" << ii << endl;
+			//cout << "\tEnding second loop iteration #" << ii << endl;
 			
 		}
 		
 		thisOnDegree--;
 		thisCoeffTrav++;
 		
-		cout << "Ending first loop iteration #" << i << endl;
+		//cout << "Ending first loop iteration #" << i << endl;
 		
 	}
 	
-	cout << "Multiplied..." << endl;
+	//cout << "Multiplied..." << endl;
 	
 	int *newCoeffs = new int[highestTerm + 1];
 	int *newCoeffTrav = newCoeffs;
@@ -351,11 +351,11 @@ Polynomial Polynomial::operator*(const Polynomial& sentPoly)
 	
 	}
 	
-	cout << "Final hT: " << highestTerm << endl;
+	//cout << "Final hT: " << highestTerm << endl;
 	
 	Polynomial tempPoly(highestTerm, newCoeffs);
 	
-	cout << "Poly before return: " << tempPoly << endl;
+	//cout << "Poly before return: " << tempPoly << endl;
 	
 	thisCoeffTrav = NULL;
 	sentCoeffLoc = NULL;

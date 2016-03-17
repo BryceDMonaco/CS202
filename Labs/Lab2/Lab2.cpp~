@@ -1,0 +1,81 @@
+#include <fstream>
+#include <iostream>
+#include <stdexcept>
+
+using namespace std;
+
+bool checkArguments (int argCount);
+void ReadAndPrint (char *fileName);
+
+int main (int argc, char *argv[])
+{
+
+	try
+	{
+		if (checkArguments(argc))
+		{	
+			try
+			{
+				ReadAndPrint(argv[1]);
+		
+			} catch (const exception& err)
+			{
+				cerr << err.what() << endl;
+			
+			}
+		}
+	} catch (const exception& msg)
+	{
+		cerr << msg.what() << " Args: "<< argc << endl;
+	
+	}
+	
+	
+	return 0;
+
+}
+
+bool checkArguments (int argCount)
+{	
+	bool enough = false;
+	
+	if (argCount == 2)
+	{
+		enough = true;
+	
+	} else
+	{
+		throw invalid_argument("ERROR: Invalid number of command line arguments");
+	
+	}
+	
+	return enough;
+
+}
+
+void ReadAndPrint (char *fileName)
+{
+	ifstream input;
+	input.open(fileName);
+	
+	if (input) //File opened
+	{
+		char *line = new char[100];
+		input.getline(line, 100);
+		cout << line << endl;
+		
+		delete[] line;
+		line = NULL;
+		
+	} else if (!input) //File not found
+	{
+			//Throw file not found error
+		throw runtime_error("ERROR: Could not open file");
+		
+	}
+	
+	input.close();
+	
+	return;
+	
+}

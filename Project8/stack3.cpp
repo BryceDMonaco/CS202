@@ -1,0 +1,199 @@
+#include "stackN.h"
+#include <iostream>
+
+using namespace std;
+
+/*
+	class Node{
+	private:
+		Node(char, Node*);
+		char data;
+		Node* next;
+		friend class Stack;
+              	friend ostream& operator<<(ostream&, const Stack&);
+};
+
+class Stack{
+        public:
+                Stack(int = 0);
+                Stack(const Stack&);
+                ~Stack();
+                Stack& operator=(const Stack&);
+                bool push(char);
+                bool pop(char&);
+                bool empty() const;
+                bool full() const;
+                bool clear();
+		bool operator==(const Stack&) const;
+                friend ostream& operator<<(ostream&, const Stack&);
+        private:
+		Node* top;
+};
+
+*/
+
+Node::Node (char sentChar, Node* nextNode)
+{
+	data = sentChar;
+	
+	next = nextNode;
+
+}
+
+Stack::Stack (int numNodes)
+{
+
+	top = NULL;
+
+}
+
+Stack::Stack (const Stack& sentStack)
+{
+	top = sentStack.top;
+	
+	Node *nextNode = (*top).next;
+	
+	while (nextNode != NULL)
+	{
+		Node *temp = new Node(*nextNode);
+		
+		nextNode = temp;
+		
+		nextNode = (*nextNode).next;
+	
+	}
+	
+	nextNode = NULL;
+
+}
+
+Stack::~Stack ()
+{
+	delete top;
+
+}
+
+bool Stack::push (char sentChar)
+{
+	Node *temp = new Node(sentChar, top);
+	
+	top = temp;
+	
+	return true;
+}
+
+bool Stack::pop (char &sentChar)
+{
+	sentChar = (*top).data;
+	
+	top = (*top).next;
+	
+	return true;
+
+}
+
+bool Stack::empty () const
+{
+	if (top == NULL)
+	{
+		return true;
+	
+	} else
+	{
+		return false;
+	
+	}
+
+}
+
+bool Stack::full () const
+{
+	return false; //Always assume that memory is avaialble
+
+}
+
+bool Stack::clear ()
+{
+	delete top;
+	top = NULL;
+	
+	return true;
+
+}
+
+bool Stack::operator== (const Stack &sentStack) const
+{
+
+	char thisChar = (*top).data;
+	Node *sentNode = sentStack.top;
+	char sentChar = (*sentNode).data;
+	if (thisChar == sentChar)
+	{
+		Node *thisNextNode = (*top).next;
+		Node *sentNextNode = (*sentNode).next;
+		
+		while (thisNextNode != NULL && sentNextNode != NULL)
+		{
+			if ((*thisNextNode).data == (*sentNextNode).data)
+			{
+				thisNextNode = (*thisNextNode).next;
+				sentNextNode = (*sentNextNode).next;
+			
+			} else
+			{
+				thisNextNode = NULL;
+				sentNextNode = NULL;
+				
+				return false;
+			
+			}
+		
+		}
+		
+		if (thisNextNode == NULL && sentNextNode == NULL)
+		{
+			return true;
+		
+		} else
+		{
+			return false;
+		
+		}
+		
+	} else
+	{
+		return false;
+	
+	}
+	
+}
+
+ostream& operator<< (ostream& os, const Stack& sentStack)
+{
+	os << "[";
+	
+	Node *nodeTrav = sentStack.top;
+	
+	while (nodeTrav != NULL)
+	{
+		os << (*nodeTrav).data << ", ";
+		
+		nodeTrav = (*nodeTrav).next;
+	
+	}
+	
+	os << "]";
+	
+	nodeTrav = NULL;
+	
+	return os;	
+	
+}
+
+Stack& Stack::operator=(const Stack& sentStack)
+{
+	Stack *temp = new Stack(sentStack);
+	
+	return *temp;
+
+}

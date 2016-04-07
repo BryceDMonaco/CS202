@@ -14,11 +14,11 @@ class Stack {
                 Stack(const Stack&);
                 ~Stack();
                 Stack& operator=(const Stack&);
-                bool push(char); //Insert
-                bool pop(char&); //Remove
-                bool empty() const;
-                bool full() const;
-                bool clear();
+                bool push(char); //Inserts
+                bool pop(char&); //Removes
+                bool empty() const; //Checks if empty
+                bool full() const; //Checks if full
+                bool clear(); //clears data
 		bool operator==(const Stack&) const;
                 friend ostream& operator<<(ostream&, const Stack&);
         private:
@@ -35,7 +35,7 @@ Stack::Stack (int sentMax)
 {
 	max = sentMax;
 	data = new char[max];
-	top = 0;
+	top = 1;
 	actual = 0;
 
 }
@@ -43,33 +43,24 @@ Stack::Stack (int sentMax)
 Stack::Stack (const Stack& sentStack)
 {
 	max = sentStack.max;
-	top = 0;
-	//actual = sentStack.actual;
-	actual = 0;
+	top = sentStack.top;
+	actual = sentStack.actual;
 	
 	data = new char[max];
 	
+	char *dataTrav = data;
 	char *sentTrav = sentStack.data;
 	
-	for (int i = 0; i < sentStack.actual; i++)
-	{	
-		//push(*sentTrav);
-		
-		sentTrav++;
-		
-	}
-	
-		sentTrav--;
-	
-	for (int i = 0; i <= (sentStack.actual + 1); i++)
+	for (int i = 0; i < max; i++)
 	{
-		push(*sentTrav);
+		*dataTrav = *sentTrav;
 		
-		sentTrav--;
+		dataTrav++;
+		sentTrav++;
 	
 	}
 	
-	//dataTrav = NULL;
+	dataTrav = NULL;
 	sentTrav = NULL;
 	
 }
@@ -81,41 +72,36 @@ Stack::~Stack ()
 
 }
 
+//Top should stay with the first value
+//Replaces actual
+
 Stack& Stack::operator= (const Stack& sentStack)
 {
-	Stack *tempStack = new Stack(sentStack);
+	Stack *tempStack = new Stack;
 	
-	/*
-	max = sentStack.max;
-	top = 0;
-	//actual = sentStack.actual;
-	actual = 0;
+	(*tempStack).max = sentStack.max;
+	(*tempStack).top = sentStack.top;
+	(*tempStack).actual = sentStack.actual;
 	
-	data = new char[max];
+	delete[] (*tempStack).data;
 	
+	(*tempStack).data = new char[max];
+	
+	char *dataTrav = (*tempStack).data;
 	char *sentTrav = sentStack.data;
 	
-	for (int i = 0; i < sentStack.actual; i++)
-	{	
-		//push(*sentTrav);
-		
-		sentTrav++;
-		
-	}
-	
-		sentTrav--;
-	
-	for (int i = 0; i <= (sentStack.actual + 1); i++)
+	for (int i = 0; i < max; i++)
 	{
-		push(*sentTrav);
+		*dataTrav = *sentTrav;
 		
-		sentTrav--;
+		dataTrav++;
+		sentTrav++;
 	
 	}
 	
-	//dataTrav = NULL;
+	dataTrav = NULL;
 	sentTrav = NULL;
-	*/
+	
 	return *tempStack;
 	
 }
@@ -123,7 +109,8 @@ Stack& Stack::operator= (const Stack& sentStack)
 //Functions
 bool Stack::push (char sentChar) //Inserts
 {
-	if (actual != max) //Stack is not full
+	
+	if (top != max) //Stack is not full
 	{
 		char *dataTrav = data;
 		char *nextTrav = data;
@@ -132,76 +119,62 @@ bool Stack::push (char sentChar) //Inserts
 	
 		int onIndex = 0;	
 	
-		cout << "Actual: " << actual << endl;
-	
-		//Position the pointers so that they can move backwards
-		for (int i = 0; i < (actual); i++)
+		for (int i = 0; i < (top - 1); i++)
 		{
 			dataTrav++;
-			nextTrav++;
 		
 		}
 	
-		//Copies values down an array so that 123XX becomes 1123X (X is garbage)
-		for (int i = 0; i <= (actual); i++)
-		{
-			*nextTrav = *dataTrav;
-		
-			dataTrav--;
-			nextTrav--;
-	
-		}
-	
-		dataTrav = data;
+		//dataTrav = data;
 	
 		*dataTrav = sentChar;
-	
-		actual++;
+		
+		cout << "Set: " << sentChar << endl;
+		
+		top++;
 	
 		dataTrav = NULL;
 		nextTrav = NULL;
 		
 		return true;
 		
-	} else if (actual == max) //Stack is full
+	} else if (top == max) //Stack is full
 	{
 		return false;
 	
-	}	
+	}
+
 }
 
 bool Stack::pop (char& sentChar) //Remove
 {
-	if (actual != 0)
+	if (top != 0)
 	{
 		char *dataTrav = data;
 		char *nextTrav = data;
-		
-		sentChar = *dataTrav;
 		
 		nextTrav++;
 	
 		int onIndex = 0;	
 	
-		for (int i = 0; i <= actual; i++)
+	
+		//Position the pointers so that they can move backwards
+		for (int i = 0; i < (top - 2); i++)
 		{
-			*dataTrav = *nextTrav;
-			
 			dataTrav++;
-			nextTrav++;
 		
 		}
+		
+		sentChar = *dataTrav;
 	
-		dataTrav = data;
-	
-		actual--;
+		top--;
 	
 		dataTrav = NULL;
 		nextTrav = NULL;
 		
 		return true;
 	
-	} else if (actual == 0)
+	} else if (top == 0)
 	{
 		return false;
 	
@@ -211,7 +184,7 @@ bool Stack::pop (char& sentChar) //Remove
 
 bool Stack::empty () const
 {
-	if (actual == 0)
+	if (top == 0)
 	{
 		return true;
 	
@@ -225,7 +198,7 @@ bool Stack::empty () const
 
 bool Stack::full () const
 {
-	if (actual == max)
+	if (top == max)
 	{
 		return true;
 	
@@ -239,7 +212,7 @@ bool Stack::full () const
 
 bool Stack::clear ()
 {
-	if (actual == 0)
+	if (top == 0)
 	{
 		return false; //Stack is already clear
 	
@@ -248,7 +221,7 @@ bool Stack::clear ()
 		delete[] data;
 		data = new char[max];
 		
-		actual = 0;
+		top = 0;
 		
 		return true;
 	
@@ -263,7 +236,7 @@ bool Stack::operator== (const Stack& sentStack) const
 		char *dataTrav = data;
 		char *sentTrav = sentStack.data;
 		
-		for (int i = 0; i < actual; i++)
+		for (int i = 0; i < top; i++)
 		{
 			if (*dataTrav != *sentTrav)
 			{
@@ -297,9 +270,9 @@ ostream& operator<< (ostream& os, const Stack& sentStack)
 	
 	char *dataTrav = sentStack.data;
 	
-	for (int i = 0; i < sentStack.actual; i++)
+	for (int i = 1; i <= (sentStack.top); i++)
 	{
-		if (i == (sentStack.actual - 1))
+		if (i == (sentStack.top))
 		{
 			os << *dataTrav;
 		
@@ -314,6 +287,8 @@ ostream& operator<< (ostream& os, const Stack& sentStack)
 	}
 	
 	os << "]";
+	
+	os << " Top: " << sentStack.top;
 	
 	dataTrav = NULL;
 	

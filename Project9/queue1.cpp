@@ -107,7 +107,7 @@ bool Queue::enqueue(int sentValue) //Insert
 {
 	if (rear != (max - 1))
 	{
-		rear++:
+		rear++;
 
 		int *thisTrav = data;
 
@@ -143,7 +143,7 @@ bool Queue::dequeue(int& returnValue) //Remove, front is always at zero
 
 		rear--;
 
-		for (int i = 0; i < rear; i++)
+		for (int i = 0; i <= rear; i++)
 		{
 			*thisTrav = *nextTrav;
 
@@ -203,10 +203,10 @@ bool Queue::clear()
 
 bool Queue::operator==(const Queue& sentQueue) const
 {
-	if (max == sentQueue.max && top == sentQueue.top && rear == sentQueue.rear)
+	if (max == sentQueue.max && front == sentQueue.front && rear == sentQueue.rear)
 	{
 		int *thisTrav = data;
-		int *sentTrav = sentTrav.data;
+		int *sentTrav = sentQueue.data;
 
 		for (int i = 0; i < max; i++)
 		{

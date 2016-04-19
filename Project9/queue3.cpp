@@ -68,7 +68,7 @@ Queue::Queue (const Queue& sentQueue)
 	if (sentNode != NULL)
 	{
 
-		*thisNode = new Node((*sentNode).data, NULL);
+		thisNode = new Node((*sentNode).data, NULL);
 
 		while (sentNode != NULL)
 		{
@@ -76,7 +76,7 @@ Queue::Queue (const Queue& sentQueue)
 
 			thisNode = (*thisNode).next;
 
-			*thisNode = new Node((*sentNode).data, NULL);
+			thisNode = new Node((*sentNode).data, NULL);
 
 		}
 	}
@@ -107,7 +107,7 @@ Queue& Queue::operator= (const Queue& sentQueue)
 	if (sentNode != NULL)
 	{
 
-		*thisNode = new Node((*sentNode).data, NULL);
+		thisNode = new Node((*sentNode).data, NULL);
 
 		while (sentNode != NULL)
 		{
@@ -115,7 +115,7 @@ Queue& Queue::operator= (const Queue& sentQueue)
 
 			thisNode = (*thisNode).next;
 
-			*thisNode = new Node((*sentNode).data, NULL);
+			thisNode = new Node((*sentNode).data, NULL);
 
 		}
 	}
@@ -131,35 +131,56 @@ bool Queue::enqueue(int value)
 {
 	Node *nodeTrav = front;
 
-	while (nodeTrav != NULL)
+	if (nodeTrav == NULL)
 	{
-		nodeTrav = (*nodeTrav).next;
+		//Do nothing wooo
+		front = new Node(value, NULL);
 
-	} //When it's done, node trav should be at a null pointer
-
-	nodeTrav = new Node(value, NULL);
-
-	return true;
-
-}
-
-bool dequeue(int& sentValue)
-{
-	sentValue = (*front).data;
-
-	Node *thisNode = front.next;
-	Node *nextNode = (*thisNode).next;
-
-	while (nextNode != NULL)
+	} else
 	{
-		thisNode = nextNode;
+		while ((*nodeTrav).next != NULL)
+		{
+			nodeTrav = (*nodeTrav).next;
 
-		nextNode = thisNode.next;
+		}
+
+		(*nodeTrav).next = new Node(value, NULL);
 
 	}
 
-	return true;
+	
 
+	
+
+	nodeTrav = NULL;
+
+	return true;
+}
+
+bool Queue::dequeue(int& sentValue)
+{
+	Node *thisFront = front;
+
+	sentValue = (*thisFront).data;
+
+	//Node *thisNode = (*thisFront).next;
+	//Node *nextNode = (*thisNode).next;
+
+	if ((*thisFront).next != NULL)
+	{
+		front = (*thisFront).next;
+
+	} else
+	{
+		front = NULL;
+
+	}
+
+	thisFront = NULL;
+	//thisNode = NULL;
+	//nextNode = NULL;
+
+	return true;
 }
 
 bool Queue::empty () const
@@ -174,7 +195,7 @@ bool Queue::full () const
 
 }
 
-bool clear()
+bool Queue::clear()
 {
 	if (front != NULL)
 	{
@@ -192,7 +213,7 @@ bool clear()
 
 }
 
-bool operator==(const Queue& sentQueue) const
+bool Queue::operator==(const Queue& sentQueue) const
 {
 	Node *thisNode = front;
 	Node *sentNode = sentQueue.front;
@@ -235,7 +256,7 @@ ostream& operator<<(ostream& os, const Queue& sentQueue)
 {
 	os << "[";
 
-	Node *thisNode = front;
+	Node *thisNode = sentQueue.front;
 
 	while (thisNode != NULL)
 	{
@@ -243,11 +264,18 @@ ostream& operator<<(ostream& os, const Queue& sentQueue)
 		{
 			os << (*thisNode).data;
 
+			thisNode = (*thisNode).next;
+
 		} else
 		{
 			os << (*thisNode).data << ", ";
 
+			thisNode = (*thisNode).next;
+
 		}
+
+		
+
 	}
 
 	os << "]";

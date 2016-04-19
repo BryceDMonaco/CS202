@@ -29,6 +29,8 @@ class Queue
 #include <iostream>
 #include "queue.h"
 
+#include <stdlib.h> //For an absolute value functino
+
 using namespace std;
 
 //Constructors and Destructor

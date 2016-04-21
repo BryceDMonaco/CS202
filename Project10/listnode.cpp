@@ -84,14 +84,14 @@ ListNode::ListNode (const ListNode& sentList)
 
 		while (sentTrav != NULL)
 		{
-			*cursor = new Node((*sentTrav).data, NULL);
+			cursor = new Node((*sentTrav).data, NULL);
 
 			sentTrav = (*sentTrav).next;
 			cursor = (*cursor).next;
 
 		}
 
-		thisTrav = NULL;
+		//thisTrav = NULL;
 
 	}
 
@@ -138,7 +138,7 @@ bool ListNode::insertBefore (int sentValue)
 
 }
 
-bool ListNode::get (int& returnVal)
+bool ListNode::get (int& returnVal) const
 {
 	if (cursor != NULL)
 	{
@@ -327,19 +327,21 @@ ListNode& ListNode::operator= (const ListNode& sentList)
 
 		while (sentTrav != NULL)
 		{
-			*cursor = new Node((*sentTrav).data, NULL);
+			cursor = new Node((*sentTrav).data, NULL);
 
 			sentTrav = (*sentTrav).next;
 			cursor = (*cursor).next;
 
 		}
 
-		thisTrav = NULL;
+		//thisTrav = NULL;
 
 	}
 
 	sentTrav = NULL;
 	cursor = head;
+
+	return *this;
 
 }
 
@@ -347,11 +349,11 @@ ostream& operator<< (ostream& os, const ListNode& sentList)
 {
 	os << "[";
 
-	Node *nodeTrav = head;
+	Node *nodeTrav = sentList.head;
 
 	while (nodeTrav != NULL)
 	{
-		if (nodeTrav == cursor)
+		if (nodeTrav == sentList.cursor)
 		{
 			os << "(Cursor) ";
 

@@ -159,6 +159,8 @@ bool ListNode::insertBefore (int sentValue)
 
 		head = newNode;
 
+
+
 		return true;
 
 	} else

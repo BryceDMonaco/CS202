@@ -1,0 +1,372 @@
+Script started on Wed 27 Apr 2016 02:39:32 PM PDT
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ maketouch Driver.cpp[4Pcd Project11..[KProject11touch Driver.cppmake[K[K./ListTest 
+Enter the data file name: data.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 793811888, 15, 10, 7, 6, 4, 3, 2, 
+[(Cursor) 793811888]
+[(Cursor) 15, 793811888]
+[(Cursor) 10, 15, 793811888]
+[(Cursor) 7, 10, 15, 793811888]
+[(Cursor) 6, 7, 10, 15, 793811888]
+[(Cursor) 4, 6, 7, 10, 15, 793811888]
+[(Cursor) 3, 4, 6, 7, 10, 15, 793811888]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15, 793811888]
+List sorted, sorted list is: [(Cursor) 2, 3, 4, 6, 7, 10, 15, 793811888]
+What Fib value should be found: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: data.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+What Fib value should be found: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+Driver.cpp:11:1: error: expected initializer before ‘ListNode’
+ ListNode SortList (ListNode sentList, int amount);
+ ^
+Driver.cpp: In function ‘int main()’:
+Driver.cpp:45:43: error: ‘SortList’ was not declared in this scope
+  sortedList = SortList(initialList, amount);
+                                           ^
+Driver.cpp:51:46: error: ‘NodeToArray’ was not declared in this scope
+  sortedListA = NodeToArray(sortedList, amount);
+                                              ^
+Driver.cpp:53:7: error: expected ‘;’ before string constant
+  cout "Converted to array, array list is: " << sortedListA << endl;
+       ^
+make: *** [ListTest] Error 1
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ,[Kmake
+g++ Driver.cpp listnode.o -o ListTest
+Driver.cpp: In function ‘int main()’:
+Driver.cpp:53:7: error: expected ‘;’ before string constant
+  cout "Converted to array, array list is: " << sortedListA << endl;
+       ^
+make: *** [ListTest] Error 1
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./make./ListTest 
+Enter the data file name: data.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [10, 7, 6, 4, 3, 2, 1, (Cursor) 15]
+What Fib value should be found: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+make: Nothing to be done for `all'.
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ makema[K[K
+make: Nothing to be done for `all'.
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+make: Nothing to be done for `all'.
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./make[2P./ListTest 
+Enter the data file name: data.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [10, 7, 6, 4, 3, 2, 1, (Cursor) 15]
+What Fib value should be found: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: data.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+What Fib value should be found: [ 45
+Fib 45 = 1134903170
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest [K./ListTest [Kmake
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: dtat   ata.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 3
+The value 3 was found in the list!
+What Fib value should be found: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest [7Pmake./ListTest 
+Enter the data file name: datat.tx    .txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 5
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest [7Pmake./ListTest 
+Enter the data file name: 11 0  dtat   atat.  .txx t
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 10
+The value 10 was found in the list!
+What Fib value should be found: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest [7Pmake
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: datat .txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 11
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest [7Pmake
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: datat .txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 11
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest [7Pmake./ListTest 
+Enter the data file name: 6 dta  atat .txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 6
+The value 6 was found in the list!
+What Fib value should be found: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest [7Pmake
+make: Nothing to be done for `all'.
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: datat.  .txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 11
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: datat .txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 11
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: data.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 11
+Segmentation fault (core dumped)
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: data.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 11
+The value 11 count not be found.
+What Fib value should be found: 12
+Fib 12 = 144
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest [7Pmake./ListTest 
+Enter the data file name: data.tt xt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 119
+The value 119 count not be found.
+What Fib value should be found: ^[[A^[[B^[[B            5
+Fib 5 = 5
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest 
+Enter the data file name: datat .txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 2
+The value 2 was found in the list!
+What Fib value should be found: ^C
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ ./ListTest 
+Enter the data file name: data.txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+Sorted Array: 15, 10, 7, 6, 4, 3, 2, 1, 
+[(Cursor) 15]
+[(Cursor) 10, 15]
+[(Cursor) 7, 10, 15]
+[(Cursor) 6, 7, 10, 15]
+[(Cursor) 4, 6, 7, 10, 15]
+[(Cursor) 3, 4, 6, 7, 10, 15]
+[(Cursor) 2, 3, 4, 6, 7, 10, 15]
+[(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 1
+The value 1 was found in the list!
+What Fib value should be found: 3
+Fib 3 = 2
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: data.tt xt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 3
+The value 3 was found in the list!
+What Fib value should be found: 2
+Fib 2 = 1
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make
+g++ Driver.cpp listnode.o -o ListTest
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ make./ListTest 
+Enter the data file name: tx  datat .txt
+Data read in, list node is: [(Cursor) 3, 15, 10, 7, 1, 2, 6, 4]
+
+List sorted, sorted list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Converted to array, array list is: [(Cursor) 1, 2, 3, 4, 6, 7, 10, 15]
+Enter value to search for: 3
+The value 3 was found in the list!
+What Fib value should be found: 3
+Fib 3 = 2
+]0;bryce@Brycbuntu: ~/CS202/Project11bryce@Brycbuntu:~/CS202/Project11$ exit
+exit
+
+Script done on Wed 27 Apr 2016 03:33:49 PM PDT

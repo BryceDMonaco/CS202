@@ -142,7 +142,7 @@ bool ListArray<T>::insertBefore (const T& sentValue)
 
         *onTrav = sentValue;
 
-        cursor++;
+        //cursor++;
         actual++;
 
         onTrav = NULL;

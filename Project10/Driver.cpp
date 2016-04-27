@@ -1,10 +1,12 @@
 #include <iostream>
+//#include "listnode.h"
 #include "listarray.h"
 
 using namespace std;
 
 int main ()
 {
+	//ListNode testList;
 	ListArray<int> testList;
 
 	for (int i = 0; i < 10; i++)
@@ -42,6 +44,16 @@ int main ()
 		cout << testList << endl;
 
 	}
+
+	cout << "Testing Assignment." << endl;
+
+	//ListNode testAssign(testList);
+
+	ListArray<int> testAssign;
+	testAssign = testList;
+
+	cout << "Original List: \t" << testList << endl;
+	cout << "Test List: \t" << testAssign << endl;
 
 	cout << "Removing." << endl;
 

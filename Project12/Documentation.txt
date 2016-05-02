@@ -1,0 +1,5 @@
+Observations:
+1.	Multiple objects of different "types" (in this case different shapes) can all be placed into an array of the original class (so for this project they can be in an array of Shapes)
+
+2.	By having an object inherit functions and other members from a related class, implementation can be sped up and debugging is much faster because it's easier to fix one function which is used by three classes than fixing one function in every class individually.
+

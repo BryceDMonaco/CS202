@@ -58,10 +58,8 @@ float RectangularPrism::calculateAreaOrVolume () //Calculates volume
 
 float RectangularPrism::calculatePerimeterOrSurfaceArea ()
 {
-	int areaOne = length * width;
-	int areaTwo = length * height;
 
-	return ((2 * areaTwo) * (4 * areaOne)); //Total six sides
+	return (2 * ((width * length) + (height * length) + (height * width))); //A = 2(wl + hl + hw)
 
 }
 

@@ -20,7 +20,7 @@ int main ()
 
 	data >> numShapes;
 
-	cout << "Found a file containing " << numShapes << " shapes!" << endl;
+	//cout << "Found a file containing " << numShapes << " shapes!" << endl;
 
 	Shape **shapeList = new Shape*[numShapes];
 
@@ -32,7 +32,7 @@ int main ()
 
 		data >> shapeNum;
 
-		cout << "Found shape with ID: " << shapeNum << endl;
+		//cout << "Found shape with ID: " << shapeNum << endl;
 
 		if (shapeNum == 1) //Rectangle
 		{
@@ -84,6 +84,7 @@ int main ()
 
 	}
 
+	/*
 	listTrav = shapeList;
 
 	for (int i = 0; i < numShapes; i++)
@@ -95,6 +96,7 @@ int main ()
 		listTrav++;
 
 	}
+	*/
 
 	cout << endl << "Calculations of Perimeter/SA: " << endl << endl;
 

@@ -1,5 +1,16 @@
 Observations:
 1.	Multiple objects of different "types" (in this case different shapes) can all be placed into an array of the original class (so for this project they can be in an array of Shapes)
 
-2.	By having an object inherit functions and other members from a related class, implementation can be sped up and debugging is much faster because it's easier to fix one function which is used by three classes than fixing one function in every class individually.
+2.	When an object inherits from another class, the original class constructor is called first, then the class inheriting has its constructor called
 
+3.	An object inherits all protected data members as well as public members
+
+4. 	An object that inherits does not need a destructor unless it has its own member which uses dynamic memory that the original object does not have.
+
+----------------------------------------------------------------------------------------
+
+Project 12 required us to use a premade header file to create an implementation which used inheritance and polymorphism in order to perform actions on various objects. The base class was called shape, which required no implementation, and shape had four derived classes: rectangle, rectangular prism, circle, and cylinder, where rectangle and circle inherited from shape and rectangular prism and cylinder inherited from rectangle and circle respectively. The project also need us to write a test driver with output matching that in the project specification.
+
+The biggest challenge of this project initially was just understanding the concepts behind inheritance and how it worked in code. Going in blank, the header file was pretty intimidating and the project spec honestly scared me. This entirely  went away as I actually started on the code and understood how everything worked. The mention of a double pointer in the specification was also pretty intimidating, but like the above it was actually pretty simple. The only issue/bug within my code, other than a pointer that I forgot to increment within the main driver, was that I was using an incorrect equation for the rectangular prism’s surface area, where I made the mistake of assuming that length and height were equal (so the prism would have been four sides of equal area and two sides of equal area), this was solved by doing some quick searches for an actual surface area equation online.
+
+Most of the implementation for the header was able to be done in simple operations within the return statement. Constructors did not use dynamic memory so they were easy to handle and because of this the constructor was also not needed because nothing needed to be manually deallocated. Given more time I don’t think I would have done anything differently, I am happy with how the program turned out.

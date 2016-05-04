@@ -15,6 +15,8 @@ Rectangle::Rectangle (float sentLength, float sentWidth)
 
 	isThreeDimensional = false;
 
+	//cout << "Rectagle Made" << endl;
+
 }
 
 float Rectangle::calculateAreaOrVolume ()
@@ -48,6 +50,8 @@ RectangularPrism::RectangularPrism (float sentLength, float sentWidth, float sen
 
 	isThreeDimensional = true;
 
+	//cout << "R. Prism Made" << endl;
+
 }
 
 float RectangularPrism::calculateAreaOrVolume () //Calculates volume
@@ -80,6 +84,8 @@ Circle::Circle (float sentRadius)
 
 	isThreeDimensional = false;
 
+	//cout << "Circle Made" << endl;
+
 }
 
 float Circle::calculateAreaOrVolume ()
@@ -111,6 +117,8 @@ Cylinder::Cylinder (float sentRadius, float sentHeight)
 	height = sentHeight;
 
 	isThreeDimensional = true;
+
+	//cout << "Cylinder Made" << endl;
 
 }
 
